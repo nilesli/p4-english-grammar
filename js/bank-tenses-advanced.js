@@ -1,368 +1,610 @@
 /**
  * 小四英文温習 · Tenses 進階（短文填時態）
- * r2 · 2026-10-29 · 小四程度（詞彙／句長／時態混合貼小四卷）
+ * r6 · 20261029r6 · tips = 思路 only（唔寫死正確動詞形）
  */
 window.P4_BANK_TENSES_ADVANCED = [
   {
-    id: "adv-email-picnic",
-    title: "Email: Country park picnic",
-    genre: "email",
-    intro: "讀 Amy 寫俾同學嘅電郵。文中有 last Sunday（過去）同 at weekends／often（習慣）——先掃全文時間詞，再逐格判斷。",
-    segments: [
+    "id": "adv-email-picnic",
+    "title": "Email: Country park picnic",
+    "genre": "email",
+    "intro": "讀 Amy 寫俾同學嘅電郵。文中有 last Sunday（過去）同 at weekends／often（習慣）——先掃全文時間詞，再逐格判斷。",
+    "segments": [
       {
-        type: "text",
-        text: "Dear Sam,\n\nI hope you are well. Last Sunday my family ",
+        "type": "text",
+        "text": "Dear Sam,\n\nI hope you are well. Last Sunday my family "
       },
       {
-        type: "blank",
-        id: "e1",
-        options: [
-          { value: "A", label: "A. go" },
-          { value: "B", label: "B. goes" },
-          { value: "C", label: "C. went" },
-          { value: "D", label: "D. going" },
+        "type": "blank",
+        "id": "e1",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. go"
+          },
+          {
+            "value": "B",
+            "label": "B. goes"
+          },
+          {
+            "value": "C",
+            "label": "C. went"
+          },
+          {
+            "value": "D",
+            "label": "D. going"
+          }
         ],
-        answer: "C",
-        tip: "有 Last Sunday：整件事已經發生，用過去式；go 係不規則動詞。",
-        teach: "go → went。見到 last／yesterday 唔好留原形。",
+        "answer": "C",
+        "tip": "有 Last Sunday：整件事已經發生，用過去式；呢個動詞係不規則，要記特別形。",
+        "teach": "go 過去式係不規則。見到 last／yesterday 唔好留原形。"
       },
       {
-        type: "text",
-        text: " to Sai Kung Country Park for a picnic. Early in the morning Mum ",
+        "type": "text",
+        "text": " to Sai Kung Country Park for a picnic. Early in the morning Mum "
       },
       {
-        type: "blank",
-        id: "e2",
-        options: [
-          { value: "A", label: "A. prepare" },
-          { value: "B", label: "B. prepares" },
-          { value: "C", label: "C. prepared" },
-          { value: "D", label: "D. preparing" },
+        "type": "blank",
+        "id": "e2",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. prepare"
+          },
+          {
+            "value": "B",
+            "label": "B. prepares"
+          },
+          {
+            "value": "C",
+            "label": "C. prepared"
+          },
+          {
+            "value": "D",
+            "label": "D. preparing"
+          }
         ],
-        answer: "C",
-        tip: "仍然講 last Sunday 朝早：規則動詞要變過去式。",
-        teach: "規則動詞：prepare → prepared。",
+        "answer": "C",
+        "tip": "仍然講 last Sunday 朝早：規則動詞要變過去式（加 -ed）。",
+        "teach": "規則動詞：加 -ed。"
       },
       {
-        type: "text",
-        text: " sandwiches and salad, and Dad ",
+        "type": "text",
+        "text": " sandwiches and salad, and Dad "
       },
       {
-        type: "blank",
-        id: "e3",
-        options: [
-          { value: "A", label: "A. buy" },
-          { value: "B", label: "B. buys" },
-          { value: "C", label: "C. bought" },
-          { value: "D", label: "D. buying" },
+        "type": "blank",
+        "id": "e3",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. buy"
+          },
+          {
+            "value": "B",
+            "label": "B. buys"
+          },
+          {
+            "value": "C",
+            "label": "C. bought"
+          },
+          {
+            "value": "D",
+            "label": "D. buying"
+          }
         ],
-        answer: "C",
-        tip: "同一日過去事：buy 嘅過去式係邊個？",
-        teach: "buy → bought（不規則）。",
+        "answer": "C",
+        "tip": "同一日過去事：呢個動詞係不規則，揀正確過去形。",
+        "teach": "buy 係不規則過去式。"
       },
       {
-        type: "text",
-        text: " drinks and fruit from the supermarket. When we arrived, we ",
+        "type": "text",
+        "text": " drinks and fruit from the supermarket. When we arrived, we "
       },
       {
-        type: "blank",
-        id: "e4",
-        options: [
-          { value: "A", label: "A. find" },
-          { value: "B", label: "B. finds" },
-          { value: "C", label: "C. found" },
-          { value: "D", label: "D. finding" },
+        "type": "blank",
+        "id": "e4",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. find"
+          },
+          {
+            "value": "B",
+            "label": "B. finds"
+          },
+          {
+            "value": "C",
+            "label": "C. found"
+          },
+          {
+            "value": "D",
+            "label": "D. finding"
+          }
         ],
-        answer: "C",
-        tip: "When we arrived 已經係過去；find 係不規則。",
-        teach: "find → found。故事敍述用過去式。",
+        "answer": "C",
+        "tip": "When we arrived 已經係過去；find 係不規則。",
+        "teach": "find 係不規則。故事敍述用過去式。"
       },
       {
-        type: "text",
-        text: " a shady place under a big tree. We ",
+        "type": "text",
+        "text": " a shady place under a big tree. We "
       },
       {
-        type: "blank",
-        id: "e5",
-        options: [
-          { value: "A", label: "A. eat" },
-          { value: "B", label: "B. eats" },
-          { value: "C", label: "C. ate" },
-          { value: "D", label: "D. eating" },
+        "type": "blank",
+        "id": "e5",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. eat"
+          },
+          {
+            "value": "B",
+            "label": "B. eats"
+          },
+          {
+            "value": "C",
+            "label": "C. ate"
+          },
+          {
+            "value": "D",
+            "label": "D. eating"
+          }
         ],
-        answer: "C",
-        tip: "野餐當日已經食完：用過去式。",
-        teach: "eat → ate（唔係 eated）。",
+        "answer": "C",
+        "tip": "野餐當日已經食完：用過去式；呢個動詞係不規則（唔係加 -ed）。",
+        "teach": "eat 過去式唔係 eated。"
       },
       {
-        type: "text",
-        text: " happily and shared the food. After lunch my brother and I ",
+        "type": "text",
+        "text": " happily and shared the food. After lunch my brother and I "
       },
       {
-        type: "blank",
-        id: "e6",
-        options: [
-          { value: "A", label: "A. run" },
-          { value: "B", label: "B. runs" },
-          { value: "C", label: "C. ran" },
-          { value: "D", label: "D. running" },
+        "type": "blank",
+        "id": "e6",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. run"
+          },
+          {
+            "value": "B",
+            "label": "B. runs"
+          },
+          {
+            "value": "C",
+            "label": "C. ran"
+          },
+          {
+            "value": "D",
+            "label": "D. running"
+          }
         ],
-        answer: "C",
-        tip: "After lunch 仍然係 last Sunday 故事線。",
-        teach: "run → ran。寫作故事多數用過去式。",
+        "answer": "C",
+        "tip": "After lunch 仍然係 last Sunday 故事線；呢個動詞係不規則。",
+        "teach": "run 係不規則。寫作故事多數用過去式。"
       },
       {
-        type: "text",
-        text: " races on the grass. I was tired so I ",
+        "type": "text",
+        "text": " races on the grass. I was tired so I "
       },
       {
-        type: "blank",
-        id: "e7",
-        options: [
-          { value: "A", label: "A. watch" },
-          { value: "B", label: "B. watches" },
-          { value: "C", label: "C. watched" },
-          { value: "D", label: "D. watching" },
+        "type": "blank",
+        "id": "e7",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. watch"
+          },
+          {
+            "value": "B",
+            "label": "B. watches"
+          },
+          {
+            "value": "C",
+            "label": "C. watched"
+          },
+          {
+            "value": "D",
+            "label": "D. watching"
+          }
         ],
-        answer: "C",
-        tip: "前面 I was…，so 後面都要跟過去；規則動詞加 -ed。",
-        teach: "so 句：so I + 過去式。watch → watched。",
+        "answer": "C",
+        "tip": "前面 I was…，so 後面都要跟過去；規則動詞加 -ed。",
+        "teach": "so 句：so I + 過去式。規則動詞加 -ed。"
       },
       {
-        type: "text",
-        text: " the birds quietly for a while.\n\nAt weekends I usually ",
+        "type": "text",
+        "text": " the birds quietly for a while.\n\nAt weekends I usually "
       },
       {
-        type: "blank",
-        id: "e8",
-        options: [
-          { value: "A", label: "A. play" },
-          { value: "B", label: "B. plays" },
-          { value: "C", label: "C. played" },
-          { value: "D", label: "D. playing" },
+        "type": "blank",
+        "id": "e8",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. play"
+          },
+          {
+            "value": "B",
+            "label": "B. plays"
+          },
+          {
+            "value": "C",
+            "label": "C. played"
+          },
+          {
+            "value": "D",
+            "label": "D. playing"
+          }
         ],
-        answer: "A",
-        tip: "At weekends／usually 係習慣：用現在式；主語係 I。",
-        teach: "習慣用現在式：I／you／we／they + 原形。",
+        "answer": "A",
+        "tip": "At weekends／usually 係習慣：用現在式；主語係 I → 原形。",
+        "teach": "習慣用現在式：I／you／we／they + 原形。"
       },
       {
-        type: "text",
-        text: " badminton in the park near my home. My sister often ",
+        "type": "text",
+        "text": " badminton in the park near my home. My sister often "
       },
       {
-        type: "blank",
-        id: "e9",
-        options: [
-          { value: "A", label: "A. win" },
-          { value: "B", label: "B. wins" },
-          { value: "C", label: "C. won" },
-          { value: "D", label: "D. winning" },
+        "type": "blank",
+        "id": "e9",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. win"
+          },
+          {
+            "value": "B",
+            "label": "B. wins"
+          },
+          {
+            "value": "C",
+            "label": "C. won"
+          },
+          {
+            "value": "D",
+            "label": "D. winning"
+          }
         ],
-        answer: "B",
-        tip: "often 係習慣；主語 My sister 等同 she → 要加 -s。",
-        teach: "第三人稱單數現在式加 -s／-es：wins。",
+        "answer": "B",
+        "tip": "often 係習慣；主語 My sister 等同 she → 動詞要加 -s。",
+        "teach": "第三人稱單數現在式加 -s／-es。"
       },
       {
-        type: "text",
-        text: " our matches, but I still enjoy the games. ",
+        "type": "text",
+        "text": " our matches, but I still enjoy the games. "
       },
       {
-        type: "blank",
-        id: "e10",
-        options: [
-          { value: "A", label: "A. Do" },
-          { value: "B", label: "B. Does" },
-          { value: "C", label: "C. Did" },
-          { value: "D", label: "D. Are" },
+        "type": "blank",
+        "id": "e10",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. Do"
+          },
+          {
+            "value": "B",
+            "label": "B. Does"
+          },
+          {
+            "value": "C",
+            "label": "C. Did"
+          },
+          {
+            "value": "D",
+            "label": "D. Are"
+          }
         ],
-        answer: "A",
-        tip: "問對方平時習慣；主語 you → 用邊個助動詞？",
-        teach: "現在式問句：you → Do + 原形。",
+        "answer": "A",
+        "tip": "問對方平時習慣；主語 you → 用邊個現在式助動詞？",
+        "teach": "現在式問句：you → Do + 原形。"
       },
       {
-        type: "text",
-        text: " you play any sport at weekends too? Please write back soon!\n\nBest wishes,\nAmy",
-      },
-    ],
+        "type": "text",
+        "text": " you play any sport at weekends too? Please write back soon!\n\nBest wishes,\nAmy"
+      }
+    ]
   },
-
   {
-    id: "adv-dialogue-homework",
-    title: "Dialogue: Project and habits",
-    genre: "dialogue",
-    intro: "讀媽媽同 Ken 嘅對話。有 yesterday／last night（過去）、every day／often（習慣）同 now（而家正在）。",
-    segments: [
-      { type: "text", text: "Mum: Ken, " },
+    "id": "adv-dialogue-homework",
+    "title": "Dialogue: Project and habits",
+    "genre": "dialogue",
+    "intro": "讀媽媽同 Ken 嘅對話。有 yesterday／last night（過去）、every day／often（習慣）同 now（而家正在）。",
+    "segments": [
       {
-        type: "blank",
-        id: "d1",
-        options: [
-          { value: "A", label: "A. do" },
-          { value: "B", label: "B. does" },
-          { value: "C", label: "C. did" },
-          { value: "D", label: "D. are" },
+        "type": "text",
+        "text": "Mum: Ken, "
+      },
+      {
+        "type": "blank",
+        "id": "d1",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. do"
+          },
+          {
+            "value": "B",
+            "label": "B. does"
+          },
+          {
+            "value": "C",
+            "label": "C. did"
+          },
+          {
+            "value": "D",
+            "label": "D. are"
+          }
         ],
-        answer: "C",
-        tip: "後面提到 yesterday：問過去要用邊個助動詞？後面動詞保持原形。",
-        teach: "過去式問句：Did + 主語 + 動詞原形。",
+        "answer": "C",
+        "tip": "後面提到 yesterday：問過去要用邊個助動詞？後面動詞保持原形。",
+        "teach": "過去式問句：Did + 主語 + 動詞原形。"
       },
       {
-        type: "text",
-        text: " you finish the Science project yesterday?\nKen: Yes. I ",
+        "type": "text",
+        "text": " you finish the Science project yesterday?\nKen: Yes. I "
       },
       {
-        type: "blank",
-        id: "d2",
-        options: [
-          { value: "A", label: "A. start" },
-          { value: "B", label: "B. starts" },
-          { value: "C", label: "C. started" },
-          { value: "D", label: "D. starting" },
+        "type": "blank",
+        "id": "d2",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. start"
+          },
+          {
+            "value": "B",
+            "label": "B. starts"
+          },
+          {
+            "value": "C",
+            "label": "C. started"
+          },
+          {
+            "value": "D",
+            "label": "D. starting"
+          }
         ],
-        answer: "C",
-        tip: "答 yesterday 已經做嘅事：規則動詞變過去式。",
-        teach: "規則動詞：start → started。",
+        "answer": "C",
+        "tip": "答 yesterday 已經做嘅事：規則動詞變過去式。",
+        "teach": "規則動詞加 -ed。"
       },
       {
-        type: "text",
-        text: " after dinner. The instructions ",
+        "type": "text",
+        "text": " after dinner. The instructions "
       },
       {
-        type: "blank",
-        id: "d3",
-        options: [
-          { value: "A", label: "A. is" },
-          { value: "B", label: "B. are" },
-          { value: "C", label: "C. was" },
-          { value: "D", label: "D. were" },
+        "type": "blank",
+        "id": "d3",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. is"
+          },
+          {
+            "value": "B",
+            "label": "B. are"
+          },
+          {
+            "value": "C",
+            "label": "C. was"
+          },
+          {
+            "value": "D",
+            "label": "D. were"
+          }
         ],
-        answer: "D",
-        tip: "講昨晚當時情況；主語 instructions 係複數。",
-        teach: "be 過去式：複數／you → were；單數 → was。",
+        "answer": "D",
+        "tip": "講昨晚當時情況；主語 instructions 係複數 → 揀正確 be 過去形。",
+        "teach": "be 過去式：複數／you → were；單數 → was。"
       },
       {
-        type: "text",
-        text: " a bit hard. I was confused so I ",
+        "type": "text",
+        "text": " a bit hard. I was confused so I "
       },
       {
-        type: "blank",
-        id: "d4",
-        options: [
-          { value: "A", label: "A. ask" },
-          { value: "B", label: "B. asks" },
-          { value: "C", label: "C. asked" },
-          { value: "D", label: "D. asking" },
+        "type": "blank",
+        "id": "d4",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. ask"
+          },
+          {
+            "value": "B",
+            "label": "B. asks"
+          },
+          {
+            "value": "C",
+            "label": "C. asked"
+          },
+          {
+            "value": "D",
+            "label": "D. asking"
+          }
         ],
-        answer: "C",
-        tip: "前面 I was…，so 後面要跟過去。",
-        teach: "so 句要用過去式：asked。",
+        "answer": "C",
+        "tip": "前面 I was…，so 後面要跟過去；規則動詞加 -ed。",
+        "teach": "so 句要用過去式。"
       },
       {
-        type: "text",
-        text: " Dad for help. Together we ",
+        "type": "text",
+        "text": " Dad for help. Together we "
       },
       {
-        type: "blank",
-        id: "d5",
-        options: [
-          { value: "A", label: "A. make" },
-          { value: "B", label: "B. makes" },
-          { value: "C", label: "C. made" },
-          { value: "D", label: "D. making" },
+        "type": "blank",
+        "id": "d5",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. make"
+          },
+          {
+            "value": "B",
+            "label": "B. makes"
+          },
+          {
+            "value": "C",
+            "label": "C. made"
+          },
+          {
+            "value": "D",
+            "label": "D. making"
+          }
         ],
-        answer: "C",
-        tip: "仍然係昨晚完成嘅動作；make 係不規則。",
-        teach: "make → made（不規則）。",
+        "answer": "C",
+        "tip": "仍然係昨晚完成嘅動作；make 係不規則。",
+        "teach": "make 係不規則過去式。"
       },
       {
-        type: "text",
-        text: " a simple poster about plants.\nMum: Well done. ",
+        "type": "text",
+        "text": " a simple poster about plants.\nMum: Well done. "
       },
       {
-        type: "blank",
-        id: "d6",
-        options: [
-          { value: "A", label: "A. Do" },
-          { value: "B", label: "B. Does" },
-          { value: "C", label: "C. Did" },
-          { value: "D", label: "D. Is" },
+        "type": "blank",
+        "id": "d6",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. Do"
+          },
+          {
+            "value": "B",
+            "label": "B. Does"
+          },
+          {
+            "value": "C",
+            "label": "C. Did"
+          },
+          {
+            "value": "D",
+            "label": "D. Is"
+          }
         ],
-        answer: "C",
-        tip: "跟住問 last night 讀故事：仍係過去問句。",
-        teach: "Did you…? 問過去；後面用原形。",
+        "answer": "C",
+        "tip": "跟住問 last night：仍係過去問句；後面動詞原形。",
+        "teach": "Did you…? 問過去；後面用原形。"
       },
       {
-        type: "text",
-        text: " you read the English story last night as well?\nKen: Yes. I ",
+        "type": "text",
+        "text": " you read the English story last night as well?\nKen: Yes. I "
       },
       {
-        type: "blank",
-        id: "d7",
-        options: [
-          { value: "A", label: "A. read" },
-          { value: "B", label: "B. reads" },
-          { value: "C", label: "C. reading" },
-          { value: "D", label: "D. readed" },
+        "type": "blank",
+        "id": "d7",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. read"
+          },
+          {
+            "value": "B",
+            "label": "B. reads"
+          },
+          {
+            "value": "C",
+            "label": "C. reading"
+          },
+          {
+            "value": "D",
+            "label": "D. readed"
+          }
         ],
-        answer: "A",
-        tip: "講昨晚：read 過去式寫法同原形一樣（讀音唔同）。唔好寫 readed。",
-        teach: "read → read（過去式字形相同；唔係 readed）。",
+        "answer": "A",
+        "tip": "講昨晚：呢個動詞過去式字形同原形一樣（讀音唔同）。唔好亂加 -ed。",
+        "teach": "read 過去式字形相同；唔係 readed。"
       },
       {
-        type: "text",
-        text: " three pages and wrote new words in my notebook. Every day I ",
+        "type": "text",
+        "text": " three pages and wrote new words in my notebook. Every day I "
       },
       {
-        type: "blank",
-        id: "d8",
-        options: [
-          { value: "A", label: "A. review" },
-          { value: "B", label: "B. reviews" },
-          { value: "C", label: "C. reviewed" },
-          { value: "D", label: "D. reviewing" },
+        "type": "blank",
+        "id": "d8",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. review"
+          },
+          {
+            "value": "B",
+            "label": "B. reviews"
+          },
+          {
+            "value": "C",
+            "label": "C. reviewed"
+          },
+          {
+            "value": "D",
+            "label": "D. reviewing"
+          }
         ],
-        answer: "A",
-        tip: "Every day 係習慣；主語 I。",
-        teach: "習慣：I／you／we／they + 原形。",
+        "answer": "A",
+        "tip": "Every day 係習慣；主語 I → 原形。",
+        "teach": "習慣：I／you／we／they + 原形。"
       },
       {
-        type: "text",
-        text: " my vocabulary list before bed. Dad often ",
+        "type": "text",
+        "text": " my vocabulary list before bed. Dad often "
       },
       {
-        type: "blank",
-        id: "d9",
-        options: [
-          { value: "A", label: "A. check" },
-          { value: "B", label: "B. checks" },
-          { value: "C", label: "C. checked" },
-          { value: "D", label: "D. checking" },
+        "type": "blank",
+        "id": "d9",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. check"
+          },
+          {
+            "value": "B",
+            "label": "B. checks"
+          },
+          {
+            "value": "C",
+            "label": "C. checked"
+          },
+          {
+            "value": "D",
+            "label": "D. checking"
+          }
         ],
-        answer: "B",
-        tip: "often 習慣；主語 Dad 等同 he。",
-        teach: "第三人稱單數現在式加 -s：checks。",
+        "answer": "B",
+        "tip": "often 習慣；主語 Dad 等同 he → 加 -s。",
+        "teach": "第三人稱單數現在式加 -s。"
       },
       {
-        type: "text",
-        text: " my spelling too.\nMum: Good habit. Where ",
+        "type": "text",
+        "text": " my spelling too.\nMum: Good habit. Where "
       },
       {
-        type: "blank",
-        id: "d10",
-        options: [
-          { value: "A", label: "A. do we go" },
-          { value: "B", label: "B. are we going" },
-          { value: "C", label: "C. did we go" },
-          { value: "D", label: "D. does we go" },
+        "type": "blank",
+        "id": "d10",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. do we go"
+          },
+          {
+            "value": "B",
+            "label": "B. are we going"
+          },
+          {
+            "value": "C",
+            "label": "C. did we go"
+          },
+          {
+            "value": "D",
+            "label": "D. does we go"
+          }
         ],
-        answer: "B",
-        tip: "有 now：而家正在發生，諗 am／is／are + V-ing。",
-        teach: "而家正在做：Where are we going now?",
+        "answer": "B",
+        "tip": "有 now：而家正在發生，諗 am／is／are + V-ing。",
+        "teach": "而家正在做：Where are we going now?"
       },
       {
-        type: "text",
-        text: " now? Please wash your hands — supper is ready!",
-      },
-    ],
-  },
+        "type": "text",
+        "text": " now? Please wash your hands — supper is ready!"
+      }
+    ]
+  }
 ];

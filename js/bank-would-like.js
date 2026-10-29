@@ -1,4 +1,4 @@
-/** auto bank · r3 */
+/** auto bank · r6 · 20261029r6 · tips = 思路 only */
 window.P4_BANK_WOULD_LIKE = [
   {
     "id": "wl1",
@@ -22,12 +22,12 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "A",
-    "tip": "禮貌想要：would like。",
+    "tip": "禮貌表達「想要」：揀正確助動詞組成 ___ like。",
     "teach": "would like + 名詞。"
   },
   {
     "id": "wl2",
-    "prompt": "She would like ______ some noodles.",
+    "prompt": "She would like ______ some noodles from the menu.",
     "options": [
       {
         "value": "A",
@@ -47,12 +47,12 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "would like + to-V。",
+    "tip": "呢個結構後面接動詞時用 to + 原形（唔係 V-ing）。",
     "teach": "would like to + 原形。"
   },
   {
     "id": "wl3",
-    "prompt": "______ you like some tea?",
+    "prompt": "______ you like some tea after the show?",
     "options": [
       {
         "value": "A",
@@ -72,12 +72,12 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "A",
-    "tip": "禮貌邀請：Would you like…?",
+    "tip": "禮貌邀請／詢問想唔想要：疑問要倒裝。",
     "teach": "Would you like…?"
   },
   {
     "id": "wl4",
-    "prompt": "What ______ you like for lunch?",
+    "prompt": "What ______ you like for lunch at the picnic?",
     "options": [
       {
         "value": "A",
@@ -97,7 +97,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "What would you like…?",
+    "tip": "問「想要咩」：揀正確助動詞組成 What ___ you like。",
     "teach": "What would you like…?"
   },
   {
@@ -122,7 +122,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "Which…would you like?",
+    "tip": "有選擇：Which… ___ you like？揀正確助動詞。",
     "teach": "Which … would you like?"
   },
   {
@@ -147,7 +147,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "A",
-    "tip": "而家想要：would like。",
+    "tip": "平時喜好用 like；「而家想要」要用另一個結構 + like。",
     "teach": "like＝喜好；would like＝想要。"
   },
   {
@@ -172,12 +172,12 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "would like to be。",
+    "tip": "呢個結構 + to + 原形。",
     "teach": "would like to + 原形。"
   },
   {
     "id": "wl8",
-    "prompt": "______ like some help?",
+    "prompt": "______ like some help with the shopping list?",
     "options": [
       {
         "value": "A",
@@ -197,12 +197,12 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "疑問倒裝：Would you like…?",
+    "tip": "疑問要倒裝：助動詞放句首再接 you like…？",
     "teach": "Would you like…?"
   },
   {
     "id": "wl9",
-    "prompt": "They would like ______ the museum tomorrow.",
+    "prompt": "They would like ______ the cinema tomorrow.",
     "options": [
       {
         "value": "A",
@@ -222,12 +222,12 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "would like to visit。",
+    "tip": "呢個結構 + to + 原形。",
     "teach": "to + 原形。"
   },
   {
     "id": "wl10",
-    "prompt": "What would Mum like ______?",
+    "prompt": "What would Mum like ______ from the menu?",
     "options": [
       {
         "value": "A",
@@ -247,7 +247,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "would like to drink。",
+    "tip": "呢個結構 + to + 原形。",
     "teach": "What would … like to …?"
   },
   {
@@ -272,7 +272,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "講平時喜好用 like。",
+    "tip": "括號 habit＝平時喜好，唔係此刻想要。",
     "teach": "like＝喜好；would like＝此刻想要。"
   },
   {
@@ -297,12 +297,12 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "兩個選擇常用 Which。",
+    "tip": "已畀兩個選擇：用「有限選擇」疑問詞。",
     "teach": "Which … would you like?"
   },
   {
     "id": "wl13",
-    "prompt": "Would you like ______ orange?",
+    "prompt": "Would you like ______ orange from the picnic basket?",
     "options": [
       {
         "value": "A",
@@ -322,7 +322,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "orange 母音開頭用 an。",
+    "tip": "orange 母音開頭：冠詞要配合讀音揀（母音開頭用邊個）。",
     "teach": "a／an 配合讀音。"
   },
   {
@@ -347,12 +347,12 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "A",
-    "tip": "I'd like = I would like + 名詞。",
+    "tip": "縮寫 I'd like 等於「我想要」+ 名詞片語。",
     "teach": "I'd like + 名詞。"
   },
   {
     "id": "wl15",
-    "prompt": "______ you like to come with us?",
+    "prompt": "______ you like to come to the country park with us?",
     "options": [
       {
         "value": "A",
@@ -372,12 +372,12 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "A",
-    "tip": "Would you like to…?",
+    "tip": "邀請：句首助動詞倒裝，再接 you like to…？",
     "teach": "Would you like to + V。"
   },
   {
     "id": "wl16",
-    "prompt": "What would you like ______ Sunday?",
+    "prompt": "What would you like ______ on Sunday in your spare time?",
     "options": [
       {
         "value": "A",
@@ -397,7 +397,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "would like to do。",
+    "tip": "呢個結構 + to + 原形。",
     "teach": "to + 原形。"
   },
   {
@@ -414,7 +414,7 @@ window.P4_BANK_WOULD_LIKE = [
       },
       {
         "value": "C",
-        "label": "C. don't would"
+        "label": "C. do not would"
       },
       {
         "value": "D",
@@ -422,12 +422,12 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "禮貌拒絕：wouldn't like。",
+    "tip": "禮貌拒絕：用呢個結構嘅否定縮寫。",
     "teach": "wouldn't like…"
   },
   {
     "id": "wl18",
-    "prompt": "Which drink would you ______?",
+    "prompt": "Which drink would you ______ on the menu?",
     "options": [
       {
         "value": "A",
@@ -447,7 +447,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "A",
-    "tip": "would you like。",
+    "tip": "助動詞後面接原形（唔好三單 -s 或 -ing）。",
     "teach": "would + like。"
   },
   {
@@ -472,12 +472,12 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "此刻想食：would like to eat。",
+    "tip": "此刻想食：呢個結構 + to + 原形。",
     "teach": "喜好 like ≠ 想要 would like to。"
   },
   {
     "id": "wl20",
-    "prompt": "______ would you like to sit, near the window or the door?",
+    "prompt": "______ would you like to sit at the cinema, near the window or the door?",
     "options": [
       {
         "value": "A",
@@ -497,12 +497,12 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "問位置用 Where。",
+    "tip": "答句講位置；揀問地點嘅疑問詞。",
     "teach": "Where would you like…?"
   },
   {
     "id": "wl21",
-    "prompt": "Would Ken like ______ football with us?",
+    "prompt": "Would Ken like ______ football after the picnic?",
     "options": [
       {
         "value": "A",
@@ -522,12 +522,12 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "Would … like to play…?",
+    "tip": "邀請結構：… like + to + 原形。",
     "teach": "to + 原形。"
   },
   {
     "id": "wl22",
-    "prompt": "______ fruit would you like?",
+    "prompt": "______ fruit would you like from the shopping list?",
     "options": [
       {
         "value": "A",
@@ -547,7 +547,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "A",
-    "tip": "開放問想要咩水果可用 What。",
-    "teach": "What … would you like?（無限定清單時）。"
+    "tip": "開放問想要咩（無限定清單）用問事物嘅疑問詞。",
+    "teach": "What … would you like?"
   }
 ];

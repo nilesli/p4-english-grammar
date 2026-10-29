@@ -1,4 +1,4 @@
-/** r5 interactive bank */
+/** r6 interactive bank · 20261029r6 · tips 思路 only */
 window.P4_BANK_PUNCTUATION = [
   {
     "id": "pu1",
@@ -21,7 +21,7 @@ window.P4_BANK_PUNCTUATION = [
       ","
     ],
     "tip": "呢句係問句，諗句末標點。",
-    "teach": "疑問句句末用問號：Where is my bag?"
+    "teach": "疑問句句末用問號。"
   },
   {
     "id": "pu2",
@@ -160,7 +160,7 @@ window.P4_BANK_PUNCTUATION = [
       "!",
       ","
     ],
-    "tip": "講過去事實。",
+    "tip": "講過去事實：陳述句。",
     "teach": "We had a picnic yesterday."
   },
   {
@@ -179,7 +179,7 @@ window.P4_BANK_PUNCTUATION = [
       "!",
       ","
     ],
-    "tip": "警告用语。",
+    "tip": "警告用语：強烈語氣。",
     "teach": "Look out!"
   },
   {
@@ -250,7 +250,7 @@ window.P4_BANK_PUNCTUATION = [
       "!",
       ","
     ],
-    "tip": "感嘆詞 Wow 後面可加逗號。",
+    "tip": "感嘆詞後面可加逗號再接句子。",
     "teach": "Wow, that is amazing."
   },
   {
@@ -276,7 +276,7 @@ window.P4_BANK_PUNCTUATION = [
       ",",
       "'"
     ],
-    "tip": "單數所有格：人名後加 's。",
+    "tip": "單數所有格：人名後加撇號再加 s。",
     "teach": "Tom's book is here."
   },
   {
@@ -301,7 +301,7 @@ window.P4_BANK_PUNCTUATION = [
       "'"
     ],
     "tip": "It is 可縮寫；撇號放邊？",
-    "teach": "It's raining outside.（it's = it is）"
+    "teach": "It's raining outside.（= it is）"
   },
   {
     "id": "pu14",
@@ -326,7 +326,7 @@ window.P4_BANK_PUNCTUATION = [
       ",",
       "'"
     ],
-    "tip": "I am → I'm。",
+    "tip": "I am 縮寫：撇號位置。",
     "teach": "I'm happy to help."
   },
   {
@@ -348,7 +348,7 @@ window.P4_BANK_PUNCTUATION = [
       ",",
       "'"
     ],
-    "tip": "let us → let's。",
+    "tip": "let us 縮寫：撇號位置。",
     "teach": "Let's go."
   },
   {
@@ -375,7 +375,7 @@ window.P4_BANK_PUNCTUATION = [
       "!",
       ","
     ],
-    "tip": "問時間。",
+    "tip": "問時間：問句標點。",
     "teach": "What time do you get up?"
   },
   {
@@ -403,10 +403,30 @@ window.P4_BANK_PUNCTUATION = [
   },
   {
     "id": "pu18",
-    "words": ["I", "don", "t", "like", "spicy", "food"],
-    "slots": [null, "'", null, null, null, "."],
-    "palette": [".", "?", "!", ",", "'"],
-    "tip": "do not 縮寫 don't：撇號喺 n 同 t 中間。",
+    "words": [
+      "I",
+      "don",
+      "t",
+      "like",
+      "spicy",
+      "food"
+    ],
+    "slots": [
+      null,
+      "'",
+      null,
+      null,
+      null,
+      "."
+    ],
+    "palette": [
+      ".",
+      "?",
+      "!",
+      ",",
+      "'"
+    ],
+    "tip": "do not 縮寫：撇號喺 n 同 t 中間。",
     "teach": "I don't like spicy food."
   },
   {

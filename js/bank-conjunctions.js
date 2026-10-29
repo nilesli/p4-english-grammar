@@ -1,8 +1,8 @@
-/** auto bank · r3 */
+/** auto bank · r6 · 20261029r6 · tips = 思路 only */
 window.P4_BANK_CONJUNCTIONS = [
   {
     "id": "c1",
-    "prompt": "______ Tom ______ Ken like football.",
+    "prompt": "______ Tom ______ Ken like football hobbies.",
     "options": [
       {
         "value": "A",
@@ -22,12 +22,12 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "A",
-    "tip": "兩人都用 both…and。",
+    "tip": "兩人都：用「兩者都…又…」配對連接。",
     "teach": "both A and B。"
   },
   {
     "id": "c2",
-    "prompt": "You can have juice ______ water.",
+    "prompt": "You can have juice ______ water with your dessert.",
     "options": [
       {
         "value": "A",
@@ -47,12 +47,12 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "B",
-    "tip": "二揀一用 or。",
+    "tip": "二揀一：用選擇連接詞。",
     "teach": "A or B。"
   },
   {
     "id": "c3",
-    "prompt": "I was tired, ______ I went to bed early.",
+    "prompt": "I was tired after the picnic, ______ I went to bed early.",
     "options": [
       {
         "value": "A",
@@ -72,12 +72,12 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "C",
-    "tip": "因果：所以。",
+    "tip": "前因後果：用「所以」類連接詞。",
     "teach": "…, so …"
   },
   {
     "id": "c4",
-    "prompt": "She likes apples ______ she doesn't like oranges.",
+    "prompt": "She likes apples ______ she does not like oranges.",
     "options": [
       {
         "value": "A",
@@ -97,12 +97,12 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "B",
-    "tip": "轉折用 but。",
+    "tip": "前後意思相反：用轉折連接詞。",
     "teach": "… but …"
   },
   {
     "id": "c5",
-    "prompt": "______ my mum ______ my dad work in an office.",
+    "prompt": "______ my mum ______ my dad work near the cinema.",
     "options": [
       {
         "value": "A",
@@ -122,12 +122,12 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "A",
-    "tip": "兩人＝both…and。",
+    "tip": "兩人＝「兩者都…又…」結構。",
     "teach": "both…and。"
   },
   {
     "id": "c6",
-    "prompt": "Hurry up, ______ you will be late.",
+    "prompt": "Hurry up, ______ you will be late for the show.",
     "options": [
       {
         "value": "A",
@@ -147,12 +147,12 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "B",
-    "tip": "否則／二擇：or。",
+    "tip": "「否則」會遲到：揀選擇／否則類連接詞。",
     "teach": "…, or …（否則）"
   },
   {
     "id": "c7",
-    "prompt": "It was raining, ______ we stayed at home.",
+    "prompt": "It was raining, ______ we stayed at the supermarket café.",
     "options": [
       {
         "value": "A",
@@ -172,7 +172,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "C",
-    "tip": "結果用 so。",
+    "tip": "結果：用因果「所以」類連接詞。",
     "teach": "…, so …"
   },
   {
@@ -197,12 +197,12 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "A",
-    "tip": "轉折：雖然矮但強壯。",
+    "tip": "雖然矮但強壯：轉折。",
     "teach": "… but …"
   },
   {
     "id": "c9",
-    "prompt": "Would you like noodles ______ rice?",
+    "prompt": "Would you like noodles ______ rice on the menu?",
     "options": [
       {
         "value": "A",
@@ -222,7 +222,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "B",
-    "tip": "選擇用 or。",
+    "tip": "選擇：二揀一。",
     "teach": "A or B？"
   },
   {
@@ -247,12 +247,12 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "A",
-    "tip": "兩科都係。",
+    "tip": "兩科都係：用「兩者都…又…」。",
     "teach": "both…and。"
   },
   {
     "id": "c11",
-    "prompt": "I wanted to play, ______ I finished my homework first.",
+    "prompt": "I wanted to play, ______ I finished my shopping list first.",
     "options": [
       {
         "value": "A",
@@ -272,12 +272,12 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "B",
-    "tip": "想玩但先做功課。",
+    "tip": "想玩但先做嘢：轉折。",
     "teach": "… but …"
   },
   {
     "id": "c12",
-    "prompt": "The bag was heavy, ______ Dad helped me.",
+    "prompt": "The bag was heavy, ______ Dad helped me at the supermarket.",
     "options": [
       {
         "value": "A",
@@ -297,12 +297,12 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "C",
-    "tip": "因此爸爸幫手。",
+    "tip": "因此爸爸幫手：結果。",
     "teach": "…, so …"
   },
   {
     "id": "c13",
-    "prompt": "You can take the bus ______ the minibus.",
+    "prompt": "You can take the bus ______ the minibus to the country park.",
     "options": [
       {
         "value": "A",
@@ -327,7 +327,7 @@ window.P4_BANK_CONJUNCTIONS = [
   },
   {
     "id": "c14",
-    "prompt": "______ my sister ______ I can cook simple dishes.",
+    "prompt": "______ my sister ______ I can cook simple desserts.",
     "options": [
       {
         "value": "A",
@@ -347,12 +347,12 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "A",
-    "tip": "兩人都可以。",
+    "tip": "兩人都可以：用「兩者都…又…」。",
     "teach": "both…and。"
   },
   {
     "id": "c15",
-    "prompt": "It looks nice, ______ it is too expensive.",
+    "prompt": "It looks nice on the menu, ______ it is too expensive.",
     "options": [
       {
         "value": "A",
@@ -377,7 +377,7 @@ window.P4_BANK_CONJUNCTIONS = [
   },
   {
     "id": "c16",
-    "prompt": "She practised hard, ______ she won the race.",
+    "prompt": "She practised hard, ______ she won the school show race.",
     "options": [
       {
         "value": "A",
@@ -402,7 +402,7 @@ window.P4_BANK_CONJUNCTIONS = [
   },
   {
     "id": "c17",
-    "prompt": "Do you want the blue one ______ the green one?",
+    "prompt": "Do you want the blue ticket ______ the green one for the cinema?",
     "options": [
       {
         "value": "A",
@@ -427,7 +427,7 @@ window.P4_BANK_CONJUNCTIONS = [
   },
   {
     "id": "c18",
-    "prompt": "______ cats ______ dogs are popular pets.",
+    "prompt": "______ cats ______ dogs are popular pets and hobbies for some kids.",
     "options": [
       {
         "value": "A",
@@ -447,12 +447,12 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "A",
-    "tip": "兩者都。",
+    "tip": "兩者都：用「兩者都…又…」。",
     "teach": "both…and。"
   },
   {
     "id": "c19",
-    "prompt": "I called him, ______ he didn't answer.",
+    "prompt": "I called him about the picnic, ______ he did not answer.",
     "options": [
       {
         "value": "A",
@@ -477,7 +477,7 @@ window.P4_BANK_CONJUNCTIONS = [
   },
   {
     "id": "c20",
-    "prompt": "Bring a coat, ______ you will feel cold.",
+    "prompt": "Bring a coat, ______ you will feel cold at the country park.",
     "options": [
       {
         "value": "A",
@@ -522,12 +522,12 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "A",
-    "tip": "雖然長但有趣。",
+    "tip": "雖然長但有趣：轉折。",
     "teach": "… but …"
   },
   {
     "id": "c22",
-    "prompt": "He lost his wallet, ______ he was worried.",
+    "prompt": "He lost his wallet at the supermarket, ______ he was worried.",
     "options": [
       {
         "value": "A",
@@ -547,7 +547,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "C",
-    "tip": "因此擔心。",
+    "tip": "因此擔心：結果。",
     "teach": "…, so …"
   }
 ];

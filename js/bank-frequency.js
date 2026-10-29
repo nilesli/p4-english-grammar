@@ -1,4 +1,4 @@
-/** auto bank · r3 */
+/** auto bank · r6 · 20261029r6 · tips = 思路 only */
 window.P4_BANK_FREQUENCY = [
   {
     "id": "f1",
@@ -22,7 +22,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "B",
-    "tip": "每晚都刷＝總係。",
+    "tip": "括號 every night＝每次都做：揀「總是」類頻率詞。",
     "teach": "always＝總是。"
   },
   {
@@ -47,12 +47,12 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "C",
-    "tip": "從不遲到。",
+    "tip": "後句話佢早到：遲到頻率應該係「從不」。",
     "teach": "never＝從不。"
   },
   {
     "id": "f3",
-    "prompt": "We ______ have rice for dinner, but not every day.",
+    "prompt": "We ______ order dessert after dinner, but not every day.",
     "options": [
       {
         "value": "A",
@@ -72,12 +72,12 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "C",
-    "tip": "多數會但非每天。",
+    "tip": "多數會但非每天：揀「通常」類。",
     "teach": "usually＝通常。"
   },
   {
     "id": "f4",
-    "prompt": "He ______ plays football on Sundays.",
+    "prompt": "He ______ plays football in his spare time on Sundays.",
     "options": [
       {
         "value": "A",
@@ -97,7 +97,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "A",
-    "tip": "經常。",
+    "tip": "講「經常」做hobby。",
     "teach": "often＝經常。"
   },
   {
@@ -122,7 +122,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "B",
-    "tip": "間中。",
+    "tip": "只係特別日子先食＝間中。",
     "teach": "sometimes＝有時。"
   },
   {
@@ -147,7 +147,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "B",
-    "tip": "be 動詞後面放頻率副詞。",
+    "tip": "頻率副詞位置：be 動詞後面。",
     "teach": "is／am／are + always。"
   },
   {
@@ -172,12 +172,12 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "B",
-    "tip": "一般動詞前面放頻率副詞。",
-    "teach": "often + 動詞原形／三單。"
+    "tip": "一般動詞：頻率副詞放動詞前面。",
+    "teach": "often + 動詞。"
   },
   {
     "id": "f8",
-    "prompt": "Ken ______ forgets his homework. He is careful.",
+    "prompt": "Ken ______ forgets his shopping list. He is careful.",
     "options": [
       {
         "value": "A",
@@ -197,12 +197,12 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "C",
-    "tip": "從不忘記。",
+    "tip": "佢好小心＝從不忘記。",
     "teach": "never。"
   },
   {
     "id": "f9",
-    "prompt": "Mum ______ cooks fish on Fridays.",
+    "prompt": "Mum ______ cooks fish on Fridays from the menu.",
     "options": [
       {
         "value": "A",
@@ -222,12 +222,12 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "A",
-    "tip": "多數逢星期五。",
+    "tip": "多數逢星期五＝通常。",
     "teach": "usually。"
   },
   {
     "id": "f10",
-    "prompt": "I am ______ hungry after PE.",
+    "prompt": "I am ______ hungry after PE at the country park.",
     "options": [
       {
         "value": "A",
@@ -247,12 +247,12 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "A",
-    "tip": "be 後：am always hungry。",
+    "tip": "be 後放頻率詞；每次都肚餓。",
     "teach": "I am always…"
   },
   {
     "id": "f11",
-    "prompt": "We ______ go hiking in summer.",
+    "prompt": "We ______ go hiking in the country park in summer.",
     "options": [
       {
         "value": "A",
@@ -297,7 +297,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "A",
-    "tip": "一般動詞前：often reads。",
+    "tip": "一般動詞前：頻率詞 + 動詞。",
     "teach": "主語 + often + V。"
   },
   {
@@ -322,12 +322,12 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "A",
-    "tip": "有時會喊。",
+    "tip": "有時會喊；揀正確拼寫嘅頻率副詞。",
     "teach": "sometimes（一字）。"
   },
   {
     "id": "f14",
-    "prompt": "I ______ drink coffee. I don't like it.",
+    "prompt": "I ______ drink coffee. I do not like it.",
     "options": [
       {
         "value": "A",
@@ -352,7 +352,7 @@ window.P4_BANK_FREQUENCY = [
   },
   {
     "id": "f15",
-    "prompt": "She ______ finishes her work on time.",
+    "prompt": "She ______ finishes her shopping list on time.",
     "options": [
       {
         "value": "A",
@@ -377,7 +377,7 @@ window.P4_BANK_FREQUENCY = [
   },
   {
     "id": "f16",
-    "prompt": "They are ______ at home in the evening.",
+    "prompt": "They are ______ at home in the evening after shows.",
     "options": [
       {
         "value": "A",
@@ -397,7 +397,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "A",
-    "tip": "be 後：are usually。",
+    "tip": "be 後：are + 頻率詞。",
     "teach": "are usually…"
   },
   {
@@ -422,7 +422,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "A",
-    "tip": "問頻率用 How often。",
+    "tip": "問「幾耐一次」：揀問頻率嘅片語。",
     "teach": "How often…?"
   },
   {
@@ -447,12 +447,12 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "C",
-    "tip": "落雨唔步行。",
+    "tip": "落雨唔步行＝從不。",
     "teach": "never。"
   },
   {
     "id": "f19",
-    "prompt": "Tom ______ helps his mum with housework.",
+    "prompt": "Tom ______ helps his mum with the shopping list.",
     "options": [
       {
         "value": "A",
@@ -477,7 +477,7 @@ window.P4_BANK_FREQUENCY = [
   },
   {
     "id": "f20",
-    "prompt": "We ______ eat out, maybe once a month.",
+    "prompt": "We ______ eat out at the cinema plaza, maybe once a month.",
     "options": [
       {
         "value": "A",
@@ -497,12 +497,12 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "B",
-    "tip": "偶爾外出食。",
+    "tip": "一個月一次左右＝間中。",
     "teach": "sometimes。"
   },
   {
     "id": "f21",
-    "prompt": "The shop is ______ busy on Sundays.",
+    "prompt": "The shop is ______ busy on Sundays near the supermarket.",
     "options": [
       {
         "value": "A",
@@ -522,7 +522,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "A",
-    "tip": "is always busy。",
+    "tip": "is + 頻率詞；逢星期日都忙。",
     "teach": "be + always。"
   },
   {
@@ -547,7 +547,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "B",
-    "tip": "幾乎每天＝usually。",
+    "tip": "幾乎每天＝通常。",
     "teach": "usually。"
   }
 ];

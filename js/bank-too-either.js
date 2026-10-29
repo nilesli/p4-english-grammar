@@ -1,4 +1,4 @@
-/** auto bank · r3 */
+/** auto bank · r6 · 20261029r6 · tips = 思路 only */
 window.P4_BANK_TOO_EITHER = [
   {
     "id": "te1",
@@ -22,12 +22,12 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "A",
-    "tip": "肯定句尾用 too。",
-    "teach": "肯定：… too。"
+    "tip": "睇前句：肯定定否定？肯定句尾用邊個呼應詞。",
+    "teach": "肯定句尾：… too。"
   },
   {
     "id": "te2",
-    "prompt": "I don't like spicy food. He doesn't like it ______.",
+    "prompt": "I do not like spicy food. He does not like it ______.",
     "options": [
       {
         "value": "A",
@@ -47,12 +47,12 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "B",
-    "tip": "否定句尾用 either。",
-    "teach": "否定：… either。"
+    "tip": "前句有 do not：否定呼應句尾用邊個。",
+    "teach": "否定句尾：… either。"
   },
   {
     "id": "te3",
-    "prompt": "We are tired. They are tired ______.",
+    "prompt": "We are tired after the picnic. They are tired ______.",
     "options": [
       {
         "value": "A",
@@ -72,12 +72,12 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "A",
-    "tip": "肯定 be 句 + too。",
-    "teach": "… are … too。"
+    "tip": "前句 are tired＝肯定；句尾呼應用邊個。",
+    "teach": "肯定 be 句：… too。"
   },
   {
     "id": "te4",
-    "prompt": "Tom can't swim. Mary can't swim ______.",
+    "prompt": "Tom cannot swim. Mary cannot swim ______.",
     "options": [
       {
         "value": "A",
@@ -97,12 +97,12 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "B",
-    "tip": "否定 can't + either。",
-    "teach": "… can't … either。"
+    "tip": "前句 cannot＝否定；句尾呼應用邊個。",
+    "teach": "否定：… either。"
   },
   {
     "id": "te5",
-    "prompt": "I have a pet. Ken has a pet ______.",
+    "prompt": "I have a hobby. Ken has a hobby ______.",
     "options": [
       {
         "value": "A",
@@ -122,12 +122,12 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "A",
-    "tip": "肯定 + too。",
-    "teach": "… too。"
+    "tip": "前句肯定；句尾呼應用邊個。",
+    "teach": "肯定：… too。"
   },
   {
     "id": "te6",
-    "prompt": "She isn't hungry. I'm not hungry ______.",
+    "prompt": "She is not hungry. I am not hungry ______.",
     "options": [
       {
         "value": "A",
@@ -147,12 +147,12 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "B",
-    "tip": "否定 + either。",
-    "teach": "… not … either。"
+    "tip": "前句 is not＝否定；句尾呼應用邊個。",
+    "teach": "否定：… either。"
   },
   {
     "id": "te7",
-    "prompt": "I enjoy reading. My sister enjoys reading ______.",
+    "prompt": "I enjoy watching shows. My sister enjoys watching shows ______.",
     "options": [
       {
         "value": "A",
@@ -172,12 +172,12 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "A",
-    "tip": "肯定用 too。",
-    "teach": "肯定呼應用 too。"
+    "tip": "前句肯定；句尾呼應用邊個。",
+    "teach": "肯定呼應。"
   },
   {
     "id": "te8",
-    "prompt": "I don't play tennis. Sam doesn't play tennis ______.",
+    "prompt": "I do not play tennis. Sam does not play tennis ______.",
     "options": [
       {
         "value": "A",
@@ -197,12 +197,12 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "B",
-    "tip": "否定呼應用 either。",
-    "teach": "否定唔好用 too。"
+    "tip": "前句 do not＝否定；唔好用肯定句尾嗰個。",
+    "teach": "否定呼應。"
   },
   {
     "id": "te9",
-    "prompt": "It's raining here. It's raining there ______.",
+    "prompt": "The cinema is busy. The supermarket is busy ______.",
     "options": [
       {
         "value": "A",
@@ -222,12 +222,12 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "A",
-    "tip": "肯定 + too。",
-    "teach": "… too。"
+    "tip": "前句肯定；句尾呼應用邊個。",
+    "teach": "肯定：… too。"
   },
   {
     "id": "te10",
-    "prompt": "This shop isn't open. That one isn't open ______.",
+    "prompt": "This shop is not open. That one is not open ______.",
     "options": [
       {
         "value": "A",
@@ -247,12 +247,12 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "B",
-    "tip": "isn't + either。",
-    "teach": "否定 + either。"
+    "tip": "前句 is not＝否定；句尾呼應用邊個。",
+    "teach": "否定：… either。"
   },
   {
     "id": "te11",
-    "prompt": "I can ride a bike. She can ride a bike ______.",
+    "prompt": "I can order dessert. She can order dessert ______.",
     "options": [
       {
         "value": "A",
@@ -272,12 +272,12 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "A",
-    "tip": "can 肯定 + too。",
-    "teach": "… can … too。"
+    "tip": "前句 can＝肯定；句尾呼應用邊個。",
+    "teach": "肯定：… too。"
   },
   {
     "id": "te12",
-    "prompt": "We didn't go to the party. They didn't go ______.",
+    "prompt": "We did not go to the country park. They did not go ______.",
     "options": [
       {
         "value": "A",
@@ -297,8 +297,8 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "B",
-    "tip": "didn't + either。",
-    "teach": "過去否定 + either。"
+    "tip": "前句 did not＝過去否定；句尾呼應用邊個。",
+    "teach": "過去否定：… either。"
   },
   {
     "id": "te13",
@@ -322,8 +322,8 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "A",
-    "tip": "肯定 + too。",
-    "teach": "… too。"
+    "tip": "前句肯定；句尾呼應用邊個。",
+    "teach": "肯定：… too。"
   },
   {
     "id": "te14",
@@ -347,12 +347,12 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "B",
-    "tip": "never＝否定意味 + either。",
+    "tip": "never＝否定意味；句尾用邊個呼應詞。",
     "teach": "否定意味用 either。"
   },
   {
     "id": "te15",
-    "prompt": "The soup is hot. The tea is hot ______.",
+    "prompt": "The soup on the menu is hot. The tea is hot ______.",
     "options": [
       {
         "value": "A",
@@ -372,12 +372,12 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "A",
-    "tip": "肯定 + too。",
-    "teach": "… too。"
+    "tip": "前句肯定；句尾呼應用邊個。",
+    "teach": "肯定：… too。"
   },
   {
     "id": "te16",
-    "prompt": "I wasn't at home. Mum wasn't at home ______.",
+    "prompt": "I was not at the cinema. Mum was not there ______.",
     "options": [
       {
         "value": "A",
@@ -397,8 +397,8 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "B",
-    "tip": "wasn't + either。",
-    "teach": "be 過去否定 + either。"
+    "tip": "前句 was not＝否定；句尾呼應用邊個。",
+    "teach": "be 過去否定：… either。"
   },
   {
     "id": "te17",
@@ -422,12 +422,12 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "A",
-    "tip": "肯定句 too 放句末。",
-    "teach": "… too。"
+    "tip": "前句肯定：揀句末用正確肯定呼應、語序都啱嘅一句。",
+    "teach": "肯定：… too（句末）。"
   },
   {
     "id": "te18",
-    "prompt": "Best: I don't watch scary films. ______",
+    "prompt": "Best: I do not watch scary shows. ______",
     "options": [
       {
         "value": "A",
@@ -447,12 +447,12 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "B",
-    "tip": "否定用 either。",
-    "teach": "… either。"
+    "tip": "前句否定：揀句末用正確否定呼應嗰句。",
+    "teach": "否定：… either。"
   },
   {
     "id": "te19",
-    "prompt": "You look happy. I look happy ______.",
+    "prompt": "You look happy after the picnic. I look happy ______.",
     "options": [
       {
         "value": "A",
@@ -472,12 +472,12 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "A",
-    "tip": "肯定 + too。",
-    "teach": "… too。"
+    "tip": "前句肯定；句尾呼應用邊個。",
+    "teach": "肯定：… too。"
   },
   {
     "id": "te20",
-    "prompt": "This bag isn't heavy. That bag isn't heavy ______.",
+    "prompt": "This shopping bag is not heavy. That bag is not heavy ______.",
     "options": [
       {
         "value": "A",
@@ -497,12 +497,12 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "B",
-    "tip": "isn't + either。",
-    "teach": "… either。"
+    "tip": "前句 is not＝否定；句尾呼應用邊個。",
+    "teach": "否定：… either。"
   },
   {
     "id": "te21",
-    "prompt": "We will go to the zoo. They will go ______.",
+    "prompt": "We will go to the cinema. They will go ______.",
     "options": [
       {
         "value": "A",
@@ -522,12 +522,12 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "A",
-    "tip": "will 肯定 + too。",
-    "teach": "… too。"
+    "tip": "前句 will＝肯定；句尾呼應用邊個。",
+    "teach": "肯定：… too。"
   },
   {
     "id": "te22",
-    "prompt": "I couldn't find my keys. Dad couldn't find them ______.",
+    "prompt": "I could not find my shopping list. Dad could not find it ______.",
     "options": [
       {
         "value": "A",
@@ -547,7 +547,7 @@ window.P4_BANK_TOO_EITHER = [
       }
     ],
     "answer": "B",
-    "tip": "couldn't + either。",
-    "teach": "… either。"
+    "tip": "前句 could not＝否定；句尾呼應用邊個。",
+    "teach": "否定：… either。"
   }
 ];

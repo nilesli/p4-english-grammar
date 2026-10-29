@@ -1,4 +1,4 @@
-/** r5 interactive bank */
+/** r6 interactive bank · 20261029r6 · 8–12 tokens; tips 唔洩答案詞 */
 window.P4_BANK_SENTENCE_ORDER = [
   {
     "id": "so1",
@@ -7,11 +7,13 @@ window.P4_BANK_SENTENCE_ORDER = [
       "go",
       "to",
       "school",
+      "by",
+      "bus",
       "every",
       "day",
       "."
     ],
-    "tip": "先搵主語 I，再接動詞 go。",
+    "tip": "先搵主語，再接動詞，時間詞多放句末。",
     "teach": "陳述句：主語 + 動詞 + 其他 + 句號。"
   },
   {
@@ -21,10 +23,14 @@ window.P4_BANK_SENTENCE_ORDER = [
       "likes",
       "playing",
       "football",
+      "in",
+      "her",
+      "spare",
+      "time",
       "."
     ],
-    "tip": "likes 後面多數接 V-ing。",
-    "teach": "She likes playing football."
+    "tip": "likes 後面多數接 V-ing；時間／場合放後面。",
+    "teach": "She likes playing football in her spare time."
   },
   {
     "id": "so3",
@@ -33,10 +39,14 @@ window.P4_BANK_SENTENCE_ORDER = [
       "does",
       "she",
       "live",
+      "near",
+      "the",
+      "country",
+      "park",
       "?"
     ],
-    "tip": "疑問詞開頭，再用 does + 主語 + 原形。",
-    "teach": "Where does she live?"
+    "tip": "疑問詞開頭，再用助動詞 + 主語 + 動詞原形。",
+    "teach": "Where does she live…?"
   },
   {
     "id": "so4",
@@ -46,10 +56,13 @@ window.P4_BANK_SENTENCE_ORDER = [
       "taller",
       "than",
       "Ken",
+      "in",
+      "our",
+      "class",
       "."
     ],
-    "tip": "比較級：is + -er + than。",
-    "teach": "Tom is taller than Ken."
+    "tip": "比較級：be + -er + than；有 than 線索。",
+    "teach": "Tom is taller than Ken…"
   },
   {
     "id": "so5",
@@ -59,10 +72,13 @@ window.P4_BANK_SENTENCE_ORDER = [
       "like",
       "some",
       "tea",
+      "after",
+      "the",
+      "show",
       "?"
     ],
-    "tip": "禮貌問句：Would you like…?",
-    "teach": "Would you like some tea?"
+    "tip": "禮貌問句：Would you like…？時間放後面。",
+    "teach": "Would you like some tea after the show?"
   },
   {
     "id": "so6",
@@ -72,10 +88,14 @@ window.P4_BANK_SENTENCE_ORDER = [
       "good",
       "at",
       "drawing",
+      "for",
+      "the",
+      "school",
+      "show",
       "."
     ],
     "tip": "good at 後面用 V-ing。",
-    "teach": "She is good at drawing."
+    "teach": "She is good at drawing…"
   },
   {
     "id": "so7",
@@ -84,12 +104,16 @@ window.P4_BANK_SENTENCE_ORDER = [
       "do",
       "not",
       "like",
-      "it",
+      "spicy",
+      "food",
+      "on",
+      "the",
+      "menu",
       "either",
       "."
     ],
-    "tip": "否定句尾用 either。",
-    "teach": "I do not like it either."
+    "tip": "否定句尾用否定呼應詞；先排 do not like。",
+    "teach": "I do not like … either."
   },
   {
     "id": "so8",
@@ -99,10 +123,13 @@ window.P4_BANK_SENTENCE_ORDER = [
       "and",
       "Dad",
       "work",
+      "near",
+      "the",
+      "cinema",
       "."
     ],
-    "tip": "Both A and B 放前面。",
-    "teach": "Both Mum and Dad work."
+    "tip": "Both A and B 放前面，再接複數動詞。",
+    "teach": "Both Mum and Dad work…"
   },
   {
     "id": "so9",
@@ -111,10 +138,14 @@ window.P4_BANK_SENTENCE_ORDER = [
       "often",
       "reads",
       "magazines",
+      "in",
+      "her",
+      "spare",
+      "time",
       "."
     ],
-    "tip": "頻率副詞 often 放一般動詞前。",
-    "teach": "She often reads magazines."
+    "tip": "頻率副詞放一般動詞前。",
+    "teach": "She often reads…"
   },
   {
     "id": "so10",
@@ -126,10 +157,12 @@ window.P4_BANK_SENTENCE_ORDER = [
       "I",
       "slept",
       "early",
+      "last",
+      "night",
       "."
     ],
-    "tip": "so 後面要再有主語。",
-    "teach": "I was tired so I slept early."
+    "tip": "so 後面要再有主語；過去敍述。",
+    "teach": "I was tired so I slept early last night."
   },
   {
     "id": "so11",
@@ -139,10 +172,13 @@ window.P4_BANK_SENTENCE_ORDER = [
       "the",
       "heaviest",
       "bag",
+      "of",
+      "all",
+      "today",
       "."
     ],
-    "tip": "最高級前要有 the。",
-    "teach": "This is the heaviest bag."
+    "tip": "最高級前要有 the；of all 係線索。",
+    "teach": "This is the heaviest bag of all…"
   },
   {
     "id": "so12",
@@ -153,10 +189,12 @@ window.P4_BANK_SENTENCE_ORDER = [
       "go",
       "to",
       "school",
+      "every",
+      "morning",
       "?"
     ],
-    "tip": "How + do + 主語 + 動詞。",
-    "teach": "How do you go to school?"
+    "tip": "How + 助動詞 + 主語 + 動詞。",
+    "teach": "How do you go to school…?"
   },
   {
     "id": "so13",
@@ -166,11 +204,15 @@ window.P4_BANK_SENTENCE_ORDER = [
       "my",
       "brother",
       "'s",
+      "new",
       "bike",
+      "from",
+      "the",
+      "shop",
       "."
     ],
     "tip": "所有格 's 貼喺人稱後面。",
-    "teach": "It is my brother's bike."
+    "teach": "It is my brother's new bike from the shop."
   },
   {
     "id": "so14",
@@ -179,10 +221,14 @@ window.P4_BANK_SENTENCE_ORDER = [
       "is",
       "never",
       "late",
+      "for",
+      "the",
+      "morning",
+      "show",
       "."
     ],
-    "tip": "be 動詞後面放 never。",
-    "teach": "He is never late."
+    "tip": "be 動詞後面放頻率副詞。",
+    "teach": "He is never late…"
   },
   {
     "id": "so15",
@@ -190,13 +236,18 @@ window.P4_BANK_SENTENCE_ORDER = [
       "We",
       "had",
       "a",
+      "big",
       "picnic",
+      "in",
+      "the",
+      "country",
+      "park",
       "last",
       "Sunday",
       "."
     ],
-    "tip": "過去式 had；時間詞常放句末。",
-    "teach": "We had a picnic last Sunday."
+    "tip": "過去敍述：過去式動詞；時間詞常放句末。",
+    "teach": "We had a picnic … last Sunday."
   },
   {
     "id": "so16",
@@ -207,10 +258,13 @@ window.P4_BANK_SENTENCE_ORDER = [
       "apples",
       "or",
       "oranges",
+      "from",
+      "the",
+      "list",
       "?"
     ],
     "tip": "Do you + 動詞；選擇用 or。",
-    "teach": "Do you want apples or oranges?"
+    "teach": "Do you want apples or oranges…?"
   },
   {
     "id": "so17",
@@ -218,10 +272,15 @@ window.P4_BANK_SENTENCE_ORDER = [
       "She",
       "enjoys",
       "swimming",
+      "at",
+      "the",
+      "pool",
+      "after",
+      "school",
       "."
     ],
-    "tip": "enjoys + V-ing。",
-    "teach": "She enjoys swimming."
+    "tip": "enjoys 後面接 V-ing。",
+    "teach": "She enjoys swimming…"
   },
   {
     "id": "so18",
@@ -229,11 +288,14 @@ window.P4_BANK_SENTENCE_ORDER = [
       "I",
       "am",
       "hungry",
+      "after",
+      "the",
+      "picnic",
       "too",
       "."
     ],
-    "tip": "肯定 too 放句末。",
-    "teach": "I am hungry too."
+    "tip": "肯定呼應詞放句末。",
+    "teach": "I am hungry … too."
   },
   {
     "id": "so19",
@@ -244,10 +306,13 @@ window.P4_BANK_SENTENCE_ORDER = [
       "like",
       "to",
       "drink",
+      "from",
+      "the",
+      "menu",
       "?"
     ],
-    "tip": "What would you like to…?",
-    "teach": "What would you like to drink?"
+    "tip": "What would you like to…？",
+    "teach": "What would you like to drink…?"
   },
   {
     "id": "so20",
@@ -260,10 +325,11 @@ window.P4_BANK_SENTENCE_ORDER = [
       "stayed",
       "at",
       "home",
+      "yesterday",
       "."
     ],
-    "tip": "so 連接兩句，後面要有 we。",
-    "teach": "It was raining so we stayed at home."
+    "tip": "過去敍述；so 連接兩句，後面要有主語。",
+    "teach": "It was raining so we stayed at home yesterday."
   },
   {
     "id": "so21",
@@ -273,10 +339,13 @@ window.P4_BANK_SENTENCE_ORDER = [
       "my",
       "best",
       "friend",
+      "in",
+      "Class",
+      "4A",
       "."
     ],
-    "tip": "best 係最高級，放名詞前。",
-    "teach": "Amy is my best friend."
+    "tip": "最高級形容詞放名詞前。",
+    "teach": "Amy is my best friend…"
   },
   {
     "id": "so22",
@@ -284,11 +353,79 @@ window.P4_BANK_SENTENCE_ORDER = [
       "Does",
       "he",
       "go",
+      "to",
+      "the",
+      "cinema",
       "by",
       "bus",
       "?"
     ],
-    "tip": "Does + 原形 go（唔好 goes）。",
-    "teach": "Does he go by bus?"
+    "tip": "Does + 主語 + 動詞原形（唔好用三單 -s 形）。",
+    "teach": "Does he go … by bus?"
+  },
+  {
+    "id": "so23",
+    "tokens": [
+      "Last",
+      "Sunday",
+      "we",
+      "bought",
+      "fruit",
+      "at",
+      "the",
+      "supermarket",
+      "."
+    ],
+    "tip": "過去時間詞可放句首；過去式動詞。",
+    "teach": "Last Sunday we bought fruit at the supermarket."
+  },
+  {
+    "id": "so24",
+    "tokens": [
+      "What",
+      "does",
+      "your",
+      "sister",
+      "do",
+      "in",
+      "her",
+      "spare",
+      "time",
+      "?"
+    ],
+    "tip": "Wh + does + 主語 + 動詞原形。",
+    "teach": "What does your sister do…?"
+  },
+  {
+    "id": "so25",
+    "tokens": [
+      "They",
+      "ordered",
+      "dessert",
+      "from",
+      "the",
+      "menu",
+      "yesterday",
+      "evening",
+      "."
+    ],
+    "tip": "過去敍述：規則動詞過去式；時間放句末。",
+    "teach": "They ordered dessert … yesterday evening."
+  },
+  {
+    "id": "so26",
+    "tokens": [
+      "How",
+      "does",
+      "Tom",
+      "go",
+      "to",
+      "the",
+      "country",
+      "park",
+      "?"
+    ],
+    "tip": "How + does + 單數主語 + 原形。",
+    "teach": "How does Tom go…?"
   }
 ];

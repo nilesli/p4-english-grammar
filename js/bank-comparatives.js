@@ -1,8 +1,8 @@
-/** auto bank · r3 */
+/** auto bank · r6 · 20261029r6 · tips = 思路 only */
 window.P4_BANK_COMPARATIVES = [
   {
     "id": "cp1",
-    "prompt": "Tom is ______ than Ken. (tall)",
+    "prompt": "Tom is ______ than Ken at the country park. (tall)",
     "options": [
       {
         "value": "A",
@@ -22,7 +22,7 @@ window.P4_BANK_COMPARATIVES = [
       }
     ],
     "answer": "A",
-    "tip": "短形容詞比較級 +er。",
+    "tip": "見到 than：兩者比較；短形容詞多數加字尾 -er。",
     "teach": "tall → taller than。"
   },
   {
@@ -47,12 +47,12 @@ window.P4_BANK_COMPARATIVES = [
       }
     ],
     "answer": "B",
-    "tip": "三者以上用最高級 the + -est。",
+    "tip": "見到 the … in：三者以上；短詞用字尾 -est。",
     "teach": "the tallest。"
   },
   {
     "id": "cp3",
-    "prompt": "English is ______ than Art for me. (interesting)",
+    "prompt": "This cinema show is ______ than that one. (interesting)",
     "options": [
       {
         "value": "A",
@@ -72,7 +72,7 @@ window.P4_BANK_COMPARATIVES = [
       }
     ],
     "answer": "B",
-    "tip": "長形容詞用 more。",
+    "tip": "見到 than；interesting 係長詞 → 用 more／most 系列，唔係 -er。",
     "teach": "more + adj + than。"
   },
   {
@@ -97,12 +97,12 @@ window.P4_BANK_COMPARATIVES = [
       }
     ],
     "answer": "B",
-    "tip": "長形容詞最高級 the most。",
+    "tip": "見到 the … in：最高級；長詞用 most。",
     "teach": "the most + adj。"
   },
   {
     "id": "cp5",
-    "prompt": "My results are ______ this year than last year. (good)",
+    "prompt": "My show scores are ______ this year than last year. (good)",
     "options": [
       {
         "value": "A",
@@ -122,7 +122,7 @@ window.P4_BANK_COMPARATIVES = [
       }
     ],
     "answer": "B",
-    "tip": "good 比較級＝better。",
+    "tip": "見到 than；good 係不規則，要記特別比較級形。",
     "teach": "good → better → best。"
   },
   {
@@ -147,7 +147,7 @@ window.P4_BANK_COMPARATIVES = [
       }
     ],
     "answer": "B",
-    "tip": "good 最高級＝best。",
+    "tip": "見到 the … in：最高級；good 不規則。",
     "teach": "the best。"
   },
   {
@@ -172,12 +172,12 @@ window.P4_BANK_COMPARATIVES = [
       }
     ],
     "answer": "B",
-    "tip": "bad → worse。",
+    "tip": "見到 than；bad 係不規則比較級。",
     "teach": "bad → worse → worst。"
   },
   {
     "id": "cp8",
-    "prompt": "That was the ______ day of the trip. (bad)",
+    "prompt": "That was the ______ day of the picnic trip. (bad)",
     "options": [
       {
         "value": "A",
@@ -197,12 +197,12 @@ window.P4_BANK_COMPARATIVES = [
       }
     ],
     "answer": "B",
-    "tip": "bad 最高級＝worst。",
+    "tip": "見到 the … of：最高級；bad 不規則。",
     "teach": "the worst。"
   },
   {
     "id": "cp9",
-    "prompt": "A cheetah is ______ than a cat. (fast)",
+    "prompt": "Running to the cinema is ______ than walking. (fast)",
     "options": [
       {
         "value": "A",
@@ -222,7 +222,7 @@ window.P4_BANK_COMPARATIVES = [
       }
     ],
     "answer": "A",
-    "tip": "fast → faster。",
+    "tip": "見到 than：兩者；短詞加 -er。",
     "teach": "-er than。"
   },
   {
@@ -247,12 +247,12 @@ window.P4_BANK_COMPARATIVES = [
       }
     ],
     "answer": "B",
-    "tip": "the fastest。",
+    "tip": "見到 the … in：最高級；短詞 -est。",
     "teach": "the + -est。"
   },
   {
     "id": "cp11",
-    "prompt": "This bag is ______ than that one. (heavy)",
+    "prompt": "This shopping bag is ______ than that one. (heavy)",
     "options": [
       {
         "value": "A",
@@ -272,7 +272,7 @@ window.P4_BANK_COMPARATIVES = [
       }
     ],
     "answer": "A",
-    "tip": "y→i + er：heavier。",
+    "tip": "見到 than；以 y 結尾：y→i 再加 -er。",
     "teach": "heavy → heavier。"
   },
   {
@@ -297,7 +297,7 @@ window.P4_BANK_COMPARATIVES = [
       }
     ],
     "answer": "B",
-    "tip": "the highest。",
+    "tip": "見到 the … in：最高級；短詞 -est。",
     "teach": "最高級。"
   },
   {
@@ -322,12 +322,12 @@ window.P4_BANK_COMPARATIVES = [
       }
     ],
     "answer": "A",
-    "tip": "tidy → tidier。",
+    "tip": "見到 than；y→i + er。",
     "teach": "-ier than。"
   },
   {
     "id": "cp14",
-    "prompt": "This puzzle is ______ than the last one. (difficult)",
+    "prompt": "This menu is ______ than the last one. (difficult)",
     "options": [
       {
         "value": "A",
@@ -343,16 +343,16 @@ window.P4_BANK_COMPARATIVES = [
       },
       {
         "value": "D",
-        "label": "D. difficulter"
+        "label": "D. difficultest"
       }
     ],
     "answer": "B",
-    "tip": "長詞用 more。",
+    "tip": "見到 than；長詞用 more，唔好亂加 -er。",
     "teach": "more difficult than。"
   },
   {
     "id": "cp15",
-    "prompt": "He feels ______ today than yesterday. (good)",
+    "prompt": "He feels ______ today than yesterday after the picnic. (good)",
     "options": [
       {
         "value": "A",
@@ -372,12 +372,12 @@ window.P4_BANK_COMPARATIVES = [
       }
     ],
     "answer": "A",
-    "tip": "比較：今日好啲＝better。",
+    "tip": "見到 than；good 不規則比較級。",
     "teach": "feel better。"
   },
   {
     "id": "cp16",
-    "prompt": "Of the three skirts, the red one is the ______.",
+    "prompt": "Of the three desserts, the red jelly is the ______.",
     "options": [
       {
         "value": "A",
@@ -397,12 +397,12 @@ window.P4_BANK_COMPARATIVES = [
       }
     ],
     "answer": "B",
-    "tip": "三者選最…用最高級。",
+    "tip": "見到 Of the three／the：三者選最…用最高級。",
     "teach": "the prettiest。"
   },
   {
     "id": "cp17",
-    "prompt": "My school bag is ______ than yours. (big)",
+    "prompt": "My school bag for the picnic is ______ than yours. (big)",
     "options": [
       {
         "value": "A",
@@ -422,7 +422,7 @@ window.P4_BANK_COMPARATIVES = [
       }
     ],
     "answer": "A",
-    "tip": "重寫輔音 +er：bigger。",
+    "tip": "見到 than；短母音＋輔音結尾要重寫輔音再加 -er。",
     "teach": "big → bigger。"
   },
   {
@@ -447,7 +447,7 @@ window.P4_BANK_COMPARATIVES = [
       }
     ],
     "answer": "A",
-    "tip": "hot → hotter。",
+    "tip": "見到 than；hot 要重寫 t 再加 -er。",
     "teach": "hotter than。"
   },
   {
@@ -472,12 +472,12 @@ window.P4_BANK_COMPARATIVES = [
       }
     ],
     "answer": "A",
-    "tip": "味道差啲＝worse。",
+    "tip": "見到 than；bad 不規則。",
     "teach": "worse than。"
   },
   {
     "id": "cp20",
-    "prompt": "She is ______ than her brother. (old)",
+    "prompt": "She is ______ than her brother in Class 4A. (old)",
     "options": [
       {
         "value": "A",
@@ -497,12 +497,12 @@ window.P4_BANK_COMPARATIVES = [
       }
     ],
     "answer": "A",
-    "tip": "older than。",
+    "tip": "見到 than：兩者比較；短詞 -er。",
     "teach": "old → older。"
   },
   {
     "id": "cp21",
-    "prompt": "This is the ______ film of all. (exciting)",
+    "prompt": "This is the ______ film of all at the cinema. (exciting)",
     "options": [
       {
         "value": "A",
@@ -522,12 +522,12 @@ window.P4_BANK_COMPARATIVES = [
       }
     ],
     "answer": "B",
-    "tip": "of all → 最高級。",
+    "tip": "見到 the … of all：最高級；長詞用 most。",
     "teach": "the most exciting。"
   },
   {
     "id": "cp22",
-    "prompt": "A bike is ______ than a bus in heavy traffic. (slow)",
+    "prompt": "Walking is ______ than taking the bus in heavy traffic sometimes. (slow)",
     "options": [
       {
         "value": "A",
@@ -547,7 +547,7 @@ window.P4_BANK_COMPARATIVES = [
       }
     ],
     "answer": "A",
-    "tip": "比較兩者：slower than。",
+    "tip": "見到 than：兩者；短詞 -er。",
     "teach": "slow → slower。"
   }
 ];
