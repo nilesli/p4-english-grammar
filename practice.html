@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light" />
+  <title>小四英文温習</title>
+  <link rel="stylesheet" href="css/styles.css?v=20261029r5" />
+</head>
+<body class="mode-basic">
+  <header class="app-header">
+    <div class="inner">
+      <div>
+        <h1 id="page-title">小四英文温習</h1>
+        <p class="sub" id="page-sub">每回合隨機 8 題</p>
+      </div>
+      <a class="nav-back" href="index.html">← 返課題</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="mode-bar" id="mode-bar" role="group" aria-label="難度" hidden>
+      <span class="mode-label">難度</span>
+      <button type="button" class="mode-btn active" id="mode-basic" aria-pressed="true">基礎</button>
+      <button type="button" class="mode-btn" id="mode-advanced" aria-pressed="false">進階</button>
+    </div>
+    <p class="mode-hint" id="mode-hint" hidden>基礎：隨機 8 題四選一。</p>
+
+    <p id="practice-intro" style="margin:0.85rem 0 0;color:var(--muted);">
+      睇清題目再揀。未諗到先撳「小提示」；每題第一次撳先計一次。
+    </p>
+
+    <div class="toolbar" role="region" aria-label="練習工具列">
+      <span class="chip tips" id="tip-chip">今次已用提示：0 次</span>
+      <div class="toolbar-actions">
+        <button type="button" class="btn-primary" id="btn-check">核對答案</button>
+        <button type="button" class="btn-secondary" id="btn-new">換一組題</button>
+      </div>
+    </div>
+
+    <section id="practice" aria-label="温習題">
+      <div class="q-list" id="q-list"></div>
+      <div id="passage-wrap" hidden></div>
+    </section>
+
+    <section class="score-panel" id="score-panel" aria-live="polite">
+      <h2>今次結果</h2>
+      <div id="score-body">
+        <p class="score-msg">核對後先有分數。</p>
+      </div>
+    </section>
+
+    <section class="history-panel" id="history" aria-label="成績紀錄">
+      <h2>成績紀錄</h2>
+      <p class="hist-meta" id="hist-meta">關閉瀏覽器都會留低（本機儲存）。</p>
+      <div id="hist-body">
+        <p class="empty-note">未有紀錄。</p>
+      </div>
+      <p style="margin-top:0.9rem;">
+        <button type="button" class="btn-danger" id="btn-clear-hist">清空紀錄</button>
+      </p>
+    </section>
+
+    <details class="teach-panel" id="teach" open>
+      <summary>教學重點</summary>
+      <div class="teach-body" id="teach-body"></div>
+    </details>
+
+    <p class="footer-note">小四英文温習 · r5</p>
+  </main>
+
+  <script src="js/topics.js?v=20261029r5"></script>
+  <script src="js/bank-tenses.js?v=20261029r5"></script>
+  <script src="js/bank-tenses-advanced.js?v=20261029r5"></script>
+  <script src="js/bank-like-ving.js?v=20261029r5"></script>
+  <script src="js/bank-do-does.js?v=20261029r5"></script>
+  <script src="js/bank-wh-words.js?v=20261029r5"></script>
+  <script src="js/bank-frequency.js?v=20261029r5"></script>
+  <script src="js/bank-too-either.js?v=20261029r5"></script>
+  <script src="js/bank-conjunctions.js?v=20261029r5"></script>
+  <script src="js/bank-comparatives.js?v=20261029r5"></script>
+  <script src="js/bank-would-like.js?v=20261029r5"></script>
+  <script src="js/bank-punctuation.js?v=20261029r5"></script>
+  <script src="js/bank-sentence-order.js?v=20261029r5"></script>
+  <script src="js/interactive.js?v=20261029r5"></script>
+  <script src="js/storage.js?v=20261029r5"></script>
+  <script src="js/app.js?v=20261029r5"></script>
+</body>
+</html>
