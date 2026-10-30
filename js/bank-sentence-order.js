@@ -1,4 +1,4 @@
-/** r6 interactive bank · 20261029r6 · 8–12 tokens; tips 唔洩答案詞 */
+/** r7 interactive bank · 20261030r7 · 8–12 tokens; tips 唔洩答案詞 */
 window.P4_BANK_SENTENCE_ORDER = [
   {
     "id": "so1",
@@ -427,5 +427,41 @@ window.P4_BANK_SENTENCE_ORDER = [
     ],
     "tip": "How + does + 單數主語 + 原形。",
     "teach": "How does Tom go…?"
+  },
+{
+    "id": "so27",
+    "tokens": ["Mike", "is", "thinner", "than", "me", "in", "our", "class", "."],
+    "tip": "比較級：be + 短詞比較形 + than。",
+    "teach": "Mike is thinner than me…"
+  },
+  {
+    "id": "so28",
+    "tokens": ["John", "is", "the", "tallest", "kid", "in", "our", "class", "."],
+    "tip": "最高級前要有 the；in our class 係範圍線索。",
+    "teach": "John is the tallest kid in our class."
+  },
+  {
+    "id": "so29",
+    "tokens": ["Bananas", "are", "more", "popular", "than", "cherries", "in", "our", "survey", "."],
+    "tip": "長詞比較：more + 形容詞 + than。",
+    "teach": "Bananas are more popular than cherries…"
+  },
+  {
+    "id": "so30",
+    "tokens": ["Sunshine", "Mixed", "Nuts", "is", "the", "most", "expensive", "snack", "."],
+    "tip": "長詞最高級：the most + 形容詞。",
+    "teach": "Sunshine Mixed Nuts is the most expensive…"
+  },
+  {
+    "id": "so31",
+    "tokens": ["Natural", "Raisins", "are", "cheaper", "than", "Cola", "on", "the", "list", "."],
+    "tip": "價錢表比較：短詞 -er + than。",
+    "teach": "Natural Raisins are cheaper than Cola…"
+  },
+  {
+    "id": "so32",
+    "tokens": ["How", "about", "a", "picnic", "in", "the", "country", "park", "?"],
+    "tip": "邀請建議：開頭詞 + about + 名詞／活動。",
+    "teach": "How about a picnic…?"
   }
 ];

@@ -1,4 +1,4 @@
-/** auto bank · r6 · 20261029r6 · tips = 思路 only */
+/** auto bank · r7 · 20261030r7 · tips = 思路 only */
 window.P4_BANK_COMPARATIVES = [
   {
     "id": "cp1",
@@ -549,5 +549,213 @@ window.P4_BANK_COMPARATIVES = [
     "answer": "A",
     "tip": "見到 than：兩者；短詞 -er。",
     "teach": "slow → slower。"
+  },
+{
+    "id": "cp23",
+    "prompt": "Mike is ______ than me. (thin)",
+    "options": [
+      {"value": "A", "label": "A. thinner"},
+      {"value": "B", "label": "B. more thin"},
+      {"value": "C", "label": "C. thinnest"},
+      {"value": "D", "label": "D. most thin"}
+    ],
+    "answer": "A",
+    "tip": "見到 than：兩者比較；短詞＋單輔音結尾要重寫輔音再加 -er。",
+    "teach": "thin → thinner than。"
+  },
+  {
+    "id": "cp24",
+    "prompt": "At the picnic shop, Natural Raisins are ______ than Cola. (cheap)",
+    "options": [
+      {"value": "A", "label": "A. cheaper"},
+      {"value": "B", "label": "B. cheapper"},
+      {"value": "C", "label": "C. cheapest"},
+      {"value": "D", "label": "D. more cheap"}
+    ],
+    "answer": "A",
+    "tip": "見到 than：兩者比價錢；短詞加 -er（唔好亂加多一個輔音）。",
+    "teach": "cheap → cheaper（唔係 cheapper）。"
+  },
+  {
+    "id": "cp25",
+    "prompt": "Look at the price list. Orange juice is the ______ drink of the three. (cheap)",
+    "options": [
+      {"value": "A", "label": "A. cheaper"},
+      {"value": "B", "label": "B. cheapest"},
+      {"value": "C", "label": "C. cheapper"},
+      {"value": "D", "label": "D. cheappest"}
+    ],
+    "answer": "B",
+    "tip": "見到 the … of the three：最高級；短詞 -est，注意拼寫唔好多重寫輔音。",
+    "teach": "the cheapest（唔係 cheappest）。"
+  },
+  {
+    "id": "cp26",
+    "prompt": "Salad is ______ than fries on our picnic menu. (healthy)",
+    "options": [
+      {"value": "A", "label": "A. healthier"},
+      {"value": "B", "label": "B. more healthy"},
+      {"value": "C", "label": "C. healthiest"},
+      {"value": "D", "label": "D. most healthy"}
+    ],
+    "answer": "A",
+    "tip": "見到 than；以 y 結尾：y→i 再加 -er。",
+    "teach": "healthy → healthier。"
+  },
+  {
+    "id": "cp27",
+    "prompt": "Of all the picnic snacks, fruit is the ______. (healthy)",
+    "options": [
+      {"value": "A", "label": "A. healthier"},
+      {"value": "B", "label": "B. healthiest"},
+      {"value": "C", "label": "C. more healthy"},
+      {"value": "D", "label": "D. most healthy"}
+    ],
+    "answer": "B",
+    "tip": "見到 Of all／the：最高級；y→i + est。",
+    "teach": "the healthiest。"
+  },
+  {
+    "id": "cp28",
+    "prompt": "This shopping bag is ______ than that heavy one. (light)",
+    "options": [
+      {"value": "A", "label": "A. lighter"},
+      {"value": "B", "label": "B. more light"},
+      {"value": "C", "label": "C. lightest"},
+      {"value": "D", "label": "D. most light"}
+    ],
+    "answer": "A",
+    "tip": "見到 than：兩者；短詞加 -er。",
+    "teach": "light → lighter。"
+  },
+  {
+    "id": "cp29",
+    "prompt": "Which bag is the ______ in the supermarket trolley? (light)",
+    "options": [
+      {"value": "A", "label": "A. lighter"},
+      {"value": "B", "label": "B. lightest"},
+      {"value": "C", "label": "C. more light"},
+      {"value": "D", "label": "D. most light"}
+    ],
+    "answer": "B",
+    "tip": "見到 the … in：最高級；短詞 -est。",
+    "teach": "the lightest。"
+  },
+  {
+    "id": "cp30",
+    "prompt": "My shoes are ______ than yours after the country park walk. (dirty)",
+    "options": [
+      {"value": "A", "label": "A. dirtier"},
+      {"value": "B", "label": "B. more dirty"},
+      {"value": "C", "label": "C. dirtiest"},
+      {"value": "D", "label": "D. most dirty"}
+    ],
+    "answer": "A",
+    "tip": "見到 than；y→i + er。",
+    "teach": "dirty → dirtier。"
+  },
+  {
+    "id": "cp31",
+    "prompt": "In our juice brand survey, Bananas are ______ than cherries. (popular)",
+    "options": [
+      {"value": "A", "label": "A. popularer"},
+      {"value": "B", "label": "B. more popular"},
+      {"value": "C", "label": "C. most popular"},
+      {"value": "D", "label": "D. popularest"}
+    ],
+    "answer": "B",
+    "tip": "見到 than；popular 係長詞 → 用 more／most，唔係 -er。",
+    "teach": "more popular than。"
+  },
+  {
+    "id": "cp32",
+    "prompt": "This chocolate cake is ______ than the plain bread. (delicious)",
+    "options": [
+      {"value": "A", "label": "A. deliciouser"},
+      {"value": "B", "label": "B. more delicious"},
+      {"value": "C", "label": "C. most delicious"},
+      {"value": "D", "label": "D. deliciousest"}
+    ],
+    "answer": "B",
+    "tip": "見到 than；長詞用 more。",
+    "teach": "more delicious than。"
+  },
+  {
+    "id": "cp33",
+    "prompt": "On the price list, Sunshine Mixed Nuts is the ______ snack. (expensive)",
+    "options": [
+      {"value": "A", "label": "A. more expensive"},
+      {"value": "B", "label": "B. most expensive"},
+      {"value": "C", "label": "C. expensiver"},
+      {"value": "D", "label": "D. expensivest"}
+    ],
+    "answer": "B",
+    "tip": "見到 the …：最高級；長詞用 most。",
+    "teach": "the most expensive。"
+  },
+  {
+    "id": "cp34",
+    "prompt": "The cinema show was ______ than the school play. (exciting)",
+    "options": [
+      {"value": "A", "label": "A. excitinger"},
+      {"value": "B", "label": "B. more exciting"},
+      {"value": "C", "label": "C. most exciting"},
+      {"value": "D", "label": "D. excitingest"}
+    ],
+    "answer": "B",
+    "tip": "見到 than；長詞用 more。",
+    "teach": "more exciting than。"
+  },
+  {
+    "id": "cp35",
+    "prompt": "Waiting in the long supermarket queue is ______ than shopping online. (boring)",
+    "options": [
+      {"value": "A", "label": "A. boringer"},
+      {"value": "B", "label": "B. more boring"},
+      {"value": "C", "label": "C. most boring"},
+      {"value": "D", "label": "D. boringest"}
+    ],
+    "answer": "B",
+    "tip": "見到 than；長詞用 more。",
+    "teach": "more boring than。"
+  },
+  {
+    "id": "cp36",
+    "prompt": "Climbing that rock in the country park is ______ than walking on the path. (dangerous)",
+    "options": [
+      {"value": "A", "label": "A. dangerouser"},
+      {"value": "B", "label": "B. more dangerous"},
+      {"value": "C", "label": "C. most dangerous"},
+      {"value": "D", "label": "D. dangerousest"}
+    ],
+    "answer": "B",
+    "tip": "見到 than；長詞用 more。",
+    "teach": "more dangerous than。"
+  },
+  {
+    "id": "cp37",
+    "prompt": "Leaving your shopping list at home is a ______ mistake than forgetting one item. (careless)",
+    "options": [
+      {"value": "A", "label": "A. carelesser"},
+      {"value": "B", "label": "B. more careless"},
+      {"value": "C", "label": "C. most careless"},
+      {"value": "D", "label": "D. carelessest"}
+    ],
+    "answer": "B",
+    "tip": "見到 than；長詞用 more。",
+    "teach": "more careless than。"
+  },
+  {
+    "id": "cp38",
+    "prompt": "Of the three juice brands in our class survey, Fresh Orange is the ______. (popular)",
+    "options": [
+      {"value": "A", "label": "A. more popular"},
+      {"value": "B", "label": "B. most popular"},
+      {"value": "C", "label": "C. popularer"},
+      {"value": "D", "label": "D. popularest"}
+    ],
+    "answer": "B",
+    "tip": "見到 Of the three／the：最高級；長詞用 most。",
+    "teach": "the most popular。"
   }
 ];

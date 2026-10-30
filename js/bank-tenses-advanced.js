@@ -1,6 +1,6 @@
 /**
  * 小四英文温習 · Tenses 進階（短文填時態）
- * r6 · 20261029r6 · tips = 思路 only（唔寫死正確動詞形）
+ * r7 · 20261030r7 · tips = 思路 only（唔寫死正確動詞形）
  */
 window.P4_BANK_TENSES_ADVANCED = [
   {
@@ -605,6 +605,141 @@ window.P4_BANK_TENSES_ADVANCED = [
         "type": "text",
         "text": " now? Please wash your hands — supper is ready!"
       }
+    ]
+  },
+  {
+    "id": "adv-story-uncle-hobbies",
+    "title": "Story: Uncle's job and hobbies",
+    "genre": "story",
+    "intro": "讀關於 Uncle Ben 嘅短文。文中有 Last year（過去）同 Now／sometimes／never（而家習慣）——先掃全文時間詞，再逐格判斷。亦考 love／keep／go + V-ing。",
+    "segments": [
+      {"type": "text", "text": "Last year Uncle Ben "},
+      {
+        "type": "blank",
+        "id": "u1",
+        "options": [
+          {"value": "A", "label": "A. is"},
+          {"value": "B", "label": "B. was"},
+          {"value": "C", "label": "C. are"},
+          {"value": "D", "label": "D. being"}
+        ],
+        "answer": "B",
+        "tip": "有 Last year：講過去狀態；主語單數 → 揀正確 be 過去形。",
+        "teach": "Last year … was …"
+      },
+      {"type": "text", "text": " a shop assistant. He "},
+      {
+        "type": "blank",
+        "id": "u2",
+        "options": [
+          {"value": "A", "label": "A. work"},
+          {"value": "B", "label": "B. works"},
+          {"value": "C", "label": "C. worked"},
+          {"value": "D", "label": "D. working"}
+        ],
+        "answer": "C",
+        "tip": "仍然 Last year：規則動詞要變過去式。",
+        "teach": "work → worked。"
+      },
+      {"type": "text", "text": " long hours and "},
+      {
+        "type": "blank",
+        "id": "u3",
+        "options": [
+          {"value": "A", "label": "A. do not have"},
+          {"value": "B", "label": "B. does not have"},
+          {"value": "C", "label": "C. did not have"},
+          {"value": "D", "label": "D. not had"}
+        ],
+        "answer": "C",
+        "tip": "過去否定：用邊個助動詞 + not + 原形？",
+        "teach": "did not have（過去否定）。"
+      },
+      {"type": "text", "text": " much free time. Still, he "},
+      {
+        "type": "blank",
+        "id": "u4",
+        "options": [
+          {"value": "A", "label": "A. loved eating"},
+          {"value": "B", "label": "B. loved eat"},
+          {"value": "C", "label": "C. love eating"},
+          {"value": "D", "label": "D. loves eat"}
+        ],
+        "answer": "A",
+        "tip": "講上年喜好：love 用過去；後面動詞多數用 V-ing。",
+        "teach": "loved eating（love + V-ing）。"
+      },
+      {"type": "text", "text": " noodles after work. He also tried to "},
+      {
+        "type": "blank",
+        "id": "u5",
+        "options": [
+          {"value": "A", "label": "A. keep running"},
+          {"value": "B", "label": "B. keep run"},
+          {"value": "C", "label": "C. keeps running"},
+          {"value": "D", "label": "D. kept run"}
+        ],
+        "answer": "A",
+        "tip": "to 後面用原形短語；keep 後面動詞要用 V-ing。",
+        "teach": "keep + V-ing：keep running。"
+      },
+      {"type": "text", "text": " in the park.\n\nNow Uncle Ben "},
+      {
+        "type": "blank",
+        "id": "u6",
+        "options": [
+          {"value": "A", "label": "A. is"},
+          {"value": "B", "label": "B. was"},
+          {"value": "C", "label": "C. were"},
+          {"value": "D", "label": "D. being"}
+        ],
+        "answer": "A",
+        "tip": "有 Now：而家狀態；單數主語用 be 現在式。",
+        "teach": "Now … is …"
+      },
+      {"type": "text", "text": " a PE teacher. He "},
+      {
+        "type": "blank",
+        "id": "u7",
+        "options": [
+          {"value": "A", "label": "A. go cycling"},
+          {"value": "B", "label": "B. goes cycling"},
+          {"value": "C", "label": "C. went cycle"},
+          {"value": "D", "label": "D. going cycling"}
+        ],
+        "answer": "B",
+        "tip": "而家習慣；he → 動詞加 -s；go + V-ing 表示去做活動。",
+        "teach": "goes cycling（go + V-ing）。"
+      },
+      {"type": "text", "text": " every Saturday morning. He sometimes "},
+      {
+        "type": "blank",
+        "id": "u8",
+        "options": [
+          {"value": "A", "label": "A. play"},
+          {"value": "B", "label": "B. plays"},
+          {"value": "C", "label": "C. played"},
+          {"value": "D", "label": "D. playing"}
+        ],
+        "answer": "B",
+        "tip": "sometimes 習慣；主語 He → 現在式加 -s。",
+        "teach": "sometimes plays。"
+      },
+      {"type": "text", "text": " badminton with friends. He never "},
+      {
+        "type": "blank",
+        "id": "u9",
+        "options": [
+          {"value": "A", "label": "A. see"},
+          {"value": "B", "label": "B. sees"},
+          {"value": "C", "label": "C. saw"},
+          {"value": "D", "label": "D. seeing"}
+        ],
+        "answer": "B",
+        "tip": "never 仍然係而家習慣；He → 加 -s。",
+        "teach": "never sees。"
+      },
+      {"type": "text", "text": " his old shop now — he is much happier!"}
     ]
   }
 ];

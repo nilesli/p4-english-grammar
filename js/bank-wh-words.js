@@ -1,4 +1,4 @@
-/** auto bank · r6 · 20261029r6 · tips = 思路 only */
+/** auto bank · r7 · 20261030r7 · tips = 思路 only */
 window.P4_BANK_WH_WORDS = [
   {
     "id": "w1",
@@ -699,5 +699,135 @@ window.P4_BANK_WH_WORDS = [
     "answer": "B",
     "tip": "menu 價錢：問「幾錢」；揀配 much 嘅疑問詞。",
     "teach": "How much is…?"
+  },
+{
+    "id": "w29",
+    "prompt": "At the supermarket: ______ much is this carton of soya milk?",
+    "options": [
+      {"value": "A", "label": "A. What"},
+      {"value": "B", "label": "B. How"},
+      {"value": "C", "label": "C. Which"},
+      {"value": "D", "label": "D. Where"}
+    ],
+    "answer": "B",
+    "tip": "購物問價錢；後面有 much，揀配 much 嘅疑問詞家族。",
+    "teach": "How much is…? 問價錢。"
+  },
+  {
+    "id": "w30",
+    "prompt": "Shopkeeper: Can I help you? Customer: ______ is the peanut butter, please?",
+    "options": [
+      {"value": "A", "label": "A. What"},
+      {"value": "B", "label": "B. Where"},
+      {"value": "C", "label": "C. When"},
+      {"value": "D", "label": "D. Who"}
+    ],
+    "answer": "B",
+    "tip": "答句會講貨架位置；揀問地點嘅疑問詞。",
+    "teach": "Where is…? 問位置。"
+  },
+  {
+    "id": "w31",
+    "prompt": "______ put this chocolate on our shopping list?",
+    "options": [
+      {"value": "A", "label": "A. What"},
+      {"value": "B", "label": "B. Who"},
+      {"value": "C", "label": "C. Where"},
+      {"value": "D", "label": "D. When"}
+    ],
+    "answer": "B",
+    "tip": "答句講邊個人做「放」呢個動作；揀問人嘅疑問詞。",
+    "teach": "Who + 動詞…?"
+  },
+  {
+    "id": "w32",
+    "prompt": "______ do we need from the bakery — bread or cakes?",
+    "options": [
+      {"value": "A", "label": "A. What"},
+      {"value": "B", "label": "B. Where"},
+      {"value": "C", "label": "C. Who"},
+      {"value": "D", "label": "D. When"}
+    ],
+    "answer": "A",
+    "tip": "答句講需要咩嘢；揀問事物／資料嘅疑問詞。",
+    "teach": "What do we need…?"
+  },
+  {
+    "id": "w33",
+    "prompt": "______ are these grapes so expensive today?",
+    "options": [
+      {"value": "A", "label": "A. What"},
+      {"value": "B", "label": "B. Where"},
+      {"value": "C", "label": "C. Why"},
+      {"value": "D", "label": "D. Who"}
+    ],
+    "answer": "C",
+    "tip": "答句講原因；揀問原因嘅疑問詞。",
+    "teach": "Why are…?"
+  },
+  {
+    "id": "w34",
+    "prompt": "______ do you usually pay at the supermarket — by Octopus or cash?",
+    "options": [
+      {"value": "A", "label": "A. How"},
+      {"value": "B", "label": "B. Who"},
+      {"value": "C", "label": "C. Which"},
+      {"value": "D", "label": "D. Whose"}
+    ],
+    "answer": "A",
+    "tip": "答句講付款方式；揀問方法嘅疑問詞（唔係邀請建議）。",
+    "teach": "How → 問方式。"
+  },
+  {
+    "id": "w35",
+    "prompt": "We have finished shopping. ______ about a picnic in the country park this Sunday?",
+    "options": [
+      {"value": "A", "label": "A. How"},
+      {"value": "B", "label": "B. What"},
+      {"value": "C", "label": "C. Why"},
+      {"value": "D", "label": "D. Who"}
+    ],
+    "answer": "A",
+    "tip": "呢句係「邀請／建議去做某事」，唔係問搭車方式；揀「約＋about」嗰個疑問詞家族。",
+    "teach": "How about + 名詞／V-ing？＝建議。"
+  },
+  {
+    "id": "w36",
+    "prompt": "Mum: ______ about ordering dessert after dinner? Tom: Great idea!",
+    "options": [
+      {"value": "A", "label": "A. How"},
+      {"value": "B", "label": "B. Where"},
+      {"value": "C", "label": "C. When"},
+      {"value": "D", "label": "D. Who"}
+    ],
+    "answer": "A",
+    "tip": "答句係同意建議；揀「約＋about」嘅邀請句型開頭詞，唔係問地方／時間。",
+    "teach": "How about ordering…?"
+  },
+  {
+    "id": "w37",
+    "prompt": "______ about some orange juice with our picnic snacks?",
+    "options": [
+      {"value": "A", "label": "A. How"},
+      {"value": "B", "label": "B. What"},
+      {"value": "C", "label": "C. Which"},
+      {"value": "D", "label": "D. Why"}
+    ],
+    "answer": "A",
+    "tip": "建議加飲品；留意同「問方式」唔同——呢度 about 後面係建議內容，揀邀請建議句型開頭。",
+    "teach": "How about some…?"
+  },
+  {
+    "id": "w38",
+    "prompt": "Friend: ______ about watching a show at the cinema tonight? You: Sorry, I am busy.",
+    "options": [
+      {"value": "A", "label": "A. How"},
+      {"value": "B", "label": "B. Who"},
+      {"value": "C", "label": "C. Where"},
+      {"value": "D", "label": "D. Whose"}
+    ],
+    "answer": "A",
+    "tip": "朋友提出活動建議；揀「約＋about」邀請句開頭，唔係問人／地。",
+    "teach": "How about watching…?"
   }
 ];

@@ -1,6 +1,6 @@
 /**
  * 小四英文温習 · 課題清單 + 教學重點
- * r6 · ?v=20261029r6
+ * r7 · ?v=20261030r7
  */
 window.P4_TOPICS = [
   {
@@ -89,7 +89,8 @@ window.P4_TOPICS = [
       <tr><td>When／What time</td><td>時間</td></tr>
       <tr><td>Who／Whose</td><td>人／誰的</td></tr>
       <tr><td>Why</td><td>原因</td></tr>
-      <tr><td>How／How often／How many</td><td>方式／頻率／數量</td></tr>
+      <tr><td>How／How often／How many／How much</td><td>方式／頻率／數量／價錢</td></tr>
+      <tr><td>How about…?</td><td>邀請／建議（唔係問方式）</td></tr>
       <tr><td>Which</td><td>有限選擇</td></tr>
       </tbody></table>`,
   },
@@ -155,10 +156,11 @@ window.P4_TOPICS = [
       <div class="teach-callout"><div class="lead">短詞／長詞／不規則</div>
       短：-er／-est；長：more／most；good→better／best；bad→worse／worst。</div>
       <table class="teach-table"><thead><tr><th>類型</th><th>例子</th></tr></thead><tbody>
-      <tr><td>短比較</td><td>taller than</td></tr>
-      <tr><td>短最高</td><td>the tallest</td></tr>
-      <tr><td>長比較</td><td>more interesting than</td></tr>
-      <tr><td>長最高</td><td>the most interesting</td></tr>
+      <tr><td>短比較</td><td>taller／thinner／cheaper than</td></tr>
+      <tr><td>短最高</td><td>the tallest／cheapest</td></tr>
+      <tr><td>y→i</td><td>healthy→healthier；dirty→dirtier</td></tr>
+      <tr><td>長比較</td><td>more popular／delicious than</td></tr>
+      <tr><td>長最高</td><td>the most expensive／exciting</td></tr>
       <tr><td>不規則</td><td>better／best；worse／worst</td></tr>
       </tbody></table>`,
   },
@@ -197,6 +199,33 @@ window.P4_TOPICS = [
       <tr><td>所有格</td><td>Tom's book；girls' toys</td></tr>
       <tr><td>it's vs its</td><td>it's = it is；its = 它的</td></tr>
       </tbody></table>`,
+  },
+  {
+    id: "quantifiers",
+    title: "Quantifiers（量詞／容器）",
+    short: "Quantifiers",
+    enabled: true,
+    hasAdvanced: false,
+    bankKey: "P4_BANK_QUANTIFIERS",
+    historyTopic: "quantifiers",
+    teachHtml: `
+      <div class="teach-callout"><div class="lead">a … of …</div>
+      用容器／形狀量詞：a jar／packet／carton／bar／bunch／loaf／tin of + 名詞。</div>
+      <table class="teach-table"><thead><tr><th>量詞</th><th>常見配對</th></tr></thead><tbody>
+      <tr><td>a jar of</td><td>peanut butter／jam</td></tr>
+      <tr><td>a packet of</td><td>crisps／biscuits</td></tr>
+      <tr><td>a carton of</td><td>soya milk／juice</td></tr>
+      <tr><td>a bar of</td><td>chocolate（一條）</td></tr>
+      <tr><td>a bunch of</td><td>grapes／bananas</td></tr>
+      <tr><td>a loaf of</td><td>bread</td></tr>
+      <tr><td>a tin of</td><td>nuts／tuna</td></tr>
+      </tbody></table>
+      <h3>常見錯</h3>
+      <ul class="mistake-list">
+      <li><div class="mtitle">tin vs jar</div>金屬罐 tin；玻璃／塑膠樽 jar（花生醬多用 jar）</li>
+      <li><div class="mtitle">bar vs box</div>a bar of chocolate（一條）≠ a box of chocolates（一盒）</li>
+      <li><div class="mtitle">beans of nuts</div>beans of nuts ✗ → a tin of nuts ✓</li>
+      </ul>`,
   },
   {
     id: "sentence-order",

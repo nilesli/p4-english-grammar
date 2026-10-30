@@ -1,6 +1,6 @@
 /**
  * 小四英文温習 · Tenses 題庫（現在式＋過去式混題）
- * r6 · 20261029r6 · tips = 思路 only（唔寫死正確動詞形）
+ * r7 · 20261030r7 · tips = 思路 only（唔寫死正確動詞形）
  */
 window.P4_BANK_TENSES = [
   {

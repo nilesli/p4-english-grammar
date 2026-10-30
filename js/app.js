@@ -1,6 +1,6 @@
 /**
  * 小四英文温習 · Practice app
- * r6 · ?v=20261029r6
+ * r7 · ?v=20261030r7
  */
 (function () {
   const ROUND_SIZE = 8;
