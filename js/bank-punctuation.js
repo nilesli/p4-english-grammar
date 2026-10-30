@@ -1,4 +1,4 @@
-/** r7 interactive bank · 20261030r7 · tips 思路 only */
+/** auto bank · r8 tips · 20261030r8 · tips = 思路 only, no answer leak */
 window.P4_BANK_PUNCTUATION = [
   {
     "id": "pu1",
@@ -20,7 +20,7 @@ window.P4_BANK_PUNCTUATION = [
       "!",
       ","
     ],
-    "tip": "呢句係問句，諗句末標點。",
+    "tip": "Where 開頭＝問句：句末用邊個標點？",
     "teach": "疑問句句末用問號。"
   },
   {
@@ -45,7 +45,7 @@ window.P4_BANK_PUNCTUATION = [
       "!",
       ","
     ],
-    "tip": "陳述事實，用邊個句末標點？",
+    "tip": "講事實、唔係問人：陳述句句末用邊個？",
     "teach": "陳述句句末用句號。"
   },
   {
@@ -68,7 +68,7 @@ window.P4_BANK_PUNCTUATION = [
       "!",
       ","
     ],
-    "tip": "感嘆句常用驚嘆號。",
+    "tip": "帶強烈感情／讚嘆：感嘆句常用邊個符號？",
     "teach": "What a sunny day!"
   },
   {
@@ -85,7 +85,7 @@ window.P4_BANK_PUNCTUATION = [
       "!",
       ","
     ],
-    "tip": "呼救／強烈感情。",
+    "tip": "呼救／好急：強烈語氣用邊個句末標點？",
     "teach": "Help!"
   },
   {
@@ -112,7 +112,7 @@ window.P4_BANK_PUNCTUATION = [
       "!",
       ","
     ],
-    "tip": "列舉物品時，中間常用逗號。",
+    "tip": "列舉幾樣嘢：項目中間多用邊個符號隔開？",
     "teach": "I bought apples, oranges and bananas."
   },
   {
@@ -135,7 +135,7 @@ window.P4_BANK_PUNCTUATION = [
       "!",
       ","
     ],
-    "tip": "問年紀係問句。",
+    "tip": "問年紀：整句係問句，句末？",
     "teach": "How old are you?"
   },
   {
@@ -160,7 +160,7 @@ window.P4_BANK_PUNCTUATION = [
       "!",
       ","
     ],
-    "tip": "講過去事實：陳述句。",
+    "tip": "講過去發生咗嘅事：陳述句句末？",
     "teach": "We had a picnic yesterday."
   },
   {
@@ -179,7 +179,7 @@ window.P4_BANK_PUNCTUATION = [
       "!",
       ","
     ],
-    "tip": "警告用语：強烈語氣。",
+    "tip": "警告／叫人小心：強烈語氣。",
     "teach": "Look out!"
   },
   {
@@ -204,7 +204,7 @@ window.P4_BANK_PUNCTUATION = [
       "!",
       ","
     ],
-    "tip": "句首時間短語後面常加逗號。",
+    "tip": "句首時間短語（Last Sunday 類）後面常加邊個符號再接主句？",
     "teach": "On Monday, we have PE."
   },
   {
@@ -227,7 +227,7 @@ window.P4_BANK_PUNCTUATION = [
       "!",
       ","
     ],
-    "tip": "Yes/No 問句。",
+    "tip": "Yes/No 問句：句末？",
     "teach": "Do you like mangoes?"
   },
   {
@@ -250,7 +250,7 @@ window.P4_BANK_PUNCTUATION = [
       "!",
       ","
     ],
-    "tip": "感嘆詞後面可加逗號再接句子。",
+    "tip": "Oh／Wow 類感嘆詞後面，常加逗號再接句子。",
     "teach": "Wow, that is amazing."
   },
   {
@@ -276,7 +276,7 @@ window.P4_BANK_PUNCTUATION = [
       ",",
       "'"
     ],
-    "tip": "單數所有格：人名後加撇號再加 s。",
+    "tip": "單數人名所有格：人名後點樣加撇號同 s？",
     "teach": "Tom's book is here."
   },
   {
@@ -300,7 +300,7 @@ window.P4_BANK_PUNCTUATION = [
       ",",
       "'"
     ],
-    "tip": "It is 可縮寫；撇號放邊？",
+    "tip": "It is 縮寫：撇號應放喺邊兩個字母中間？",
     "teach": "It's raining outside.（= it is）"
   },
   {
@@ -326,7 +326,7 @@ window.P4_BANK_PUNCTUATION = [
       ",",
       "'"
     ],
-    "tip": "I am 縮寫：撇號位置。",
+    "tip": "I am 縮寫：撇號位置？",
     "teach": "I'm happy to help."
   },
   {
@@ -348,7 +348,7 @@ window.P4_BANK_PUNCTUATION = [
       ",",
       "'"
     ],
-    "tip": "let us 縮寫：撇號位置。",
+    "tip": "let us 縮寫：撇號位置？",
     "teach": "Let's go."
   },
   {
@@ -375,7 +375,7 @@ window.P4_BANK_PUNCTUATION = [
       "!",
       ","
     ],
-    "tip": "問時間：問句標點。",
+    "tip": "問時間：問句句末標點。",
     "teach": "What time do you get up?"
   },
   {
@@ -398,7 +398,7 @@ window.P4_BANK_PUNCTUATION = [
       "!",
       ","
     ],
-    "tip": "Yes／No 後面常加逗號再接句子。",
+    "tip": "Yes／No 答完，後面常加逗號再接完整句。",
     "teach": "Yes, I can swim."
   },
   {
@@ -447,7 +447,7 @@ window.P4_BANK_PUNCTUATION = [
       "!",
       ","
     ],
-    "tip": "問句用問號。",
+    "tip": "疑問詞開頭：問句標點。",
     "teach": "Are you coming?"
   },
   {
@@ -474,7 +474,7 @@ window.P4_BANK_PUNCTUATION = [
       "!",
       ","
     ],
-    "tip": "清單中間用逗號，句末句號。",
+    "tip": "清單中間用逗號分隔，整句結束用句號。",
     "teach": "She bought bread, milk and eggs."
   },
   {
@@ -499,7 +499,7 @@ window.P4_BANK_PUNCTUATION = [
       "!",
       ","
     ],
-    "tip": "呼喚人後加逗號，整句係問句。",
+    "tip": "呼喚人名後加逗號；整句若係問句，句末仲要啱。",
     "teach": "Mum, can I go out?"
   },
   {
@@ -525,7 +525,7 @@ window.P4_BANK_PUNCTUATION = [
       ",",
       "'"
     ],
-    "tip": "複數 girls 所有格：s 後加撇號。",
+    "tip": "複數 girls 所有格：s 已經喺度，撇號加喺 s 前定後？",
     "teach": "The girls' bags are heavy."
   }
 ];

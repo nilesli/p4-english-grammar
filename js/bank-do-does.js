@@ -1,4 +1,4 @@
-/** auto bank · r7 · 20261030r7 · tips = 思路 only */
+/** auto bank · r8 tips · 20261030r8 · tips = 思路 only, no answer leak */
 window.P4_BANK_DO_DOES = [
   {
     "id": "dd1",
@@ -22,7 +22,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "A",
-    "tip": "睇主語：you 係複數／第二人稱 → 用邊個現在式助動詞？後面動詞保持原形。",
+    "tip": "主語 you＝第二人稱／非 he-she-it：現在式助動詞揀邊個？後面動詞保持原形。",
     "teach": "Do + you + 原形。"
   },
   {
@@ -47,7 +47,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "B",
-    "tip": "Sam＝單數第三人稱 → 用邊個助動詞？後面 play 保持原形。",
+    "tip": "Sam＝單數第三人稱：助動詞揀邊個？後面動詞保持原形。",
     "teach": "Does + 名字 + 原形。"
   },
   {
@@ -72,7 +72,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "B",
-    "tip": "she＝單數 → 助動詞；後面 go 保持原形（唔好 goes）。",
+    "tip": "she＝單數：助動詞？後面 go 保持原形（唔好變成 goes）。",
     "teach": "Does + 原形。"
   },
   {
@@ -97,7 +97,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "A",
-    "tip": "they＝複數 → 用邊個助動詞？",
+    "tip": "they＝複數：助動詞揀邊個？",
     "teach": "Do + they + 原形。"
   },
   {
@@ -122,7 +122,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "B",
-    "tip": "your brother＝單數 → 助動詞選邊個。",
+    "tip": "your brother＝單數第三人稱：助動詞？",
     "teach": "Does + 單數人稱。"
   },
   {
@@ -147,7 +147,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "A",
-    "tip": "主語 you；現在習慣問句用邊個助動詞。",
+    "tip": "主語 you；現在習慣 Wh- 問句：助動詞用邊個？",
     "teach": "What do you do…?"
   },
   {
@@ -172,7 +172,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "B",
-    "tip": "Mary＝單數 → 助動詞。",
+    "tip": "Mary＝單數：Wh- 問句助動詞？",
     "teach": "Where does …?"
   },
   {
@@ -197,7 +197,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "B",
-    "tip": "he＝單數：助動詞選對之後，後面動詞一定用原形。",
+    "tip": "he＝單數：第一格助動詞；第二格動詞一定用原形（唔好三單 -s）。",
     "teach": "Does + 原形；唔好 Does he goes。"
   },
   {
@@ -222,7 +222,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "A",
-    "tip": "parents＝複數 → 助動詞。",
+    "tip": "parents＝複數：助動詞？",
     "teach": "Do + 複數主語。"
   },
   {
@@ -247,7 +247,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "B",
-    "tip": "it＝單數 → 助動詞。",
+    "tip": "it＝單數：助動詞？",
     "teach": "Does it + 原形？"
   },
   {
@@ -272,7 +272,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "A",
-    "tip": "主語 you → 助動詞。",
+    "tip": "主語 you：Wh- 問句助動詞？",
     "teach": "How do you…?"
   },
   {
@@ -297,7 +297,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "A",
-    "tip": "Tom and Ken＝複數 → 助動詞。",
+    "tip": "Tom and Ken＝複數：助動詞？",
     "teach": "兩人＝複數用 Do。"
   },
   {
@@ -322,7 +322,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "B",
-    "tip": "she＝單數：助動詞選對之後，後面動詞一定用原形（唔好用三單 -s 形）。",
+    "tip": "she＝單數：助動詞＋後面動詞用原形（唔好用 has／三單形）。",
     "teach": "Does she have…?"
   },
   {
@@ -347,7 +347,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "B",
-    "tip": "your sister＝單數 → 助動詞。",
+    "tip": "your sister＝單數：助動詞？",
     "teach": "What does she do…?"
   },
   {
@@ -372,7 +372,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "A",
-    "tip": "we＝複數 → 助動詞。",
+    "tip": "we＝複數：助動詞？",
     "teach": "Do we + 原形？"
   },
   {
@@ -397,7 +397,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "B",
-    "tip": "mum＝單數 → 助動詞。",
+    "tip": "mum＝單數：助動詞？",
     "teach": "Does your mum…?"
   },
   {
@@ -422,7 +422,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "B",
-    "tip": "he＝單數 → 助動詞。",
+    "tip": "he＝單數：Wh- 問句助動詞？",
     "teach": "Why does he…?"
   },
   {
@@ -447,7 +447,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "A",
-    "tip": "shops＝複數 → 助動詞。",
+    "tip": "shops＝複數：助動詞？",
     "teach": "Do the shops…?"
   },
   {
@@ -472,7 +472,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "B",
-    "tip": "Amy＝單數：助動詞＋後面動詞用原形。",
+    "tip": "Amy＝單數：助動詞＋後面動詞原形。",
     "teach": "Does Amy have…?"
   },
   {
@@ -497,7 +497,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "A",
-    "tip": "you → 習慣問句助動詞。",
+    "tip": "you → 習慣問句助動詞？",
     "teach": "When do you…?"
   },
   {
@@ -522,7 +522,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "B",
-    "tip": "friend＝單數 → 助動詞。",
+    "tip": "friend＝單數：助動詞？",
     "teach": "Does your friend…?"
   },
   {
@@ -547,7 +547,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "A",
-    "tip": "I → 用邊個現在式助動詞？",
+    "tip": "主語 I：現在式助動詞用邊個？（唔係 he／she 嗰套）",
     "teach": "Do I + 原形？"
   },
   {
@@ -572,7 +572,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "C",
-    "tip": "they＝複數：助動詞＋原形。",
+    "tip": "they＝複數：助動詞＋後面動詞原形。",
     "teach": "Do they go…?"
   },
   {
@@ -597,7 +597,7 @@ window.P4_BANK_DO_DOES = [
       }
     ],
     "answer": "B",
-    "tip": "Mum＝單數：助動詞＋原形（唔好 checks）。",
+    "tip": "Mum＝單數：助動詞＋後面動詞原形（唔好用三單 -s 形）。",
     "teach": "Does Mum check…?"
   },
   {

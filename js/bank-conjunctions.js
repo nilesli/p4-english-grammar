@@ -1,4 +1,4 @@
-/** auto bank · r7 · 20261030r7 · tips = 思路 only */
+/** auto bank · r8 tips · 20261030r8 · tips = 思路 only, no answer leak */
 window.P4_BANK_CONJUNCTIONS = [
   {
     "id": "c1",
@@ -22,7 +22,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "A",
-    "tip": "兩人都：用「兩者都…又…」配對連接。",
+    "tip": "兩個人都鍾意：用「兩者都…又…」成對連接，唔係二揀一。",
     "teach": "both A and B。"
   },
   {
@@ -47,7 +47,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "B",
-    "tip": "二揀一：用選擇連接詞。",
+    "tip": "二揀一（果汁定水）：用選擇連接詞。",
     "teach": "A or B。"
   },
   {
@@ -72,7 +72,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "C",
-    "tip": "前因後果：用「所以」類連接詞。",
+    "tip": "前因（攰）→ 後果（早睡）：用「因此／所以」類連接。",
     "teach": "…, so …"
   },
   {
@@ -97,7 +97,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "B",
-    "tip": "前後意思相反：用轉折連接詞。",
+    "tip": "前後意思相反（鍾意 vs 唔鍾意）：用轉折連接。",
     "teach": "… but …"
   },
   {
@@ -122,7 +122,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "A",
-    "tip": "兩人＝「兩者都…又…」結構。",
+    "tip": "兩人都做：用「兩者都…又…」結構。",
     "teach": "both…and。"
   },
   {
@@ -147,7 +147,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "B",
-    "tip": "「否則」會遲到：揀選擇／否則類連接詞。",
+    "tip": "「唔快啲就會遲到」：選擇／否則類連接。",
     "teach": "…, or …（否則）"
   },
   {
@@ -172,7 +172,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "C",
-    "tip": "結果：用因果「所以」類連接詞。",
+    "tip": "落雨 → 留低：前因後果。",
     "teach": "…, so …"
   },
   {
@@ -197,7 +197,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "A",
-    "tip": "雖然矮但強壯：轉折。",
+    "tip": "矮但強壯：意思轉折。",
     "teach": "… but …"
   },
   {
@@ -222,7 +222,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "B",
-    "tip": "選擇：二揀一。",
+    "tip": "菜單二揀一：選擇連接。",
     "teach": "A or B？"
   },
   {
@@ -247,7 +247,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "A",
-    "tip": "兩科都係：用「兩者都…又…」。",
+    "tip": "兩科都係最愛：用「兩者都…又…」。",
     "teach": "both…and。"
   },
   {
@@ -272,7 +272,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "B",
-    "tip": "想玩但先做嘢：轉折。",
+    "tip": "想玩，但要先做完：轉折。",
     "teach": "… but …"
   },
   {
@@ -297,7 +297,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "C",
-    "tip": "因此爸爸幫手：結果。",
+    "tip": "袋重 → 爸爸幫手：結果連接。",
     "teach": "…, so …"
   },
   {
@@ -322,7 +322,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "B",
-    "tip": "二揀一。",
+    "tip": "兩種交通擇一：選擇。",
     "teach": "A or B。"
   },
   {
@@ -372,7 +372,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "B",
-    "tip": "轉折。",
+    "tip": "睇落靚，價錢卻貴：轉折。",
     "teach": "… but …"
   },
   {
@@ -397,7 +397,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "C",
-    "tip": "結果。",
+    "tip": "練習多 → 贏：結果。",
     "teach": "…, so …"
   },
   {
@@ -422,7 +422,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "B",
-    "tip": "選擇。",
+    "tip": "兩張飛擇一：選擇。",
     "teach": "A or B？"
   },
   {
@@ -447,7 +447,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "A",
-    "tip": "兩者都：用「兩者都…又…」。",
+    "tip": "兩種寵物都受歡迎：用「兩者都…又…」。",
     "teach": "both…and。"
   },
   {
@@ -472,7 +472,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "C",
-    "tip": "轉折。",
+    "tip": "打咗電話，對方卻冇接：轉折。",
     "teach": "… but …"
   },
   {
@@ -497,7 +497,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "B",
-    "tip": "否則會凍。",
+    "tip": "唔帶外套就會凍：否則／選擇類。",
     "teach": "…, or …"
   },
   {
@@ -522,7 +522,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "A",
-    "tip": "雖然長但有趣：轉折。",
+    "tip": "片長但有趣：轉折。",
     "teach": "… but …"
   },
   {
@@ -547,7 +547,7 @@ window.P4_BANK_CONJUNCTIONS = [
       }
     ],
     "answer": "C",
-    "tip": "因此擔心：結果。",
+    "tip": "遺失銀包 → 擔心：結果。",
     "teach": "…, so …"
   }
 ];

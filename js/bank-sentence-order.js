@@ -1,4 +1,4 @@
-/** r7 interactive bank · 20261030r7 · 8–12 tokens; tips 唔洩答案詞 */
+/** auto bank · r8 tips · 20261030r8 · tips = 思路 only, no answer leak */
 window.P4_BANK_SENTENCE_ORDER = [
   {
     "id": "so1",
@@ -13,7 +13,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "day",
       "."
     ],
-    "tip": "先搵主語，再接動詞，時間詞多放句末。",
+    "tip": "先排主語＋動詞，習慣時間詞（every day）多放句末。",
     "teach": "陳述句：主語 + 動詞 + 其他 + 句號。"
   },
   {
@@ -29,7 +29,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "time",
       "."
     ],
-    "tip": "likes 後面多數接 V-ing；時間／場合放後面。",
+    "tip": "喜好動詞後面多數接 -ing；場合／時間放後面。",
     "teach": "She likes playing football in her spare time."
   },
   {
@@ -45,7 +45,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "park",
       "?"
     ],
-    "tip": "疑問詞開頭，再用助動詞 + 主語 + 動詞原形。",
+    "tip": "疑問詞開頭 → 助動詞 → 主語 → 動詞原形。",
     "teach": "Where does she live…?"
   },
   {
@@ -61,7 +61,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "class",
       "."
     ],
-    "tip": "比較級：be + -er + than；有 than 線索。",
+    "tip": "比較句：be + 比較級形 + than；見到 than 就知係兩者比。",
     "teach": "Tom is taller than Ken…"
   },
   {
@@ -77,7 +77,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "show",
       "?"
     ],
-    "tip": "禮貌問句：Would you like…？時間放後面。",
+    "tip": "禮貌邀請：Would you like…？時間詞放句末附近。",
     "teach": "Would you like some tea after the show?"
   },
   {
@@ -94,7 +94,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "show",
       "."
     ],
-    "tip": "good at 後面用 V-ing。",
+    "tip": "good at 後面用 -ing 形式。",
     "teach": "She is good at drawing…"
   },
   {
@@ -112,7 +112,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "either",
       "."
     ],
-    "tip": "否定句尾用否定呼應詞；先排 do not like。",
+    "tip": "否定句：先排 do not + 動詞；句尾再用否定呼應詞。",
     "teach": "I do not like … either."
   },
   {
@@ -128,7 +128,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "cinema",
       "."
     ],
-    "tip": "Both A and B 放前面，再接複數動詞。",
+    "tip": "Both A and B 放句前，後面動詞用複數。",
     "teach": "Both Mum and Dad work…"
   },
   {
@@ -144,7 +144,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "time",
       "."
     ],
-    "tip": "頻率副詞放一般動詞前。",
+    "tip": "頻率副詞放喺一般動詞前面。",
     "teach": "She often reads…"
   },
   {
@@ -161,7 +161,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "night",
       "."
     ],
-    "tip": "so 後面要再有主語；過去敍述。",
+    "tip": "so 連接兩句：後面要再有主語；整體係過去敍述。",
     "teach": "I was tired so I slept early last night."
   },
   {
@@ -177,7 +177,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "today",
       "."
     ],
-    "tip": "最高級前要有 the；of all 係線索。",
+    "tip": "最高級形容詞前面要有 the；of all 提示範圍。",
     "teach": "This is the heaviest bag of all…"
   },
   {
@@ -193,7 +193,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "morning",
       "?"
     ],
-    "tip": "How + 助動詞 + 主語 + 動詞。",
+    "tip": "問方式：開頭詞 + 助動詞 + 主語 + 動詞。",
     "teach": "How do you go to school…?"
   },
   {
@@ -211,7 +211,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "shop",
       "."
     ],
-    "tip": "所有格 's 貼喺人稱後面。",
+    "tip": "所有格 's 要貼住人名／人稱後面。",
     "teach": "It is my brother's new bike from the shop."
   },
   {
@@ -227,7 +227,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "show",
       "."
     ],
-    "tip": "be 動詞後面放頻率副詞。",
+    "tip": "be 動詞後面先放頻率副詞。",
     "teach": "He is never late…"
   },
   {
@@ -246,7 +246,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "Sunday",
       "."
     ],
-    "tip": "過去敍述：過去式動詞；時間詞常放句末。",
+    "tip": "過去敍述用過去式動詞；時間詞常放句末。",
     "teach": "We had a picnic … last Sunday."
   },
   {
@@ -263,7 +263,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "list",
       "?"
     ],
-    "tip": "Do you + 動詞；選擇用 or。",
+    "tip": "Do you + 動詞原形；二揀一用 or 連接。",
     "teach": "Do you want apples or oranges…?"
   },
   {
@@ -279,7 +279,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "school",
       "."
     ],
-    "tip": "enjoys 後面接 V-ing。",
+    "tip": "enjoys（已有 -s）後面仍接 -ing。",
     "teach": "She enjoys swimming…"
   },
   {
@@ -294,7 +294,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "too",
       "."
     ],
-    "tip": "肯定呼應詞放句末。",
+    "tip": "肯定句尾呼應詞放句末。",
     "teach": "I am hungry … too."
   },
   {
@@ -311,7 +311,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "menu",
       "?"
     ],
-    "tip": "What would you like to…？",
+    "tip": "What would you like to…？開放問想做／想要咩。",
     "teach": "What would you like to drink…?"
   },
   {
@@ -328,7 +328,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "yesterday",
       "."
     ],
-    "tip": "過去敍述；so 連接兩句，後面要有主語。",
+    "tip": "過去敍述；so 後面要有主語再開新句。",
     "teach": "It was raining so we stayed at home yesterday."
   },
   {
@@ -344,7 +344,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "4A",
       "."
     ],
-    "tip": "最高級形容詞放名詞前。",
+    "tip": "最高級形容詞放喺名詞前面，前面有 the。",
     "teach": "Amy is my best friend…"
   },
   {
@@ -360,7 +360,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "bus",
       "?"
     ],
-    "tip": "Does + 主語 + 動詞原形（唔好用三單 -s 形）。",
+    "tip": "Does + 單數主語 + 動詞原形（唔好再用三單 -s 形）。",
     "teach": "Does he go … by bus?"
   },
   {
@@ -376,7 +376,7 @@ window.P4_BANK_SENTENCE_ORDER = [
       "supermarket",
       "."
     ],
-    "tip": "過去時間詞可放句首；過去式動詞。",
+    "tip": "過去時間詞可放句首；動詞用過去式。",
     "teach": "Last Sunday we bought fruit at the supermarket."
   },
   {
@@ -425,43 +425,105 @@ window.P4_BANK_SENTENCE_ORDER = [
       "park",
       "?"
     ],
-    "tip": "How + does + 單數主語 + 原形。",
+    "tip": "問方式：開頭詞 + does + 單數主語 + 原形。",
     "teach": "How does Tom go…?"
   },
-{
+  {
     "id": "so27",
-    "tokens": ["Mike", "is", "thinner", "than", "me", "in", "our", "class", "."],
-    "tip": "比較級：be + 短詞比較形 + than。",
+    "tokens": [
+      "Mike",
+      "is",
+      "thinner",
+      "than",
+      "me",
+      "in",
+      "our",
+      "class",
+      "."
+    ],
+    "tip": "比較：be + 短詞比較形 + than。",
     "teach": "Mike is thinner than me…"
   },
   {
     "id": "so28",
-    "tokens": ["John", "is", "the", "tallest", "kid", "in", "our", "class", "."],
-    "tip": "最高級前要有 the；in our class 係範圍線索。",
+    "tokens": [
+      "John",
+      "is",
+      "the",
+      "tallest",
+      "kid",
+      "in",
+      "our",
+      "class",
+      "."
+    ],
+    "tip": "最高級前要有 the；in our class 係比較範圍。",
     "teach": "John is the tallest kid in our class."
   },
   {
     "id": "so29",
-    "tokens": ["Bananas", "are", "more", "popular", "than", "cherries", "in", "our", "survey", "."],
-    "tip": "長詞比較：more + 形容詞 + than。",
+    "tokens": [
+      "Bananas",
+      "are",
+      "more",
+      "popular",
+      "than",
+      "cherries",
+      "in",
+      "our",
+      "survey",
+      "."
+    ],
+    "tip": "長詞比較：more + 形容詞 + than（唔好 -er）。",
     "teach": "Bananas are more popular than cherries…"
   },
   {
     "id": "so30",
-    "tokens": ["Sunshine", "Mixed", "Nuts", "is", "the", "most", "expensive", "snack", "."],
+    "tokens": [
+      "Sunshine",
+      "Mixed",
+      "Nuts",
+      "is",
+      "the",
+      "most",
+      "expensive",
+      "snack",
+      "."
+    ],
     "tip": "長詞最高級：the most + 形容詞。",
     "teach": "Sunshine Mixed Nuts is the most expensive…"
   },
   {
     "id": "so31",
-    "tokens": ["Natural", "Raisins", "are", "cheaper", "than", "Cola", "on", "the", "list", "."],
-    "tip": "價錢表比較：短詞 -er + than。",
+    "tokens": [
+      "Natural",
+      "Raisins",
+      "are",
+      "cheaper",
+      "than",
+      "Cola",
+      "on",
+      "the",
+      "list",
+      "."
+    ],
+    "tip": "價錢表兩者比：短詞比較形 + than。",
     "teach": "Natural Raisins are cheaper than Cola…"
   },
   {
     "id": "so32",
-    "tokens": ["How", "about", "a", "picnic", "in", "the", "country", "park", "?"],
-    "tip": "邀請建議：開頭詞 + about + 名詞／活動。",
+    "tokens": [
+      "How",
+      "about",
+      "a",
+      "picnic",
+      "in",
+      "the",
+      "country",
+      "park",
+      "?"
+    ],
+    "tip": "邀請建議：開頭詞 + about + 名詞／活動（唔係問搭車方式）。",
     "teach": "How about a picnic…?"
   }
 ];

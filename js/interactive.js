@@ -1,6 +1,6 @@
 /**
  * Interactive renderers: sentence-order (word tiles) + punctuation (mark slots)
- * r7 · ?v=20261030r7
+ * r8 · ?v=20261030r8
  */
 (function (global) {
   function shuffle(arr, rand) {

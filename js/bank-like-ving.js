@@ -1,4 +1,4 @@
-/** auto bank · r7 · 20261030r7 · tips = 思路 only */
+/** auto bank · r8 tips · 20261030r8 · tips = 思路 only, no answer leak */
 window.P4_BANK_LIKE_VING = [
   {
     "id": "l1",
@@ -22,7 +22,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "like／enjoy／good at／hate／love 後面多數接 V-ing 形式。",
+    "tip": "like／enjoy／good at／hate／love 後面多數接邊種動詞形式？諗 -ing，唔好用原形或亂加 -ed。",
     "teach": "like + V-ing。"
   },
   {
@@ -47,7 +47,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "enjoy 後面接咩動詞形式？諗 -ing。",
+    "tip": "enjoy 後面：喜好後面多數用邊種形式？",
     "teach": "enjoy + V-ing。"
   },
   {
@@ -72,7 +72,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "good at 後面接 V-ing，唔好用原形。",
+    "tip": "good at 後面：擅長後面多數用 -ing，唔好用原形。",
     "teach": "good at + V-ing。"
   },
   {
@@ -97,7 +97,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "love 後面可用 V-ing 講喜好。",
+    "tip": "love 講喜好：後面可用 -ing 形式。",
     "teach": "love + V-ing。"
   },
   {
@@ -122,7 +122,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "hate 後面接 V-ing。",
+    "tip": "hate 後面：厭惡後面多數接 -ing。",
     "teach": "hate + V-ing。"
   },
   {
@@ -147,7 +147,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "good at 後面唔好用原形，要用 -ing。",
+    "tip": "good at 後面唔好用原形——要用 -ing。",
     "teach": "good at + speaking。"
   },
   {
@@ -172,7 +172,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "like + V-ing 講喜好。",
+    "tip": "like + ？講喜好：多數用 -ing。",
     "teach": "like + eating。"
   },
   {
@@ -197,7 +197,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "enjoy 後面加 -ing。",
+    "tip": "enjoy 後面加邊種字尾？",
     "teach": "enjoy + listening。"
   },
   {
@@ -222,7 +222,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "good at + V-ing；否定一樣規則。",
+    "tip": "good at + -ing；否定句一樣規則。",
     "teach": "not good at + doing。"
   },
   {
@@ -247,7 +247,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "like 後面用 V-ing。",
+    "tip": "like 後面用邊種動詞形式講喜好？",
     "teach": "like + playing。"
   },
   {
@@ -272,7 +272,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "love + V-ing。",
+    "tip": "love + -ing 講喜好。",
     "teach": "love + flying。"
   },
   {
@@ -297,7 +297,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "enjoy + V-ing（短詞或要雙寫輔音再加 -ing）。",
+    "tip": "enjoy + -ing；短詞有時要雙寫輔音再加 -ing，睇清楚拼寫。",
     "teach": "enjoy + chatting。"
   },
   {
@@ -322,7 +322,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "good at 後面 V-ing。",
+    "tip": "good at 後面邊種形式？",
     "teach": "good at + V-ing。"
   },
   {
@@ -347,7 +347,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "don't like + V-ing。",
+    "tip": "don't like 後面仍然用 -ing，唔好變返原形。",
     "teach": "like／don't like + V-ing。"
   },
   {
@@ -372,7 +372,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "love + V-ing。",
+    "tip": "love + -ing。",
     "teach": "love + V-ing。"
   },
   {
@@ -397,7 +397,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "good at + V-ing。",
+    "tip": "good at + -ing。",
     "teach": "good at + V-ing。"
   },
   {
@@ -422,7 +422,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "enjoy + V-ing。",
+    "tip": "enjoy + -ing。",
     "teach": "enjoy + V-ing。"
   },
   {
@@ -447,7 +447,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "likes 係主句動詞；後面仍用 V-ing（唔係原形）。",
+    "tip": "likes 係主句動詞（已有 -s）；後面賓語動詞仍用 -ing，唔係原形。",
     "teach": "like + V-ing。"
   },
   {
@@ -472,7 +472,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "hate + V-ing。",
+    "tip": "hate + -ing。",
     "teach": "hate + V-ing。"
   },
   {
@@ -497,7 +497,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "be good at + V-ing。",
+    "tip": "be good at 後面邊種形式？",
     "teach": "good at + V-ing。"
   },
   {
@@ -522,7 +522,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "like + V-ing。",
+    "tip": "like + -ing。",
     "teach": "like + V-ing。"
   },
   {
@@ -547,7 +547,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "enjoy + V-ing。",
+    "tip": "enjoy + -ing。",
     "teach": "enjoy + V-ing。"
   },
   {
@@ -572,7 +572,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "hate 後面接 V-ing。",
+    "tip": "hate 後面接邊種形式？",
     "teach": "hate + V-ing。"
   },
   {
@@ -597,7 +597,7 @@ window.P4_BANK_LIKE_VING = [
       }
     ],
     "answer": "B",
-    "tip": "good at 後面 V-ing，唔好用 to + 原形。",
+    "tip": "good at 後面用 -ing，唔好用 to + 原形。",
     "teach": "good at + V-ing。"
   }
 ];

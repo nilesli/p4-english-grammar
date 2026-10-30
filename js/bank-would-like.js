@@ -1,4 +1,4 @@
-/** auto bank · r7 · 20261030r7 · tips = 思路 only */
+/** auto bank · r8 tips · 20261030r8 · tips = 思路 only, no answer leak */
 window.P4_BANK_WOULD_LIKE = [
   {
     "id": "wl1",
@@ -22,7 +22,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "A",
-    "tip": "禮貌表達「想要」：揀正確助動詞組成 ___ like。",
+    "tip": "禮貌講「想要」：___ like 結構——空格要填邊個助動詞？",
     "teach": "would like + 名詞。"
   },
   {
@@ -47,7 +47,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "呢個結構後面接動詞時用 to + 原形（唔係 V-ing）。",
+    "tip": "呢個「想要」結構後面接動詞時：用不定詞＋原形，定用 -ing？",
     "teach": "would like to + 原形。"
   },
   {
@@ -72,7 +72,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "A",
-    "tip": "禮貌邀請／詢問想唔想要：疑問要倒裝。",
+    "tip": "禮貌問想唔想要：疑問句要倒裝——助動詞放邊？",
     "teach": "Would you like…?"
   },
   {
@@ -97,7 +97,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "問「想要咩」：揀正確助動詞組成 What ___ you like。",
+    "tip": "What ___ you like：問想要咩；助動詞揀邊個組成結構。",
     "teach": "What would you like…?"
   },
   {
@@ -122,7 +122,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "有選擇：Which… ___ you like？揀正確助動詞。",
+    "tip": "Which… ___ you like：有選擇時同一套助動詞。",
     "teach": "Which … would you like?"
   },
   {
@@ -147,7 +147,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "A",
-    "tip": "平時喜好用 like；「而家想要」要用另一個結構 + like。",
+    "tip": "平時喜好用 like 就得；「而家想要」要用另一套 ___ like 結構。",
     "teach": "like＝喜好；would like＝想要。"
   },
   {
@@ -172,7 +172,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "呢個結構 + to + 原形。",
+    "tip": "呢個結構後面動詞：不定詞＋原形。",
     "teach": "would like to + 原形。"
   },
   {
@@ -197,7 +197,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "疑問要倒裝：助動詞放句首再接 you like…？",
+    "tip": "疑問倒裝：助動詞放句首，再接人稱 + like…？",
     "teach": "Would you like…?"
   },
   {
@@ -222,7 +222,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "呢個結構 + to + 原形。",
+    "tip": "呢個結構後面：不定詞＋原形。",
     "teach": "to + 原形。"
   },
   {
@@ -247,7 +247,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "呢個結構 + to + 原形。",
+    "tip": "呢個結構後面：不定詞＋原形（飲品）。",
     "teach": "What would … like to …?"
   },
   {
@@ -272,7 +272,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "括號 habit＝平時喜好，唔係此刻想要。",
+    "tip": "括號 habit＝平時喜好，唔係此刻「想要」——用邊個動詞就夠？",
     "teach": "like＝喜好；would like＝此刻想要。"
   },
   {
@@ -297,7 +297,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "已畀兩個選擇：用「有限選擇」疑問詞。",
+    "tip": "已畀兩個選擇：用「有限選擇」疑問詞開頭。",
     "teach": "Which … would you like?"
   },
   {
@@ -322,7 +322,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "orange 母音開頭：冠詞要配合讀音揀（母音開頭用邊個）。",
+    "tip": "果名以母音開頭：冠詞跟讀音走——母音開頭同輔音開頭分別用邊個？",
     "teach": "a／an 配合讀音。"
   },
   {
@@ -347,7 +347,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "A",
-    "tip": "縮寫 I'd like 等於「我想要」+ 名詞片語。",
+    "tip": "縮寫 I'd like＝「我想要」+ 名詞片語；揀完整茶類片語。",
     "teach": "I'd like + 名詞。"
   },
   {
@@ -372,7 +372,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "A",
-    "tip": "邀請：句首助動詞倒裝，再接 you like to…？",
+    "tip": "邀請：句首助動詞倒裝 + you like to…？",
     "teach": "Would you like to + V。"
   },
   {
@@ -397,7 +397,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "呢個結構 + to + 原形。",
+    "tip": "呢個結構後面：不定詞＋原形。",
     "teach": "to + 原形。"
   },
   {
@@ -422,7 +422,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "禮貌拒絕：用呢個結構嘅否定縮寫。",
+    "tip": "禮貌拒絕：用呢個結構嘅否定縮寫形。",
     "teach": "wouldn't like…"
   },
   {
@@ -472,7 +472,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "此刻想食：呢個結構 + to + 原形。",
+    "tip": "此刻想食：呢個結構＋不定詞＋原形。",
     "teach": "喜好 like ≠ 想要 would like to。"
   },
   {
@@ -497,7 +497,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "答句講位置；揀問地點嘅疑問詞。",
+    "tip": "答句講位置：問地點類疑問詞。",
     "teach": "Where would you like…?"
   },
   {
@@ -522,7 +522,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "B",
-    "tip": "邀請結構：… like + to + 原形。",
+    "tip": "邀請：… like 後面再接不定詞＋原形。",
     "teach": "to + 原形。"
   },
   {
@@ -547,7 +547,7 @@ window.P4_BANK_WOULD_LIKE = [
       }
     ],
     "answer": "A",
-    "tip": "開放問想要咩（無限定清單）用問事物嘅疑問詞。",
+    "tip": "開放問想要咩（無限定清單）：問事物類疑問詞。",
     "teach": "What … would you like?"
   }
 ];

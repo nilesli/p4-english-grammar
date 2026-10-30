@@ -1,7 +1,4 @@
-/**
- * 小四英文温習 · Tenses 題庫（現在式＋過去式混題）
- * r7 · 20261030r7 · tips = 思路 only（唔寫死正確動詞形）
- */
+/** auto bank · r8 tips · 20261030r8 · tips = 思路 only, no answer leak */
 window.P4_BANK_TENSES = [
   {
     "id": "t1",
@@ -25,7 +22,7 @@ window.P4_BANK_TENSES = [
       }
     ],
     "answer": "A",
-    "tip": "睇括號 now：講而家狀態，用現在式 be；主語 Mum 單數。",
+    "tip": "括號 now：講而家狀態 → 現在式 be；主語 Mum 單數定複數？",
     "teach": "現在式：講而家狀態用 is／am／are。"
   },
   {
@@ -50,7 +47,7 @@ window.P4_BANK_TENSES = [
       }
     ],
     "answer": "C",
-    "tip": "有 Last night：呢件事先發生咗，用過去式（規則動詞加 -ed）。",
+    "tip": "有 Last night：事先發生 → 過去式；規則動詞多數加邊種字尾？",
     "teach": "過去式：有 last night／yesterday／ago。"
   },
   {
@@ -75,7 +72,7 @@ window.P4_BANK_TENSES = [
       }
     ],
     "answer": "C",
-    "tip": "有 yesterday afternoon：清楚過去；eat 係不規則，要記特別過去形。",
+    "tip": "有 yesterday afternoon：清楚過去；eat 唔係加 -ed 嗰類——記不規則過去形。",
     "teach": "不規則動詞：eat 嘅過去式唔係 eated。"
   },
   {
@@ -100,7 +97,7 @@ window.P4_BANK_TENSES = [
       }
     ],
     "answer": "A",
-    "tip": "講而家喜好用現在式否定；主語係 I（唔係 he／she）。",
+    "tip": "講而家喜好用現在式否定；主語係 I（唔係 he／she）→ 否定助動詞點揀？",
     "teach": "I／you／we／they → don't；he／she／it → doesn't。"
   },
   {
@@ -125,7 +122,7 @@ window.P4_BANK_TENSES = [
       }
     ],
     "answer": "C",
-    "tip": "有 Yesterday：過去；主語 we＝複數 → 揀正確 be 過去形（單數／複數）。",
+    "tip": "有 Yesterday：過去 be；主語 we＝複數 → 單數／複數過去 be 分清。",
     "teach": "be 過去：I／he／she／it → was；you／we／they → were。"
   },
   {
@@ -175,7 +172,7 @@ window.P4_BANK_TENSES = [
       }
     ],
     "answer": "B",
-    "tip": "often／on Mondays 係習慣：用現在式；主語 She → 動詞要加 -s。",
+    "tip": "often／on Mondays＝習慣 → 現在式；主語 She → 動詞要唔要加 -s？",
     "teach": "習慣 → 現在式；he／she／it 加 -s。"
   },
   {
@@ -225,7 +222,7 @@ window.P4_BANK_TENSES = [
       }
     ],
     "answer": "B",
-    "tip": "at weekends 係習慣；主語 Sam＝單數 → 現在式助動詞選邊個；後面 go 原形。",
+    "tip": "at weekends＝習慣；主語 Sam＝單數 → 現在式助動詞？後面 go 原形。",
     "teach": "he／she／名字 → Does + 原形。"
   },
   {
@@ -250,7 +247,7 @@ window.P4_BANK_TENSES = [
       }
     ],
     "answer": "C",
-    "tip": "有 last year：過去問句用邊個助動詞；後面動詞保持原形。",
+    "tip": "有 last year：過去問句用邊個助動詞？後面動詞保持原形。",
     "teach": "Did + 主語 + 動詞原形。"
   },
   {
@@ -275,7 +272,7 @@ window.P4_BANK_TENSES = [
       }
     ],
     "answer": "C",
-    "tip": "有 Last Sunday：唔好用原形，規則動詞變過去。",
+    "tip": "有 Last Sunday：唔好用原形；規則動詞變過去。",
     "teach": "細妹常見錯：見到過去時間詞仍寫現在式。"
   },
   {
@@ -300,7 +297,7 @@ window.P4_BANK_TENSES = [
       }
     ],
     "answer": "A",
-    "tip": "括號 now：問而家價錢；curry 單數。",
+    "tip": "括號 now：問而家價錢；curry 單數 → be 現在式邊個？",
     "teach": "問而家事實用現在式。"
   },
   {
@@ -325,7 +322,7 @@ window.P4_BANK_TENSES = [
       }
     ],
     "answer": "B",
-    "tip": "every day 習慣：現在式；主語 He → 加 -s。",
+    "tip": "every day＝習慣：現在式；主語 He → 加 -s。",
     "teach": "第三人稱單數加 -s／-es。"
   },
   {
@@ -375,7 +372,7 @@ window.P4_BANK_TENSES = [
       }
     ],
     "answer": "C",
-    "tip": "故事已經發生：過去式；run 係不規則。",
+    "tip": "故事已發生：過去式；run 係不規則。",
     "teach": "寫作故事多數用過去式。"
   },
   {
@@ -400,7 +397,7 @@ window.P4_BANK_TENSES = [
       }
     ],
     "answer": "A",
-    "tip": "講平時喜好：現在式；主語 I。",
+    "tip": "講平時喜好：現在式；主語 I → 原形（唔加 -s）。",
     "teach": "喜好／習慣通常用現在式。"
   },
   {
@@ -450,7 +447,7 @@ window.P4_BANK_TENSES = [
       }
     ],
     "answer": "A",
-    "tip": "括號 habit：而家習慣；主語 you。",
+    "tip": "括號 habit：而家習慣；主語 you → 助動詞？",
     "teach": "I／you／we／they 問句用 Do。"
   },
   {
@@ -475,7 +472,7 @@ window.P4_BANK_TENSES = [
       }
     ],
     "answer": "B",
-    "tip": "講舊相同 then：兩格都係過去；主語 she。",
+    "tip": "講舊時 then：兩格都係過去 be；主語 she 單數。",
     "teach": "講過去年齡用 was／were。"
   },
   {
@@ -500,7 +497,7 @@ window.P4_BANK_TENSES = [
       }
     ],
     "answer": "B",
-    "tip": "括號 habit：平時能力用現在式；主語 Mum → 加 -s。",
+    "tip": "括號 habit：平時；主語 Mum → 動詞加 -s。",
     "teach": "一般事實／能力用現在式。"
   },
   {
@@ -550,7 +547,7 @@ window.P4_BANK_TENSES = [
       }
     ],
     "answer": "B",
-    "tip": "有 now：而家正在發生 → 用 be + V-ing。",
+    "tip": "有 now：而家正在發生 → be + V-ing；主語複數用邊個 be？",
     "teach": "而家正在做：be + V-ing。"
   },
   {
@@ -600,7 +597,7 @@ window.P4_BANK_TENSES = [
       }
     ],
     "answer": "B",
-    "tip": "括號 now；主語 rooms 複數。",
+    "tip": "括號 now；主語 rooms 複數 → be 現在式邊個？",
     "teach": "複數主語用 are／were。"
   }
 ];

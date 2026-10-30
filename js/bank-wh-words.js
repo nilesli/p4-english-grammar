@@ -1,4 +1,4 @@
-/** auto bank · r7 · 20261030r7 · tips = 思路 only */
+/** auto bank · r8 tips · 20261030r8 · tips = 思路 only, no answer leak */
 window.P4_BANK_WH_WORDS = [
   {
     "id": "w1",
@@ -22,7 +22,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "A",
-    "tip": "答句會講「咩嘢／邊樣資料」；睇題問嘅係內容定人名／地點。",
+    "tip": "睇答句會講咩：事物／資料、人名、定地點？先決定問邊類。",
     "teach": "What → 問事物／資料。What is on the menu…?"
   },
   {
@@ -47,7 +47,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "B",
-    "tip": "答句會講地點；諗「喺邊度」類疑問詞。",
+    "tip": "答句會講地點或位置——問「喺邊」類，唔係問人或原因。",
     "teach": "Where → 問地方。Where do you spend…?"
   },
   {
@@ -72,7 +72,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "C",
-    "tip": "答句會講時間／鐘點；揀問時間嘅疑問詞。",
+    "tip": "答句會講時間／鐘點——問時間類疑問詞。",
     "teach": "When → 問時間。"
   },
   {
@@ -97,7 +97,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "D",
-    "tip": "答句會講人名／邊個；揀問人嘅疑問詞。",
+    "tip": "答句會講人名／邊個做——問人類。",
     "teach": "Who → 問人。"
   },
   {
@@ -122,7 +122,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "C",
-    "tip": "答句會講原因；揀問原因嘅疑問詞。",
+    "tip": "答句會講原因——問「點解」類。",
     "teach": "Why → 問原因。"
   },
   {
@@ -147,7 +147,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "A",
-    "tip": "答句會講方式（搭車／步行等）；揀問方法嘅疑問詞。",
+    "tip": "答句會講搭車／步行等「點樣去」——問方式，唔係邀請建議。",
     "teach": "How → 問方法／情況。"
   },
   {
@@ -172,7 +172,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "B",
-    "tip": "後面有 often：問「幾耐一次」；揀同頻率一齊用嘅疑問詞。",
+    "tip": "後面有 often：成個片語問「幾耐一次」；開頭詞要同頻率一齊用。",
     "teach": "How often → 問多久一次。"
   },
   {
@@ -197,7 +197,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "B",
-    "tip": "後面有 many + 複數名詞：問可數數量；揀配 many 嘅疑問詞。",
+    "tip": "後面 many + 複數名詞：問可數「有幾多」；開頭詞要配 many。",
     "teach": "How many + 複數名詞。"
   },
   {
@@ -222,7 +222,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "B",
-    "tip": "答句講「邊個嘅」；揀問擁有者嘅疑問詞。",
+    "tip": "答句講「邊個嘅」——問擁有者。",
     "teach": "Whose → 問擁有。"
   },
   {
@@ -247,7 +247,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "B",
-    "tip": "題目已畀兩個選擇；揀「有限範圍入面揀邊樣」嘅疑問詞。",
+    "tip": "題目已畀兩個選擇：有限範圍入面揀邊樣，唔係開放問事物。",
     "teach": "Which → 有限選擇。"
   },
   {
@@ -272,7 +272,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "A",
-    "tip": "後面有 time：問鐘點；揀同 time 一齊用嘅疑問詞。",
+    "tip": "後面有 time：問鐘點；開頭詞要同 time 一齊用。",
     "teach": "What time…?"
   },
   {
@@ -297,7 +297,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "B",
-    "tip": "答句講位置；揀問地點嘅疑問詞。",
+    "tip": "答句講位置／地方——問地點類。",
     "teach": "Where is…?"
   },
   {
@@ -322,7 +322,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "C",
-    "tip": "答句講原因；揀問原因嘅疑問詞。",
+    "tip": "答句講原因——問「點解」類。",
     "teach": "Why did…?"
   },
   {
@@ -347,7 +347,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "B",
-    "tip": "答句講邊個人做動作；揀問人嘅疑問詞。",
+    "tip": "答句講邊個人做動作——問人類。",
     "teach": "Who is…?"
   },
   {
@@ -372,7 +372,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "B",
-    "tip": "問價錢／不可數數量；後面有 much，揀配 much 嘅疑問詞。",
+    "tip": "後面有 much，又講價錢／不可數份量：開頭詞要配 much（價錢線索），唔係問人／地。",
     "teach": "How much…?（價錢／不可數）"
   },
   {
@@ -397,7 +397,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "A",
-    "tip": "問顏色／性質；揀同 colour 一齊用嘅疑問詞。",
+    "tip": "後面有 colour：問顏色／性質；開頭詞要同 colour 一齊用。",
     "teach": "What colour…?"
   },
   {
@@ -422,7 +422,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "B",
-    "tip": "答句講地點；揀問地方嘅疑問詞。",
+    "tip": "答句講地點——問地方類。",
     "teach": "Where do you…?"
   },
   {
@@ -447,7 +447,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "B",
-    "tip": "後面有 old：問年紀；揀配 old 嘅疑問詞。",
+    "tip": "後面有 old：問年紀；開頭詞要配 old。",
     "teach": "How old…?"
   },
   {
@@ -472,7 +472,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "B",
-    "tip": "已畀兩個巴士號選擇；揀「有限選擇」疑問詞。",
+    "tip": "已畀兩個巴士號：有限選擇入面揀，唔係開放問事物。",
     "teach": "Which + 名詞。"
   },
   {
@@ -497,7 +497,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "A",
-    "tip": "問「有咩事／咩問題」；揀問事物嘅疑問詞。",
+    "tip": "問「有咩事／咩問題」——問事物／情況類。",
     "teach": "What is the matter?"
   },
   {
@@ -522,7 +522,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "B",
-    "tip": "後面有 long：問需時幾耐；揀配 long 嘅疑問詞。",
+    "tip": "後面有 long：問需時幾耐；開頭詞要配 long。",
     "teach": "How long…?"
   },
   {
@@ -547,7 +547,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "B",
-    "tip": "答句講邊個人做「寫」呢個動作；揀問人嘅疑問詞。",
+    "tip": "答句講邊個人做「寫」——問人類。",
     "teach": "Who + 動詞…?"
   },
   {
@@ -572,7 +572,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "B",
-    "tip": "問價錢；後面有 much，揀配 much 嘅疑問詞。",
+    "tip": "購物問價錢，後面有 much：靠價錢／much 線索揀開頭詞，唔好寫死單一英文詞。",
     "teach": "How much…? 問價錢。"
   },
   {
@@ -597,7 +597,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "A",
-    "tip": "答句講搭車定步行等「方式」；揀問方法嘅疑問詞。",
+    "tip": "答句講搭車定步行——問出行方式，唔係「約＋about」邀請。",
     "teach": "How → 問方式。"
   },
   {
@@ -622,7 +622,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "B",
-    "tip": "many + 複數：問可數數量；揀配 many 嘅疑問詞。",
+    "tip": "many + 複數：問可數數量；開頭詞配 many。",
     "teach": "How many + 複數名詞。"
   },
   {
@@ -647,7 +647,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "B",
-    "tip": "milk 不可數＋much：問不可數數量／份量。",
+    "tip": "milk 不可數＋much：問份量／不可數「幾多」；開頭詞配 much。",
     "teach": "How much + 不可數名詞。"
   },
   {
@@ -672,7 +672,7 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "A",
-    "tip": "答句講感覺／程度（tired／happy…）；揀問狀態嘅疑問詞。",
+    "tip": "答句講感覺／狀態（累、開心等）——問狀態／程度類。",
     "teach": "How → 問情況／感覺。"
   },
   {
@@ -697,137 +697,257 @@ window.P4_BANK_WH_WORDS = [
       }
     ],
     "answer": "B",
-    "tip": "menu 價錢：問「幾錢」；揀配 much 嘅疑問詞。",
+    "tip": "menu 價錢：much／價錢線索，開頭詞要配得上。",
     "teach": "How much is…?"
   },
-{
+  {
     "id": "w29",
     "prompt": "At the supermarket: ______ much is this carton of soya milk?",
     "options": [
-      {"value": "A", "label": "A. What"},
-      {"value": "B", "label": "B. How"},
-      {"value": "C", "label": "C. Which"},
-      {"value": "D", "label": "D. Where"}
+      {
+        "value": "A",
+        "label": "A. What"
+      },
+      {
+        "value": "B",
+        "label": "B. How"
+      },
+      {
+        "value": "C",
+        "label": "C. Which"
+      },
+      {
+        "value": "D",
+        "label": "D. Where"
+      }
     ],
     "answer": "B",
-    "tip": "購物問價錢；後面有 much，揀配 much 嘅疑問詞家族。",
+    "tip": "超市問價錢；後面 much——用價錢線索，唔係問地點或人。",
     "teach": "How much is…? 問價錢。"
   },
   {
     "id": "w30",
     "prompt": "Shopkeeper: Can I help you? Customer: ______ is the peanut butter, please?",
     "options": [
-      {"value": "A", "label": "A. What"},
-      {"value": "B", "label": "B. Where"},
-      {"value": "C", "label": "C. When"},
-      {"value": "D", "label": "D. Who"}
+      {
+        "value": "A",
+        "label": "A. What"
+      },
+      {
+        "value": "B",
+        "label": "B. Where"
+      },
+      {
+        "value": "C",
+        "label": "C. When"
+      },
+      {
+        "value": "D",
+        "label": "D. Who"
+      }
     ],
     "answer": "B",
-    "tip": "答句會講貨架位置；揀問地點嘅疑問詞。",
+    "tip": "答句會講貨架喺邊——問地點。",
     "teach": "Where is…? 問位置。"
   },
   {
     "id": "w31",
     "prompt": "______ put this chocolate on our shopping list?",
     "options": [
-      {"value": "A", "label": "A. What"},
-      {"value": "B", "label": "B. Who"},
-      {"value": "C", "label": "C. Where"},
-      {"value": "D", "label": "D. When"}
+      {
+        "value": "A",
+        "label": "A. What"
+      },
+      {
+        "value": "B",
+        "label": "B. Who"
+      },
+      {
+        "value": "C",
+        "label": "C. Where"
+      },
+      {
+        "value": "D",
+        "label": "D. When"
+      }
     ],
     "answer": "B",
-    "tip": "答句講邊個人做「放」呢個動作；揀問人嘅疑問詞。",
+    "tip": "答句講邊個人「放」——問人。",
     "teach": "Who + 動詞…?"
   },
   {
     "id": "w32",
     "prompt": "______ do we need from the bakery — bread or cakes?",
     "options": [
-      {"value": "A", "label": "A. What"},
-      {"value": "B", "label": "B. Where"},
-      {"value": "C", "label": "C. Who"},
-      {"value": "D", "label": "D. When"}
+      {
+        "value": "A",
+        "label": "A. What"
+      },
+      {
+        "value": "B",
+        "label": "B. Where"
+      },
+      {
+        "value": "C",
+        "label": "C. Who"
+      },
+      {
+        "value": "D",
+        "label": "D. When"
+      }
     ],
     "answer": "A",
-    "tip": "答句講需要咩嘢；揀問事物／資料嘅疑問詞。",
+    "tip": "答句講需要咩嘢——問事物／資料。",
     "teach": "What do we need…?"
   },
   {
     "id": "w33",
     "prompt": "______ are these grapes so expensive today?",
     "options": [
-      {"value": "A", "label": "A. What"},
-      {"value": "B", "label": "B. Where"},
-      {"value": "C", "label": "C. Why"},
-      {"value": "D", "label": "D. Who"}
+      {
+        "value": "A",
+        "label": "A. What"
+      },
+      {
+        "value": "B",
+        "label": "B. Where"
+      },
+      {
+        "value": "C",
+        "label": "C. Why"
+      },
+      {
+        "value": "D",
+        "label": "D. Who"
+      }
     ],
     "answer": "C",
-    "tip": "答句講原因；揀問原因嘅疑問詞。",
+    "tip": "答句講原因——問「點解」類。",
     "teach": "Why are…?"
   },
   {
     "id": "w34",
     "prompt": "______ do you usually pay at the supermarket — by Octopus or cash?",
     "options": [
-      {"value": "A", "label": "A. How"},
-      {"value": "B", "label": "B. Who"},
-      {"value": "C", "label": "C. Which"},
-      {"value": "D", "label": "D. Whose"}
+      {
+        "value": "A",
+        "label": "A. How"
+      },
+      {
+        "value": "B",
+        "label": "B. Who"
+      },
+      {
+        "value": "C",
+        "label": "C. Which"
+      },
+      {
+        "value": "D",
+        "label": "D. Whose"
+      }
     ],
     "answer": "A",
-    "tip": "答句講付款方式；揀問方法嘅疑問詞（唔係邀請建議）。",
+    "tip": "答句講付款方式（現金／卡等）——問「點樣做」；同「約＋about」邀請句分開。",
     "teach": "How → 問方式。"
   },
   {
     "id": "w35",
     "prompt": "We have finished shopping. ______ about a picnic in the country park this Sunday?",
     "options": [
-      {"value": "A", "label": "A. How"},
-      {"value": "B", "label": "B. What"},
-      {"value": "C", "label": "C. Why"},
-      {"value": "D", "label": "D. Who"}
+      {
+        "value": "A",
+        "label": "A. How"
+      },
+      {
+        "value": "B",
+        "label": "B. What"
+      },
+      {
+        "value": "C",
+        "label": "C. Why"
+      },
+      {
+        "value": "D",
+        "label": "D. Who"
+      }
     ],
     "answer": "A",
-    "tip": "呢句係「邀請／建議去做某事」，唔係問搭車方式；揀「約＋about」嗰個疑問詞家族。",
+    "tip": "呢句係邀請／建議去做某事（後面有 about＋活動），唔係問搭車方式或價錢。",
     "teach": "How about + 名詞／V-ing？＝建議。"
   },
   {
     "id": "w36",
     "prompt": "Mum: ______ about ordering dessert after dinner? Tom: Great idea!",
     "options": [
-      {"value": "A", "label": "A. How"},
-      {"value": "B", "label": "B. Where"},
-      {"value": "C", "label": "C. When"},
-      {"value": "D", "label": "D. Who"}
+      {
+        "value": "A",
+        "label": "A. How"
+      },
+      {
+        "value": "B",
+        "label": "B. Where"
+      },
+      {
+        "value": "C",
+        "label": "C. When"
+      },
+      {
+        "value": "D",
+        "label": "D. Who"
+      }
     ],
     "answer": "A",
-    "tip": "答句係同意建議；揀「約＋about」嘅邀請句型開頭詞，唔係問地方／時間。",
+    "tip": "答句係同意建議；句型係「約／提議＋about＋內容」，唔係問地方或時間。",
     "teach": "How about ordering…?"
   },
   {
     "id": "w37",
     "prompt": "______ about some orange juice with our picnic snacks?",
     "options": [
-      {"value": "A", "label": "A. How"},
-      {"value": "B", "label": "B. What"},
-      {"value": "C", "label": "C. Which"},
-      {"value": "D", "label": "D. Why"}
+      {
+        "value": "A",
+        "label": "A. How"
+      },
+      {
+        "value": "B",
+        "label": "B. What"
+      },
+      {
+        "value": "C",
+        "label": "C. Which"
+      },
+      {
+        "value": "D",
+        "label": "D. Why"
+      }
     ],
     "answer": "A",
-    "tip": "建議加飲品；留意同「問方式」唔同——呢度 about 後面係建議內容，揀邀請建議句型開頭。",
+    "tip": "建議加飲品：about 後面係建議內容——邀請建議句型，同「問出行方式」唔同。",
     "teach": "How about some…?"
   },
   {
     "id": "w38",
     "prompt": "Friend: ______ about watching a show at the cinema tonight? You: Sorry, I am busy.",
     "options": [
-      {"value": "A", "label": "A. How"},
-      {"value": "B", "label": "B. Who"},
-      {"value": "C", "label": "C. Where"},
-      {"value": "D", "label": "D. Whose"}
+      {
+        "value": "A",
+        "label": "A. How"
+      },
+      {
+        "value": "B",
+        "label": "B. Who"
+      },
+      {
+        "value": "C",
+        "label": "C. Where"
+      },
+      {
+        "value": "D",
+        "label": "D. Whose"
+      }
     ],
     "answer": "A",
-    "tip": "朋友提出活動建議；揀「約＋about」邀請句開頭，唔係問人／地。",
+    "tip": "朋友提出活動建議：開頭係邀請建議＋about，唔係問人／地／價錢。",
     "teach": "How about watching…?"
   }
 ];

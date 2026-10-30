@@ -1,4 +1,4 @@
-/** auto bank · r7 · 20261030r7 · tips = 思路 only */
+/** auto bank · r8 tips · 20261030r8 · tips = 思路 only, no answer leak */
 window.P4_BANK_FREQUENCY = [
   {
     "id": "f1",
@@ -22,7 +22,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "B",
-    "tip": "括號 every night＝每次都做：揀「總是」類頻率詞。",
+    "tip": "括號寫 every night：成日／每一晚都會做？定間中、定幾乎唔會？先排除兩邊極端。",
     "teach": "always＝總是。"
   },
   {
@@ -47,7 +47,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "C",
-    "tip": "後句話佢早到：遲到頻率應該係「從不」。",
+    "tip": "後句話佢早到：咁「遲到」呢件事發生嘅機會係成日、多數、定係幾乎零？",
     "teach": "never＝從不。"
   },
   {
@@ -72,7 +72,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "C",
-    "tip": "多數會但非每天：揀「通常」類。",
+    "tip": "後句 but not every day：即唔係「每一次都」，亦唔係「從來唔會」——多數會但留有例外。",
     "teach": "usually＝通常。"
   },
   {
@@ -97,7 +97,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "A",
-    "tip": "講「經常」做hobby。",
+    "tip": "講 spare time／Sundays 嘅習慣：係成日、多數、間中、定幾乎唔會？句意偏「好常見」。",
     "teach": "often＝經常。"
   },
   {
@@ -122,7 +122,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "B",
-    "tip": "只係特別日子先食＝間中。",
+    "tip": "Only on special days：即唔係成日、亦唔係零——間中先發生。",
     "teach": "sometimes＝有時。"
   },
   {
@@ -147,7 +147,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "B",
-    "tip": "頻率副詞位置：be 動詞後面。",
+    "tip": "括號已標頻率程度；留意空格喺 be 動詞後面——頻率詞要貼住 be。",
     "teach": "is／am／are + always。"
   },
   {
@@ -172,7 +172,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "B",
-    "tip": "一般動詞：頻率副詞放動詞前面。",
+    "tip": "括號標「好常見」；一般動詞前：頻率詞放喺動詞前面定後面？",
     "teach": "often + 動詞。"
   },
   {
@@ -197,7 +197,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "C",
-    "tip": "佢好小心＝從不忘記。",
+    "tip": "後句話佢好小心：忘記呢件事嘅機會係高定幾乎零？",
     "teach": "never。"
   },
   {
@@ -222,7 +222,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "A",
-    "tip": "多數逢星期五＝通常。",
+    "tip": "多數逢星期五都會：唔係「每一次」、亦唔係「從來唔」——偏向「大多數時候」。",
     "teach": "usually。"
   },
   {
@@ -247,7 +247,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "A",
-    "tip": "be 後放頻率詞；每次都肚餓。",
+    "tip": "每次都肚餓：程度係成日做？空格喺 be 後面，頻率詞貼住 be。",
     "teach": "I am always…"
   },
   {
@@ -272,7 +272,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "A",
-    "tip": "間中去。",
+    "tip": "間中先去：唔係成日、唔係零；揀「有時會」嗰個程度。",
     "teach": "sometimes。"
   },
   {
@@ -297,7 +297,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "A",
-    "tip": "一般動詞前：頻率詞 + 動詞。",
+    "tip": "「經常幫忙」：一般動詞前放頻率詞再接動詞，唔好拆錯位置。",
     "teach": "主語 + often + V。"
   },
   {
@@ -322,7 +322,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "A",
-    "tip": "有時會喊；揀正確拼寫嘅頻率副詞。",
+    "tip": "「有時會喊」：程度係間中；再睇清楚邊個選項拼寫啱。",
     "teach": "sometimes（一字）。"
   },
   {
@@ -347,7 +347,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "C",
-    "tip": "唔鍾意＝從不。",
+    "tip": "唔鍾意某樣嘢：做嗰樣嘅機會係高定幾乎零？",
     "teach": "never。"
   },
   {
@@ -372,7 +372,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "A",
-    "tip": "總準時完成。",
+    "tip": "逢次都準時完成：程度係成日都會？先排除「幾乎唔會」「間中」。",
     "teach": "always + finishes。"
   },
   {
@@ -397,7 +397,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "A",
-    "tip": "be 後：are + 頻率詞。",
+    "tip": "are 後面要放頻率詞；句意係「大多數時候」唔係「每一次」或「零」。",
     "teach": "are usually…"
   },
   {
@@ -422,7 +422,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "A",
-    "tip": "問「幾耐一次」：揀問頻率嘅片語。",
+    "tip": "呢題問「幾耐一次／有幾頻密」——揀問頻率嘅片語，唔係問地點或原因。",
     "teach": "How often…?"
   },
   {
@@ -447,7 +447,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "C",
-    "tip": "落雨唔步行＝從不。",
+    "tip": "落雨就唔步行：步行呢件事喺呢個情況係成日、定幾乎唔會？",
     "teach": "never。"
   },
   {
@@ -472,7 +472,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "A",
-    "tip": "經常幫忙。",
+    "tip": "「經常幫忙」：程度偏高但未必每一次——同「幾乎零」「間中」分開。",
     "teach": "often + helps。"
   },
   {
@@ -497,7 +497,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "B",
-    "tip": "一個月一次左右＝間中。",
+    "tip": "一個月左右一次：頻率偏低但仍會發生——唔係成日、亦唔係零。",
     "teach": "sometimes。"
   },
   {
@@ -522,7 +522,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "A",
-    "tip": "is + 頻率詞；逢星期日都忙。",
+    "tip": "逢星期日都忙：程度係成日；空格喺 is 後面，頻率詞貼住 be。",
     "teach": "be + always。"
   },
   {
@@ -547,7 +547,7 @@ window.P4_BANK_FREQUENCY = [
       }
     ],
     "answer": "B",
-    "tip": "幾乎每天＝通常。",
+    "tip": "幾乎每天：偏向「大多數時候」，唔等於「每一次都」或「間中先」。",
     "teach": "usually。"
   }
 ];
