@@ -1,4 +1,4 @@
-/** auto bank · r8 tips · 20261030r8 · tips = 思路 only, no answer leak */
+/** auto bank · r9 weakspot · 20261101r9 · tips = 思路 only, no answer leak */
 window.P4_BANK_QUANTIFIERS = [
   {
     "id": "q1",
@@ -449,5 +449,205 @@ window.P4_BANK_QUANTIFIERS = [
     "answer": "A",
     "tip": "兩格：麵包用邊種「成條」量詞？花生醬用邊種「糊狀樽裝」？各自對應，唔好互換。",
     "teach": "a loaf of bread；a jar of peanut butter。"
+  },
+  {
+    "id": "q19",
+    "prompt": "Mum put ______ peanut butter next to the bread. (thick paste in a wide pot)",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. a tin of"
+      },
+      {
+        "value": "B",
+        "label": "B. a jar of"
+      },
+      {
+        "value": "C",
+        "label": "C. a bar of"
+      },
+      {
+        "value": "D",
+        "label": "D. a box of"
+      }
+    ],
+    "answer": "B",
+    "tip": "糊狀廣口樽裝醬料——同金屬罐、成條、紙盒分清，唔好見『罐』就亂揀。",
+    "teach": "a jar of peanut butter（唔係 a tin of）。"
+  },
+  {
+    "id": "q20",
+    "prompt": "Which is the usual match for peanut butter?",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. a tin of peanut butter"
+      },
+      {
+        "value": "B",
+        "label": "B. a bar of peanut butter"
+      },
+      {
+        "value": "C",
+        "label": "C. a jar of peanut butter"
+      },
+      {
+        "value": "D",
+        "label": "D. a loaf of peanut butter"
+      }
+    ],
+    "answer": "C",
+    "tip": "花生醬＝糊狀：諗廣口樽，唔好用金屬罐或長條形量詞。",
+    "teach": "a jar of peanut butter。"
+  },
+  {
+    "id": "q21",
+    "prompt": "Tom bought ______ chocolate for himself. (one long piece, not many small ones)",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. a box of"
+      },
+      {
+        "value": "B",
+        "label": "B. a jar of"
+      },
+      {
+        "value": "C",
+        "label": "C. a bar of"
+      },
+      {
+        "value": "D",
+        "label": "D. a tin of"
+      }
+    ],
+    "answer": "C",
+    "tip": "一整條朱古力＝成條形；同『一盒好多粒』唔同，先睇形狀再揀。",
+    "teach": "a bar of chocolate（唔係 a box of chocolates）。"
+  },
+  {
+    "id": "q22",
+    "prompt": "She shared ______ chocolates with the class. (many small sweets in a carton-like pack)",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. a bar of"
+      },
+      {
+        "value": "B",
+        "label": "B. a box of"
+      },
+      {
+        "value": "C",
+        "label": "C. a loaf of"
+      },
+      {
+        "value": "D",
+        "label": "D. a bunch of"
+      }
+    ],
+    "answer": "B",
+    "tip": "好多粒細嘅、裝喺盒——唔係成一長條；分清盒裝同成條。",
+    "teach": "a box of chocolates。"
+  },
+  {
+    "id": "q23",
+    "prompt": "Dad opened ______ nuts for the picnic. (metal can)",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. a beans of"
+      },
+      {
+        "value": "B",
+        "label": "B. a jar of"
+      },
+      {
+        "value": "C",
+        "label": "C. a tin of"
+      },
+      {
+        "value": "D",
+        "label": "D. a bar of"
+      }
+    ],
+    "answer": "C",
+    "tip": "堅果常見金屬罐；『beans 配堅果』係亂配，可先排除。",
+    "teach": "a tin of nuts（唔係 beans of nuts）。"
+  },
+  {
+    "id": "q24",
+    "prompt": "Which phrase is wrong?",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. a jar of peanut butter"
+      },
+      {
+        "value": "B",
+        "label": "B. a bar of chocolate"
+      },
+      {
+        "value": "C",
+        "label": "C. a beans of nuts"
+      },
+      {
+        "value": "D",
+        "label": "D. a tin of nuts"
+      }
+    ],
+    "answer": "C",
+    "tip": "搵亂配：堅果應該配金屬罐；邊個選項明顯用錯量詞硬砌？",
+    "teach": "beans of nuts ✗。"
+  },
+  {
+    "id": "q25",
+    "prompt": "Picnic list: ______ peanut butter, not the metal-can one.",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. a tin of"
+      },
+      {
+        "value": "B",
+        "label": "B. a jar of"
+      },
+      {
+        "value": "C",
+        "label": "C. a bar of"
+      },
+      {
+        "value": "D",
+        "label": "D. a packet of"
+      }
+    ],
+    "answer": "B",
+    "tip": "題目已講唔要金屬罐：糊狀醬揀廣口樽裝嗰種。",
+    "teach": "a jar of peanut butter。"
+  },
+  {
+    "id": "q26",
+    "prompt": "After dinner he only wants ______ chocolate, not a whole gift pack. (one stick-shaped piece)",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. a box of"
+      },
+      {
+        "value": "B",
+        "label": "B. a tin of"
+      },
+      {
+        "value": "C",
+        "label": "C. a jar of"
+      },
+      {
+        "value": "D",
+        "label": "D. a bar of"
+      }
+    ],
+    "answer": "D",
+    "tip": "一條形、唔係整盒送禮裝——用成條量詞。",
+    "teach": "a bar of chocolate。"
   }
 ];

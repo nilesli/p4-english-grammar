@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light" />
   <title>小四英文温習</title>
-  <link rel="stylesheet" href="css/styles.css?v=20261030r8" />
+  <link rel="stylesheet" href="css/styles.css?v=20261101r9" />
 </head>
 <body>
   <header class="app-header">
@@ -27,10 +27,17 @@
       <!-- filled by app.js -->
     </div>
 
-    <p class="footer-note">小四英文温習 · r8 · 成績存於本機瀏覽器</p>
+    <section class="wrongs-panel" id="wrongs-panel" hidden aria-label="最近常錯">
+      <h2>最近常錯</h2>
+      <p class="wrongs-meta">本機累計（家長可影相／抄題分析）。清空成績會一併清走。</p>
+      <div id="wrongs-body"></div>
+    </section>
+
+    <p class="footer-note">小四英文温習 · r9 · 成績存於本機瀏覽器</p>
   </main>
 
-  <script src="js/topics.js?v=20261030r8"></script>
-  <script src="js/app.js?v=20261030r8"></script>
+  <script src="js/topics.js?v=20261101r9"></script>
+  <script src="js/storage.js?v=20261101r9"></script>
+  <script src="js/app.js?v=20261101r9"></script>
 </body>
 </html>

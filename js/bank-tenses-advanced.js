@@ -1,4 +1,4 @@
-/** auto bank · r8 tips · 20261030r8 · tips = 思路 only, no answer leak */
+/** auto bank · r9 weakspot · 20261101r9 · tips = 思路 only, no answer leak */
 window.P4_BANK_TENSES_ADVANCED = [
   {
     "id": "adv-email-picnic",
@@ -874,6 +874,308 @@ window.P4_BANK_TENSES_ADVANCED = [
       {
         "type": "text",
         "text": " his old shop now — he is much happier!"
+      }
+    ]
+  },
+  {
+    "id": "adv-story-mr-wong-health",
+    "title": "Story: Mr Wong's healthier life",
+    "genre": "story",
+    "intro": "讀關於黃先生健康生活嘅短文。先分 Last year（過去）同 Now／every（而家習慣）；每格留意有冇『亂加 -er』嘅假詞，唔好當比較級亂砌。",
+    "segments": [
+      {
+        "type": "text",
+        "text": "Last year Mr Wong "
+      },
+      {
+        "type": "blank",
+        "id": "mw1",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. ber"
+          },
+          {
+            "value": "B",
+            "label": "B. was"
+          },
+          {
+            "value": "C",
+            "label": "C. is"
+          },
+          {
+            "value": "D",
+            "label": "D. were"
+          }
+        ],
+        "answer": "B",
+        "tip": "Last year＋單數主語：過去 be；唔好把 be 亂加 -er 砌假詞。",
+        "teach": "was（唔係 ber）。"
+      },
+      {
+        "type": "text",
+        "text": " always tired. He "
+      },
+      {
+        "type": "blank",
+        "id": "mw2",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. worker"
+          },
+          {
+            "value": "B",
+            "label": "B. work"
+          },
+          {
+            "value": "C",
+            "label": "C. worked"
+          },
+          {
+            "value": "D",
+            "label": "D. works"
+          }
+        ],
+        "answer": "C",
+        "tip": "仍係上年：規則動詞變過去；唔好加 -er 變成『工人』形。",
+        "teach": "worked（唔係 worker）。"
+      },
+      {
+        "type": "text",
+        "text": " long hours and "
+      },
+      {
+        "type": "blank",
+        "id": "mw3",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. do not have"
+          },
+          {
+            "value": "B",
+            "label": "B. does not have"
+          },
+          {
+            "value": "C",
+            "label": "C. did not have"
+          },
+          {
+            "value": "D",
+            "label": "D. doer not have"
+          }
+        ],
+        "answer": "C",
+        "tip": "過去否定：助動詞過去形＋否定＋原形；唔好把 do 亂加 -er。",
+        "teach": "did not have（唔係 doer…）。"
+      },
+      {
+        "type": "text",
+        "text": " much free time. He "
+      },
+      {
+        "type": "blank",
+        "id": "mw4",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. loved eating"
+          },
+          {
+            "value": "B",
+            "label": "B. loved eater"
+          },
+          {
+            "value": "C",
+            "label": "C. love eat"
+          },
+          {
+            "value": "D",
+            "label": "D. loves eater"
+          }
+        ],
+        "answer": "A",
+        "tip": "過去喜好：love 用過去；後面活動用 -ing，唔好加 -er 變『食家』形。",
+        "teach": "loved eating（唔係 eater）。"
+      },
+      {
+        "type": "text",
+        "text": " fast food every night. Then he "
+      },
+      {
+        "type": "blank",
+        "id": "mw5",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. join"
+          },
+          {
+            "value": "B",
+            "label": "B. joined"
+          },
+          {
+            "value": "C",
+            "label": "C. joiner"
+          },
+          {
+            "value": "D",
+            "label": "D. joins"
+          }
+        ],
+        "answer": "B",
+        "tip": "接住講過去決定：規則動詞過去形；唔好亂加 -er。",
+        "teach": "joined。"
+      },
+      {
+        "type": "text",
+        "text": " a sports club and tried to "
+      },
+      {
+        "type": "blank",
+        "id": "mw6",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. keep doer"
+          },
+          {
+            "value": "B",
+            "label": "B. keep doing"
+          },
+          {
+            "value": "C",
+            "label": "C. keeps do"
+          },
+          {
+            "value": "D",
+            "label": "D. kept doer"
+          }
+        ],
+        "answer": "B",
+        "tip": "to 後面用原形短語；表示『持續』嗰個詞後面要 -ing，唔好 -er。",
+        "teach": "keep doing（唔係 keep doer）。"
+      },
+      {
+        "type": "text",
+        "text": " exercise.\n\nNow Mr Wong "
+      },
+      {
+        "type": "blank",
+        "id": "mw7",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. ber"
+          },
+          {
+            "value": "B",
+            "label": "B. was"
+          },
+          {
+            "value": "C",
+            "label": "C. is"
+          },
+          {
+            "value": "D",
+            "label": "D. were"
+          }
+        ],
+        "answer": "C",
+        "tip": "有 Now：而家狀態；單數主語用現在 be，唔好亂加 -er。",
+        "teach": "is（唔係 ber）。"
+      },
+      {
+        "type": "text",
+        "text": " much healthier. He "
+      },
+      {
+        "type": "blank",
+        "id": "mw8",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. go cycler"
+          },
+          {
+            "value": "B",
+            "label": "B. goes cycling"
+          },
+          {
+            "value": "C",
+            "label": "C. went cycle"
+          },
+          {
+            "value": "D",
+            "label": "D. going cycler"
+          }
+        ],
+        "answer": "B",
+        "tip": "而家習慣；he → 動詞加 -s；go 後面活動用 -ing，唔好 cycler。",
+        "teach": "goes cycling（唔係 go cycler）。"
+      },
+      {
+        "type": "text",
+        "text": " in the park every morning. He also "
+      },
+      {
+        "type": "blank",
+        "id": "mw9",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. play"
+          },
+          {
+            "value": "B",
+            "label": "B. plaier"
+          },
+          {
+            "value": "C",
+            "label": "C. plays"
+          },
+          {
+            "value": "D",
+            "label": "D. played"
+          }
+        ],
+        "answer": "C",
+        "tip": "而家習慣＋He：現在式加 -s；唔好拼成 plaier 類假詞。",
+        "teach": "plays（唔係 plaier）。"
+      },
+      {
+        "type": "text",
+        "text": " badminton with friends. He never "
+      },
+      {
+        "type": "blank",
+        "id": "mw10",
+        "options": [
+          {
+            "value": "A",
+            "label": "A. see"
+          },
+          {
+            "value": "B",
+            "label": "B. seer"
+          },
+          {
+            "value": "C",
+            "label": "C. sees"
+          },
+          {
+            "value": "D",
+            "label": "D. saw"
+          }
+        ],
+        "answer": "C",
+        "tip": "never＝而家習慣；He → 加 -s；唔好亂加 -er 砌 seer。",
+        "teach": "sees（唔係 seer）。"
+      },
+      {
+        "type": "text",
+        "text": " his doctor for junk-food problems now!"
       }
     ]
   }

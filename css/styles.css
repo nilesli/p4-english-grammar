@@ -1,4 +1,4 @@
-/* 小四英文温習 · iPad-first · r8 · ?v=20261030r8 */
+/* 小四英文温習 · iPad-first · r9 · ?v=20261101r9 */
 :root {
   --primary: #3B82F6;
   --primary-dark: #2563EB;
@@ -959,4 +959,102 @@ button:focus:not(:focus-visible) { outline: none; }
   .ix-tile { min-height: 56px; font-size: 1.1rem; }
   .ix-slot { min-width: 52px; min-height: 52px; }
   .ix-word { font-size: 1.22rem; }
+}
+
+
+/* ----- Round / history wrongs (r9) ----- */
+.round-wrongs {
+  margin-top: 0.9rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--border);
+}
+.round-wrongs-title {
+  margin: 0 0 0.4rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.wrong-snip-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.wrong-snip-list code,
+.hist-wrong-item code,
+.tw-snip code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em;
+  background: #F1F5F9;
+  padding: 0.05rem 0.35rem;
+  border-radius: 6px;
+  color: var(--text);
+}
+.hist-wrongs {
+  font-size: 0.9rem;
+  max-width: 16rem;
+  vertical-align: top;
+}
+.hist-wrong-item { display: inline-block; margin: 0.1rem 0; }
+.hist-wrong-more {
+  margin-top: 0.25rem;
+}
+.hist-wrong-more > summary {
+  cursor: pointer;
+  color: var(--primary-dark);
+  font-weight: 600;
+  list-style: none;
+}
+.hist-wrong-more > summary::-webkit-details-marker { display: none; }
+
+.wrongs-panel {
+  margin: 1.5rem 0 0.5rem;
+  padding: 1.25rem 1.35rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.wrongs-panel h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.wrongs-meta {
+  margin: 0 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+.top-wrongs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+.top-wrongs-list li {
+  display: grid;
+  grid-template-columns: minmax(5rem, auto) auto 1fr;
+  gap: 0.5rem 0.75rem;
+  align-items: baseline;
+  padding: 0.65rem 0.75rem;
+  background: #F8FAFC;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.tw-topic { font-weight: 700; color: var(--text); }
+.tw-count {
+  font-weight: 800;
+  color: var(--err);
+  background: var(--err-bg);
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+.tw-snip { color: var(--muted); font-size: 0.92rem; }
+@media (max-width: 640px) {
+  .top-wrongs-list li {
+    grid-template-columns: 1fr auto;
+  }
+  .tw-snip { grid-column: 1 / -1; }
 }

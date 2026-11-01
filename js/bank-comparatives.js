@@ -1,4 +1,4 @@
-/** auto bank · r8 tips · 20261030r8 · tips = 思路 only, no answer leak */
+/** auto bank · r9 weakspot · 20261101r9 · tips = 思路 only, no answer leak */
 window.P4_BANK_COMPARATIVES = [
   {
     "id": "cp1",
@@ -949,5 +949,205 @@ window.P4_BANK_COMPARATIVES = [
     "answer": "B",
     "tip": "Of the three／the：最高級；長詞用『前面加詞』最高級。",
     "teach": "the most popular。"
+  },
+  {
+    "id": "cp39",
+    "prompt": "On the bakery price list, this loaf is ______ than that one. (cheap)",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. cheapper"
+      },
+      {
+        "value": "B",
+        "label": "B. cheaper"
+      },
+      {
+        "value": "C",
+        "label": "C. more cheap"
+      },
+      {
+        "value": "D",
+        "label": "D. cheapest"
+      }
+    ],
+    "answer": "B",
+    "tip": "見到 than：兩者比價錢；短詞加 -er——唔好亂雙寫輔音，亦唔好用 more 硬砌。",
+    "teach": "cheap → cheaper（唔係 cheapper／more cheap）。"
+  },
+  {
+    "id": "cp40",
+    "prompt": "Natural Raisins are the ______ snack of the three on the picnic list. (cheap)",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. cheaper"
+      },
+      {
+        "value": "B",
+        "label": "B. cheappest"
+      },
+      {
+        "value": "C",
+        "label": "C. cheapest"
+      },
+      {
+        "value": "D",
+        "label": "D. more cheap"
+      }
+    ],
+    "answer": "C",
+    "tip": "the … of the three：最高級；短詞 -est，拼寫唔好亂雙寫輔音。",
+    "teach": "the cheapest（唔係 cheappest）。"
+  },
+  {
+    "id": "cp41",
+    "prompt": "At the drink stall, apple juice is ______ than cola today. (cheap)",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. cheaper"
+      },
+      {
+        "value": "B",
+        "label": "B. cheapper"
+      },
+      {
+        "value": "C",
+        "label": "C. cheapest"
+      },
+      {
+        "value": "D",
+        "label": "D. more cheaper"
+      }
+    ],
+    "answer": "A",
+    "tip": "than＝兩者比；短詞 -er，留意輔音唔好多重寫，亦唔好 more + -er 重疊。",
+    "teach": "cheaper than（唔係 cheapper／more cheaper）。"
+  },
+  {
+    "id": "cp42",
+    "prompt": "Look at the supermarket board. Soya milk is the ______ drink this week. (cheap)",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. cheapper"
+      },
+      {
+        "value": "B",
+        "label": "B. cheaper"
+      },
+      {
+        "value": "C",
+        "label": "C. cheappest"
+      },
+      {
+        "value": "D",
+        "label": "D. cheapest"
+      }
+    ],
+    "answer": "D",
+    "tip": "the + 形容詞：最高級；短詞 -est，唔好亂雙寫輔音。",
+    "teach": "the cheapest。"
+  },
+  {
+    "id": "cp43",
+    "prompt": "Dried grapes in that packet are ______ than the fresh ones on sale. (cheap)",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. more cheap"
+      },
+      {
+        "value": "B",
+        "label": "B. cheapper"
+      },
+      {
+        "value": "C",
+        "label": "C. cheaper"
+      },
+      {
+        "value": "D",
+        "label": "D. cheapest"
+      }
+    ],
+    "answer": "C",
+    "tip": "than：比較級；短詞直接加 -er，唔好 more、亦唔好亂雙寫。",
+    "teach": "cheaper than。"
+  },
+  {
+    "id": "cp44",
+    "prompt": "Of the three breads on the shelf, the brown loaf is the ______. (cheap)",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. cheaper"
+      },
+      {
+        "value": "B",
+        "label": "B. cheapest"
+      },
+      {
+        "value": "C",
+        "label": "C. cheapper"
+      },
+      {
+        "value": "D",
+        "label": "D. more cheap"
+      }
+    ],
+    "answer": "B",
+    "tip": "Of the three／the：最高級；短詞 -est，拼寫唔好亂雙寫輔音。",
+    "teach": "the cheapest of the three。"
+  },
+  {
+    "id": "cp45",
+    "prompt": "This cinema show is ______ than last week's cartoon. (interesting)",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. more intesting"
+      },
+      {
+        "value": "B",
+        "label": "B. more interesting"
+      },
+      {
+        "value": "C",
+        "label": "C. interestinger"
+      },
+      {
+        "value": "D",
+        "label": "D. most interesting"
+      }
+    ],
+    "answer": "B",
+    "tip": "than＋長詞：用『前面加詞』比較法；順便檢查拼寫有冇漏字母。",
+    "teach": "more interesting（唔係 more intesting／interestinger）。"
+  },
+  {
+    "id": "cp46",
+    "prompt": "Of the three storybooks, this one is the ______. (interesting)",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. most intesting"
+      },
+      {
+        "value": "B",
+        "label": "B. more interesting"
+      },
+      {
+        "value": "C",
+        "label": "C. most interesting"
+      },
+      {
+        "value": "D",
+        "label": "D. interestingest"
+      }
+    ],
+    "answer": "C",
+    "tip": "Of the three／the：長詞最高級用『前面加詞』；檢查拼寫有冇漏字母。",
+    "teach": "the most interesting（唔係 most intesting）。"
   }
 ];

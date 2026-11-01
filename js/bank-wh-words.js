@@ -1,4 +1,4 @@
-/** auto bank · r8 tips · 20261030r8 · tips = 思路 only, no answer leak */
+/** auto bank · r9 weakspot · 20261101r9 · tips = 思路 only, no answer leak */
 window.P4_BANK_WH_WORDS = [
   {
     "id": "w1",
@@ -949,5 +949,155 @@ window.P4_BANK_WH_WORDS = [
     "answer": "A",
     "tip": "朋友提出活動建議：開頭係邀請建議＋about，唔係問人／地／價錢。",
     "teach": "How about watching…?"
+  },
+  {
+    "id": "w39",
+    "prompt": "At the supermarket:\nA: ______ did you pick Natural Raisins instead of Cola?\nB: Because they are healthier for the picnic.",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. What"
+      },
+      {
+        "value": "B",
+        "label": "B. Why"
+      },
+      {
+        "value": "C",
+        "label": "C. Where"
+      },
+      {
+        "value": "D",
+        "label": "D. Who"
+      }
+    ],
+    "answer": "B",
+    "tip": "下一句用 Because＝問原因；唔好當佢問『邊樣嘢』或地點。",
+    "teach": "Why …? Because …"
+  },
+  {
+    "id": "w40",
+    "prompt": "Before the picnic:\nA: ______ are we leaving so early?\nB: Because the country park gets crowded after ten.",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. How"
+      },
+      {
+        "value": "B",
+        "label": "B. What"
+      },
+      {
+        "value": "C",
+        "label": "C. Why"
+      },
+      {
+        "value": "D",
+        "label": "D. Who"
+      }
+    ],
+    "answer": "C",
+    "tip": "下一句用 Because＝問原因；唔係問方法或事物。",
+    "teach": "Why are we leaving…? Because…"
+  },
+  {
+    "id": "w41",
+    "prompt": "At the cinema ticket desk:\nA: ______ do you want the morning show?\nB: Because the afternoon tickets are sold out.",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. What"
+      },
+      {
+        "value": "B",
+        "label": "B. Where"
+      },
+      {
+        "value": "C",
+        "label": "C. Who"
+      },
+      {
+        "value": "D",
+        "label": "D. Why"
+      }
+    ],
+    "answer": "D",
+    "tip": "下一句用 Because＝問原因；唔好揀問事物／地點／人。",
+    "teach": "Why do you want…? Because…"
+  },
+  {
+    "id": "w42",
+    "prompt": "Shopping list chat:\nA: ______ did Mum buy soya milk today?\nB: Because we have no milk left for breakfast.",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. Who"
+      },
+      {
+        "value": "B",
+        "label": "B. Why"
+      },
+      {
+        "value": "C",
+        "label": "C. What"
+      },
+      {
+        "value": "D",
+        "label": "D. How"
+      }
+    ],
+    "answer": "B",
+    "tip": "下一句用 Because＝問原因；唔好誤當成問『買咩』。",
+    "teach": "Why did Mum buy…? Because…"
+  },
+  {
+    "id": "w43",
+    "prompt": "After the film:\nA: ______ was Ken quiet in the cinema?\nB: Because he did not like the ending.",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. What"
+      },
+      {
+        "value": "B",
+        "label": "B. How"
+      },
+      {
+        "value": "C",
+        "label": "C. Where"
+      },
+      {
+        "value": "D",
+        "label": "D. Why"
+      }
+    ],
+    "answer": "D",
+    "tip": "下一句用 Because＝問原因；答句解釋動機，唔係問樣貌或地方。",
+    "teach": "Why was Ken quiet…? Because…"
+  },
+  {
+    "id": "w44",
+    "prompt": "Picnic packing:\nA: ______ did you put the drinks in the cooler bag?\nB: Because they stay cold that way.",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. Why"
+      },
+      {
+        "value": "B",
+        "label": "B. What"
+      },
+      {
+        "value": "C",
+        "label": "C. Who"
+      },
+      {
+        "value": "D",
+        "label": "D. Where"
+      }
+    ],
+    "answer": "A",
+    "tip": "下一句用 Because＝問原因；唔好當問事物或地點。",
+    "teach": "Why did you put…? Because…"
   }
 ];

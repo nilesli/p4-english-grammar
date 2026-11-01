@@ -1,6 +1,6 @@
 /**
  * 小四英文温習 · Practice app
- * r8 · ?v=20261030r8
+ * r9 · ?v=20261101r9 · wrong-answer tracking
  */
 (function () {
   const ROUND_SIZE = 8;
@@ -119,6 +119,7 @@
     tipCount: 0,
     checked: false,
     ixMeta: [],
+    lastWrongs: [],
   };
 
   const el = {};
@@ -231,6 +232,7 @@
         grid.appendChild(makeTopicCard(t, i, "advanced"));
       }
     });
+    renderTopWrongs();
   }
 
   function cachePracticeEls() {
@@ -317,6 +319,7 @@
     if (practice) practice.hidden = true;
     clearHash();
     document.title = "小四英文温習 · 預覽";
+    renderTopWrongs();
     try {
       window.scrollTo({ top: 0, behavior: "smooth" });
     } catch (e) {
@@ -429,6 +432,7 @@
     state.passage = null;
     state.questions = [];
     state.ixMeta = [];
+    state.lastWrongs = [];
 
     if (state.mode === "advanced" && state.topic && state.topic.hasAdvanced) {
       state.passage = pickPassage(getAdvancedBank(), state.seed);
@@ -765,6 +769,49 @@
     }
   }
 
+  function trimSnip(s, n) {
+    var t = String(s || "").replace(/\s+/g, " ").trim();
+    if (!t) return "";
+    var max = typeof n === "number" ? n : 40;
+    if (t.length <= max) return t;
+    return t.slice(0, max - 1) + "…";
+  }
+
+  function snipForQuestion(q) {
+    if (!q) return "";
+    if (q.prompt) return trimSnip(q.prompt, 40);
+    if (Array.isArray(q.tokens) && q.tokens.length) {
+      return trimSnip(q.tokens.join(" "), 40);
+    }
+    if (Array.isArray(q.words) && q.words.length) {
+      return trimSnip(q.words.join(" "), 40);
+    }
+    // advanced blank: no prompt — use passage title + blank id
+    if (state.passage && state.passage.title) {
+      return trimSnip(state.passage.title + " · " + q.id, 40);
+    }
+    if (q.tip) return trimSnip(q.tip, 40);
+    return trimSnip(q.id || "", 40);
+  }
+
+  function collectRoundWrongs() {
+    var wrongs = [];
+    var ik = interactiveKind();
+    state.questions.forEach(function (q) {
+      var ok = false;
+      if (ik && window.P4Interactive) {
+        var meta = window.P4Interactive.getMeta(state.ixMeta, q.id);
+        ok = window.P4Interactive.isCorrect(q, meta);
+      } else {
+        ok = state.answers[q.id] === q.answer;
+      }
+      if (!ok) {
+        wrongs.push({ id: q.id, text: snipForQuestion(q) });
+      }
+    });
+    return wrongs;
+  }
+
   function calcScore() {
     if (interactiveKind() && window.P4Interactive) {
       return state.questions.reduce(function (n, q) {
@@ -782,6 +829,8 @@
     state.checked = true;
     const score = calcScore();
     const total = state.questions.length;
+    const wrongs = collectRoundWrongs();
+    state.lastWrongs = wrongs;
     if (window.P4Storage) {
       window.P4Storage.addRecord({
         when: window.P4Storage.hkNowString(),
@@ -790,6 +839,10 @@
         score: score,
         total: total,
         tips: state.tipCount,
+        wrongIds: wrongs.map(function (w) {
+          return w.id;
+        }),
+        wrongSnips: wrongs,
       });
     }
     renderPractice();
@@ -807,9 +860,10 @@
   }
 
   function onClearHist() {
-    if (!window.confirm("確定清空全部成績紀錄？")) return;
+    if (!window.confirm("確定清空全部成績紀錄同常錯統計？")) return;
     if (window.P4Storage) window.P4Storage.clearHistory();
     renderHistory();
+    renderTopWrongs();
   }
 
   function renderScore() {
@@ -829,7 +883,7 @@
       cls = "good";
       msg = "今組表現不錯！";
     } else if (score >= mid) cls = "mid";
-    el.scoreBody.innerHTML =
+    let html =
       '<p class="score-big ' +
       cls +
       '">' +
@@ -841,6 +895,72 @@
       " 次提示。" +
       msg +
       "</p>";
+    const wrongs = state.lastWrongs || [];
+    if (wrongs.length) {
+      html +=
+        '<div class="round-wrongs"><p class="round-wrongs-title">今輪錯題（' +
+        wrongs.length +
+        "）</p><ul class=\"wrong-snip-list\">";
+      wrongs.forEach(function (w) {
+        html +=
+          "<li><code>" +
+          escapeHtml(w.id) +
+          "</code> " +
+          escapeHtml(w.text || "") +
+          "</li>";
+      });
+      html += "</ul></div>";
+    }
+    el.scoreBody.innerHTML = html;
+  }
+
+  function formatHistWrongs(h) {
+    const snips = Array.isArray(h.wrongSnips) ? h.wrongSnips : null;
+    const ids = Array.isArray(h.wrongIds) ? h.wrongIds : null;
+    if ((!snips || !snips.length) && (!ids || !ids.length)) {
+      return "—";
+    }
+    const items = snips && snips.length
+      ? snips.map(function (s) {
+          return {
+            id: s.id || "",
+            text: s.text || "",
+          };
+        })
+      : ids.map(function (id) {
+          return { id: id, text: "" };
+        });
+    if (!items.length) return "—";
+    function itemHtml(it) {
+      return (
+        "<span class=\"hist-wrong-item\"><code>" +
+        escapeHtml(it.id) +
+        "</code>" +
+        (it.text
+          ? " " + escapeHtml(trimSnip(it.text, 28))
+          : "") +
+        "</span>"
+      );
+    }
+    if (items.length <= 2) {
+      return items.map(itemHtml).join("<br>");
+    }
+    var head = items
+      .slice(0, 2)
+      .map(itemHtml)
+      .join("<br>");
+    var rest = items
+      .slice(2)
+      .map(itemHtml)
+      .join("<br>");
+    return (
+      head +
+      '<details class="hist-wrong-more"><summary>仲有 ' +
+      (items.length - 2) +
+      " 題</summary>" +
+      rest +
+      "</details>"
+    );
   }
 
   function renderHistory() {
@@ -852,7 +972,7 @@
     }
     let html =
       '<div class="hist-table-wrap"><table class="hist"><thead><tr>' +
-      "<th>時間（香港）</th><th>課題</th><th>分數</th><th>提示次數</th>" +
+      "<th>時間（香港）</th><th>課題</th><th>分數</th><th>提示次數</th><th>錯題</th>" +
       "</tr></thead><tbody>";
     list.forEach(function (h) {
       html +=
@@ -864,13 +984,46 @@
         escapeHtml(String(h.score) + "/" + String(h.total)) +
         "</td><td>" +
         escapeHtml(String(h.tips != null ? h.tips : 0)) +
+        '</td><td class="hist-wrongs">' +
+        formatHistWrongs(h) +
         "</td></tr>";
     });
     html += "</tbody></table></div>";
     el.histBody.innerHTML = html;
   }
 
-  function escapeHtml(s) {
+  function renderTopWrongs() {
+    var panel = $("wrongs-panel");
+    var body = $("wrongs-body");
+    if (!panel || !body) return;
+    var rows =
+      window.P4Storage && window.P4Storage.topWrongs
+        ? window.P4Storage.topWrongs(5)
+        : [];
+    if (!rows.length) {
+      panel.hidden = true;
+      body.innerHTML = "";
+      return;
+    }
+    panel.hidden = false;
+    var html = '<ul class="top-wrongs-list">';
+    rows.forEach(function (r) {
+      html +=
+        "<li><span class=\"tw-topic\">" +
+        escapeHtml(r.topic || "—") +
+        '</span><span class="tw-count">×' +
+        escapeHtml(String(r.count)) +
+        '</span><span class="tw-snip"><code>' +
+        escapeHtml(r.id) +
+        "</code> " +
+        escapeHtml(trimSnip(r.text, 36)) +
+        "</span></li>";
+    });
+    html += "</ul>";
+    body.innerHTML = html;
+  }
+
+    function escapeHtml(s) {
     return String(s)
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")

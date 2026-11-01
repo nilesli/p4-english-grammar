@@ -1,4 +1,4 @@
-/** auto bank · r8 tips · 20261030r8 · tips = 思路 only, no answer leak */
+/** auto bank · r9 weakspot · 20261101r9 · tips = 思路 only, no answer leak */
 window.P4_BANK_LIKE_VING = [
   {
     "id": "l1",
@@ -599,5 +599,105 @@ window.P4_BANK_LIKE_VING = [
     "answer": "B",
     "tip": "good at 後面用 -ing，唔好用 to + 原形。",
     "teach": "good at + V-ing。"
+  },
+  {
+    "id": "l25",
+    "prompt": "After school she loves ______ noodles with her mum.",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. eat"
+      },
+      {
+        "value": "B",
+        "label": "B. eater"
+      },
+      {
+        "value": "C",
+        "label": "C. eating"
+      },
+      {
+        "value": "D",
+        "label": "D. eats"
+      }
+    ],
+    "answer": "C",
+    "tip": "love 後面活動用 -ing；唔好加 -er 變成『食家』形。",
+    "teach": "loves eating（唔係 eater）。"
+  },
+  {
+    "id": "l26",
+    "prompt": "Please keep ______ your homework before you play.",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. do"
+      },
+      {
+        "value": "B",
+        "label": "B. doing"
+      },
+      {
+        "value": "C",
+        "label": "C. doer"
+      },
+      {
+        "value": "D",
+        "label": "D. does"
+      }
+    ],
+    "answer": "B",
+    "tip": "keep 表示持續：後面用 -ing；唔好加 -er。",
+    "teach": "keep doing。"
+  },
+  {
+    "id": "l27",
+    "prompt": "At weekends Uncle Ben goes ______ near the country park.",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. cycle"
+      },
+      {
+        "value": "B",
+        "label": "B. cycler"
+      },
+      {
+        "value": "C",
+        "label": "C. cycling"
+      },
+      {
+        "value": "D",
+        "label": "D. cycles"
+      }
+    ],
+    "answer": "C",
+    "tip": "go 後面活動多用 -ing；唔好砌成 cycler。",
+    "teach": "goes cycling。"
+  },
+  {
+    "id": "l28",
+    "prompt": "He loves ______ football, but he is not a ______. (play)",
+    "options": [
+      {
+        "value": "A",
+        "label": "A. playing; plaier"
+      },
+      {
+        "value": "B",
+        "label": "B. playing; player"
+      },
+      {
+        "value": "C",
+        "label": "C. play; player"
+      },
+      {
+        "value": "D",
+        "label": "D. plaier; playing"
+      }
+    ],
+    "answer": "B",
+    "tip": "第一格 love 後用 -ing；第二格先係『做嗰樣運動嘅人』正確拼寫，唔好亂砌。",
+    "teach": "loves playing；a player（唔係 plaier）。"
   }
 ];

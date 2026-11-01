@@ -1,4 +1,4 @@
-/** auto bank · r8 tips · 20261030r8 · tips = 思路 only, no answer leak */
+/** auto bank · r9 weakspot · 20261101r9 · tips = 思路 only, no answer leak */
 window.P4_BANK_SENTENCE_ORDER = [
   {
     "id": "so1",
@@ -525,5 +525,41 @@ window.P4_BANK_SENTENCE_ORDER = [
     ],
     "tip": "邀請建議：開頭詞 + about + 名詞／活動（唔係問搭車方式）。",
     "teach": "How about a picnic…?"
+  },
+  {
+    "id": "so33",
+    "tokens": [
+      "Why",
+      "did",
+      "you",
+      "buy",
+      "raisins",
+      "?",
+      "Because",
+      "they",
+      "are",
+      "cheaper",
+      "."
+    ],
+    "tip": "先排原因疑問句（疑問詞＋助動詞＋主語…），再用 Because 接解釋；價錢比較形放 be 後面。",
+    "teach": "Why did you buy raisins? Because they are cheaper."
+  },
+  {
+    "id": "so34",
+    "tokens": [
+      "This",
+      "loaf",
+      "is",
+      "cheaper",
+      "than",
+      "that",
+      "one",
+      "on",
+      "the",
+      "shelf",
+      "."
+    ],
+    "tip": "兩者比價錢：be＋短詞比較形＋than＋另一個。",
+    "teach": "This loaf is cheaper than that one…"
   }
 ];
