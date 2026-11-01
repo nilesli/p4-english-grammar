@@ -1,4 +1,4 @@
-/* 小四英文温習 · iPad-first · r9 · ?v=20261101r9 */
+/* 小四英文温習 · iPad-first · r10 · ?v=20261101r10 */
 :root {
   --primary: #3B82F6;
   --primary-dark: #2563EB;
@@ -1058,3 +1058,76 @@ button:focus:not(:focus-visible) { outline: none; }
   }
   .tw-snip { grid-column: 1 / -1; }
 }
+
+
+/* ----- Nickname + teacher cloud (r10) ----- */
+.nick-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin: 0.85rem 0 1rem;
+  padding: 0.85rem 1rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.nick-bar label {
+  font-weight: 700;
+  color: var(--text);
+}
+.nick-bar input {
+  flex: 1 1 10rem;
+  min-width: 8rem;
+  max-width: 16rem;
+  font-size: 1.05rem;
+  padding: 0.45rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: #fff;
+}
+.nick-hint {
+  flex: 1 1 100%;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.nick-bar-compact {
+  margin-top: 0.65rem;
+  padding: 0.55rem 0.75rem;
+  box-shadow: none;
+}
+.upload-status {
+  margin: 0.65rem 0 0;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.upload-status.ok { color: var(--ok, #15803d); font-weight: 600; }
+.upload-status.warn { color: #b45309; font-weight: 600; }
+
+.teacher-panel {
+  margin: 1.25rem 0 0.5rem;
+  padding: 1rem 1.2rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+.teacher-panel > summary {
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 1.05rem;
+  list-style: none;
+}
+.teacher-panel > summary::-webkit-details-marker { display: none; }
+.teacher-meta {
+  margin: 0.5rem 0 0.75rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+.teacher-h3 {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 800;
+}
+.teacher-hist { font-size: 0.92rem; }

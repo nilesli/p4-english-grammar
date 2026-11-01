@@ -1,6 +1,6 @@
 /**
  * 小四英文温習 · Practice app
- * r9 · ?v=20261101r9 · wrong-answer tracking
+ * r10 · ?v=20261101r10 · wrong tracking + Firebase session upload
  */
 (function () {
   const ROUND_SIZE = 8;
@@ -120,6 +120,7 @@
     checked: false,
     ixMeta: [],
     lastWrongs: [],
+    lastUploadStatus: "",
   };
 
   const el = {};
@@ -233,6 +234,8 @@
       }
     });
     renderTopWrongs();
+    bindNickname();
+    bindTeacherPanel();
   }
 
   function cachePracticeEls() {
@@ -320,6 +323,7 @@
     clearHash();
     document.title = "小四英文温習 · 預覽";
     renderTopWrongs();
+    bindNickname();
     try {
       window.scrollTo({ top: 0, behavior: "smooth" });
     } catch (e) {
@@ -831,20 +835,36 @@
     const total = state.questions.length;
     const wrongs = collectRoundWrongs();
     state.lastWrongs = wrongs;
+    var whenStr = window.P4Storage ? window.P4Storage.hkNowString() : "";
+    var sessionRec = {
+      when: whenStr,
+      whenIso: new Date().toISOString(),
+      topic: historyTopic(),
+      mode: state.mode,
+      score: score,
+      total: total,
+      tips: state.tipCount,
+      wrongIds: wrongs.map(function (w) {
+        return w.id;
+      }),
+      wrongSnips: wrongs,
+      nickname: window.P4Storage ? window.P4Storage.getNickname() : "細妹",
+      deviceId: window.P4Storage ? window.P4Storage.getDeviceId() : "",
+    };
     if (window.P4Storage) {
       window.P4Storage.addRecord({
-        when: window.P4Storage.hkNowString(),
-        topic: historyTopic(),
-        mode: state.mode,
-        score: score,
-        total: total,
-        tips: state.tipCount,
-        wrongIds: wrongs.map(function (w) {
-          return w.id;
-        }),
-        wrongSnips: wrongs,
+        when: sessionRec.when,
+        topic: sessionRec.topic,
+        mode: sessionRec.mode,
+        score: sessionRec.score,
+        total: sessionRec.total,
+        tips: sessionRec.tips,
+        wrongIds: sessionRec.wrongIds,
+        wrongSnips: sessionRec.wrongSnips,
       });
     }
+    state.lastUploadStatus = "pending";
+    queueCloudSession(sessionRec);
     renderPractice();
     renderScore();
     renderHistory();
@@ -910,6 +930,14 @@
           "</li>";
       });
       html += "</ul></div>";
+    }
+    var up = state.lastUploadStatus;
+    if (up === "cloud") {
+      html += '<p class="upload-status ok">已上傳雲端（方便分析錯題）</p>';
+    } else if (up === "local" || up === "error") {
+      html += '<p class="upload-status warn">雲端未通；成績仍留本機，稍後會再試</p>';
+    } else if (up === "pending") {
+      html += '<p class="upload-status">上傳雲端中…</p>';
     }
     el.scoreBody.innerHTML = html;
   }
@@ -1023,7 +1051,188 @@
     body.innerHTML = html;
   }
 
-    function escapeHtml(s) {
+  function queueCloudSession(rec) {
+    function applyStatus(st) {
+      state.lastUploadStatus = st;
+      renderScore();
+    }
+    function doSave(api) {
+      api
+        .saveSession(rec)
+        .then(function (st) {
+          applyStatus(st || "local");
+        })
+        .catch(function () {
+          applyStatus("error");
+        });
+    }
+    if (window.P4EngCloud && typeof window.P4EngCloud.saveSession === "function") {
+      doSave(window.P4EngCloud);
+      return;
+    }
+    var settled = false;
+    var once = function () {
+      if (settled) return;
+      settled = true;
+      window.removeEventListener("p4engcloud-ready", once);
+      if (window.P4EngCloud) doSave(window.P4EngCloud);
+      else applyStatus("local");
+    };
+    window.addEventListener("p4engcloud-ready", once);
+    // Module may have finished between the check and addEventListener
+    if (window.P4EngCloud) once();
+    setTimeout(function () {
+      if (state.lastUploadStatus === "pending") {
+        settled = true;
+        window.removeEventListener("p4engcloud-ready", once);
+        applyStatus("local");
+      }
+    }, 8000);
+  }
+
+  function bindNickname() {
+    var input = $("nick-input");
+    if (!input || input._p4Bound) return;
+    if (window.P4Storage) input.value = window.P4Storage.getNickname();
+    input.addEventListener("change", function () {
+      if (window.P4Storage) {
+        input.value = window.P4Storage.setNickname(input.value);
+      }
+    });
+    input.addEventListener("blur", function () {
+      if (window.P4Storage) {
+        input.value = window.P4Storage.setNickname(input.value);
+      }
+    });
+    input._p4Bound = true;
+  }
+
+  function isTeacherMode() {
+    try {
+      return getQuery().get("teacher") === "1";
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function bindTeacherPanel() {
+    var panel = $("teacher-panel");
+    if (!panel) return;
+    if (isTeacherMode()) {
+      panel.open = true;
+      panel.hidden = false;
+    }
+    var btn = $("btn-teacher-refresh");
+    if (btn && !btn._p4Bound) {
+      btn.addEventListener("click", function () {
+        loadTeacherSessions(true);
+      });
+      btn._p4Bound = true;
+    }
+    if (!panel._p4Bound) {
+      panel.addEventListener("toggle", function () {
+        if (panel.open) loadTeacherSessions(false);
+      });
+      panel._p4Bound = true;
+    }
+    if (isTeacherMode() || panel.open) loadTeacherSessions(false);
+  }
+
+  function loadTeacherSessions(force) {
+    var body = $("teacher-body");
+    var meta = $("teacher-meta");
+    if (!body) return;
+    if (!force && body.getAttribute("data-loaded") === "1") return;
+    body.innerHTML = '<p class="empty-note">載入雲端場次中…</p>';
+    if (meta) meta.textContent = "讀取 Firestore…";
+
+    function render(result) {
+      var sessions = (result && result.sessions) || [];
+      body.setAttribute("data-loaded", "1");
+      if (meta) {
+        meta.textContent =
+          (result && result.source === "cloud"
+            ? "雲端 · 最近 " + sessions.length + " 場"
+            : "未能讀雲端") +
+          (result && result.error ? "（" + result.error + "）" : "") +
+          " · 路徑 p4_english_grammar/sessions/entries";
+      }
+      if (!sessions.length) {
+        body.innerHTML =
+          '<p class="empty-note">未有雲端場次。若剛上線，請確認 Firestore 規則已加入 p4 路徑；本機練習仍會累積 pending。</p>';
+        return;
+      }
+      var agg =
+        window.P4EngCloud && window.P4EngCloud.aggregateWrongs
+          ? window.P4EngCloud.aggregateWrongs(sessions)
+          : [];
+      var html = "";
+      if (agg.length) {
+        html += '<h3 class="teacher-h3">常錯合計（今批場次）</h3><ul class="top-wrongs-list">';
+        agg.slice(0, 15).forEach(function (r) {
+          html +=
+            "<li><span class=\"tw-topic\">" +
+            escapeHtml(r.topic || "—") +
+            '</span><span class="tw-count">×' +
+            escapeHtml(String(r.count)) +
+            '</span><span class="tw-snip"><code>' +
+            escapeHtml(r.id) +
+            "</code> " +
+            escapeHtml(trimSnip(r.text, 36)) +
+            "</span></li>";
+        });
+        html += "</ul>";
+      }
+      html += '<h3 class="teacher-h3">最近場次</h3>';
+      html +=
+        '<div class="hist-table-wrap"><table class="hist teacher-hist"><thead><tr>' +
+        "<th>時間（香港）</th><th>暱稱</th><th>課題</th><th>分數</th><th>提示</th><th>錯題</th>" +
+        "</tr></thead><tbody>";
+      sessions.forEach(function (s) {
+        html +=
+          "<tr><td>" +
+          escapeHtml(s.when || s.whenIso || "") +
+          "</td><td>" +
+          escapeHtml(s.nickname || "") +
+          "</td><td>" +
+          escapeHtml(s.topic || "") +
+          (s.mode === "advanced" ? " ·進階" : "") +
+          "</td><td>" +
+          escapeHtml(String(s.score) + "/" + String(s.total)) +
+          "</td><td>" +
+          escapeHtml(String(s.tips != null ? s.tips : 0)) +
+          '</td><td class="hist-wrongs">' +
+          formatHistWrongs(s) +
+          "</td></tr>";
+      });
+      html += "</tbody></table></div>";
+      body.innerHTML = html;
+    }
+
+    function run(api) {
+      api.loadSessions(50).then(render).catch(function (err) {
+        render({ source: "none", sessions: [], error: String(err && err.message) });
+      });
+    }
+
+    if (window.P4EngCloud && window.P4EngCloud.loadSessions) {
+      run(window.P4EngCloud);
+    } else {
+      var once = function () {
+        window.removeEventListener("p4engcloud-ready", once);
+        if (window.P4EngCloud) run(window.P4EngCloud);
+        else render({ source: "none", sessions: [], error: "cloud module not loaded" });
+      };
+      window.addEventListener("p4engcloud-ready", once);
+      setTimeout(function () {
+        if (body.getAttribute("data-loaded") !== "1") {
+          render({ source: "none", sessions: [], error: "timeout" });
+        }
+      }, 10000);
+    }
+  }
+
+  function escapeHtml(s) {
     return String(s)
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
@@ -1034,6 +1243,8 @@
   function boot() {
     if ($("topic-grid")) initHome();
     if ($("q-list") || $("passage-wrap")) initPractice();
+    bindNickname();
+    bindTeacherPanel();
 
     if (isSpa()) {
       var goHomeBtn = $("go-home");

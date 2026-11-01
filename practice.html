@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light" />
   <title>小四英文温習</title>
-  <link rel="stylesheet" href="css/styles.css?v=20261101r9" />
+  <link rel="stylesheet" href="css/styles.css?v=20261101r10" />
 </head>
 <body class="mode-basic">
   <header class="app-header">
@@ -29,6 +29,11 @@
     <p id="practice-intro" style="margin:0.85rem 0 0;color:var(--muted);">
       睇清題目再揀。未諗到先撳「小提示」；每題第一次撳先計一次。
     </p>
+
+    <div class="nick-bar nick-bar-compact" aria-label="練習暱稱">
+      <label for="nick-input">暱稱</label>
+      <input id="nick-input" type="text" maxlength="40" placeholder="細妹" autocomplete="nickname" />
+    </div>
 
     <div class="toolbar" role="region" aria-label="練習工具列">
       <span class="chip tips" id="tip-chip">今次已用提示：0 次</span>
@@ -66,25 +71,27 @@
       <div class="teach-body" id="teach-body"></div>
     </details>
 
-    <p class="footer-note">小四英文温習 · r9</p>
+    <p class="footer-note">小四英文温習 · r10</p>
   </main>
 
-  <script src="js/topics.js?v=20261101r9"></script>
-  <script src="js/bank-tenses.js?v=20261101r9"></script>
-  <script src="js/bank-tenses-advanced.js?v=20261101r9"></script>
-  <script src="js/bank-like-ving.js?v=20261101r9"></script>
-  <script src="js/bank-do-does.js?v=20261101r9"></script>
-  <script src="js/bank-wh-words.js?v=20261101r9"></script>
-  <script src="js/bank-frequency.js?v=20261101r9"></script>
-  <script src="js/bank-too-either.js?v=20261101r9"></script>
-  <script src="js/bank-conjunctions.js?v=20261101r9"></script>
-  <script src="js/bank-comparatives.js?v=20261101r9"></script>
-  <script src="js/bank-would-like.js?v=20261101r9"></script>
-  <script src="js/bank-punctuation.js?v=20261101r9"></script>
-  <script src="js/bank-quantifiers.js?v=20261101r9"></script>
-  <script src="js/bank-sentence-order.js?v=20261101r9"></script>
-  <script src="js/interactive.js?v=20261101r9"></script>
-  <script src="js/storage.js?v=20261101r9"></script>
-  <script src="js/app.js?v=20261101r9"></script>
+  <script src="js/topics.js?v=20261101r10"></script>
+  <script src="js/bank-tenses.js?v=20261101r10"></script>
+  <script src="js/bank-tenses-advanced.js?v=20261101r10"></script>
+  <script src="js/bank-like-ving.js?v=20261101r10"></script>
+  <script src="js/bank-do-does.js?v=20261101r10"></script>
+  <script src="js/bank-wh-words.js?v=20261101r10"></script>
+  <script src="js/bank-frequency.js?v=20261101r10"></script>
+  <script src="js/bank-too-either.js?v=20261101r10"></script>
+  <script src="js/bank-conjunctions.js?v=20261101r10"></script>
+  <script src="js/bank-comparatives.js?v=20261101r10"></script>
+  <script src="js/bank-would-like.js?v=20261101r10"></script>
+  <script src="js/bank-punctuation.js?v=20261101r10"></script>
+  <script src="js/bank-quantifiers.js?v=20261101r10"></script>
+  <script src="js/bank-sentence-order.js?v=20261101r10"></script>
+  <script src="js/interactive.js?v=20261101r10"></script>
+  <script src="js/storage.js?v=20261101r10"></script>
+  <script src="js/firebase-config.js?v=20261101r10"></script>
+  <script src="js/app.js?v=20261101r10"></script>
+  <script type="module" src="js/cloud.js?v=20261101r10"></script>
 </body>
 </html>

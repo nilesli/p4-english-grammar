@@ -1,6 +1,6 @@
 /**
  * 小四英文温習 · 課題清單 + 教學重點
- * r9 weakspot · banks 20261101r9（提示只畀思路；針對考試錯題加練）
+ * r10 · banks 20261101r9 + cloud sessions 20261101r10（提示只畀思路）
  */
 window.P4_TOPICS = [
   {

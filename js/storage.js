@@ -1,11 +1,14 @@
 /**
- * 小四英文温習 · 成績／錯題紀錄（localStorage）
- * keys: p4-eng-grammar-history · p4-eng-grammar-wrongs
- * r9 · ?v=20261101r9
+ * 小四英文温習 · 成績／錯題／暱稱（localStorage）
+ * keys: p4-eng-grammar-history · p4-eng-grammar-wrongs · nickname · device-id
+ * r10 · ?v=20261101r10
  */
 (function (global) {
   const KEY = "p4-eng-grammar-history";
   const KEY_WRONGS = "p4-eng-grammar-wrongs";
+  const KEY_NICK = "p4-eng-grammar-nickname";
+  const KEY_DEVICE = "p4-eng-grammar-device-id";
+  const DEFAULT_NICK = "細妹";
   const MAX = 100;
 
   function loadHistory() {
@@ -120,9 +123,49 @@
     });
   }
 
+  function getNickname() {
+    try {
+      const v = localStorage.getItem(KEY_NICK);
+      if (v != null && String(v).trim()) return String(v).trim().slice(0, 40);
+    } catch (e) {}
+    return DEFAULT_NICK;
+  }
+
+  function setNickname(raw) {
+    const s = String(raw == null ? "" : raw).trim().slice(0, 40) || DEFAULT_NICK;
+    try {
+      localStorage.setItem(KEY_NICK, s);
+    } catch (e) {}
+    return s;
+  }
+
+  function uuid() {
+    try {
+      if (global.crypto && typeof global.crypto.randomUUID === "function") {
+        return global.crypto.randomUUID();
+      }
+    } catch (e) {}
+    return "d-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 10);
+  }
+
+  function getDeviceId() {
+    try {
+      var id = localStorage.getItem(KEY_DEVICE);
+      if (id && String(id).length >= 8) return String(id).slice(0, 64);
+      id = uuid();
+      localStorage.setItem(KEY_DEVICE, id);
+      return id;
+    } catch (e) {
+      return uuid();
+    }
+  }
+
   global.P4Storage = {
     KEY: KEY,
     KEY_WRONGS: KEY_WRONGS,
+    KEY_NICK: KEY_NICK,
+    KEY_DEVICE: KEY_DEVICE,
+    DEFAULT_NICK: DEFAULT_NICK,
     loadHistory: loadHistory,
     saveHistory: saveHistory,
     loadWrongs: loadWrongs,
@@ -130,5 +173,8 @@
     addRecord: addRecord,
     clearHistory: clearHistory,
     hkNowString: hkNowString,
+    getNickname: getNickname,
+    setNickname: setNickname,
+    getDeviceId: getDeviceId,
   };
 })(window);

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="color-scheme" content="light" />
   <title>小四英文温習</title>
-  <link rel="stylesheet" href="css/styles.css?v=20261101r9" />
+  <link rel="stylesheet" href="css/styles.css?v=20261101r10" />
 </head>
 <body>
   <header class="app-header">
@@ -23,6 +23,12 @@
       <p>題目英文、提示同講解用繁中。建議用 iPad。Tenses 有基礎 MC 同進階短文；其餘課題而家都可以練習。</p>
     </div>
 
+    <div class="nick-bar" aria-label="練習暱稱">
+      <label for="nick-input">暱稱</label>
+      <input id="nick-input" type="text" maxlength="40" placeholder="細妹" autocomplete="nickname" />
+      <span class="nick-hint">核對後會連成績一齊上傳雲端（方便分析錯題）</span>
+    </div>
+
     <div class="topic-grid" id="topic-grid" role="list">
       <!-- filled by app.js -->
     </div>
@@ -33,11 +39,20 @@
       <div id="wrongs-body"></div>
     </section>
 
-    <p class="footer-note">小四英文温習 · r9 · 成績存於本機瀏覽器</p>
+    <details class="teacher-panel" id="teacher-panel">
+      <summary>老師／家長：雲端場次</summary>
+      <p class="teacher-meta" id="teacher-meta">撳開或加 <code>?teacher=1</code> 載入最近場次。</p>
+      <p><button type="button" class="btn-secondary" id="btn-teacher-refresh">重新整理</button></p>
+      <div id="teacher-body"><p class="empty-note">尚未載入。</p></div>
+    </details>
+
+    <p class="footer-note">小四英文温習 · r10 · 本機＋雲端（Firebase）</p>
   </main>
 
-  <script src="js/topics.js?v=20261101r9"></script>
-  <script src="js/storage.js?v=20261101r9"></script>
-  <script src="js/app.js?v=20261101r9"></script>
+  <script src="js/topics.js?v=20261101r10"></script>
+  <script src="js/storage.js?v=20261101r10"></script>
+  <script src="js/firebase-config.js?v=20261101r10"></script>
+  <script src="js/app.js?v=20261101r10"></script>
+  <script type="module" src="js/cloud.js?v=20261101r10"></script>
 </body>
 </html>
