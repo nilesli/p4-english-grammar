@@ -1,6 +1,6 @@
 /**
  * 小四英文温習 · 課題清單 + 教學重點
- * r10 · banks 20261101r9 + cloud sessions 20261101r10（提示只畀思路）
+ * r11 · 疑問詞對話填充 20261102r11 · banks 其餘仍 20261101r9／r10（提示只畀思路）
  */
 window.P4_TOPICS = [
   {
@@ -81,17 +81,17 @@ window.P4_TOPICS = [
     bankKey: "P4_BANK_WH_WORDS",
     historyTopic: "wh-words",
     teachHtml: `
-      <div class="teach-callout"><div class="lead">揀啱疑問詞</div>
-      先想清楚問嘅係人、物、地、時、原因定方式。</div>
+      <div class="teach-callout"><div class="lead">疑問詞 · 對話填充</div>
+      每題係短對話：先睇<strong>答句</strong>講價錢、數量、人、地方定原因，再揀問句疑問詞。本課題範圍：How／How much／How many／How often／Who／What／Where／Why。</div>
       <table class="teach-table"><thead><tr><th>詞</th><th>問咩</th></tr></thead><tbody>
       <tr><td>What</td><td>事物／資料</td></tr>
       <tr><td>Where</td><td>地方</td></tr>
-      <tr><td>When／What time</td><td>時間</td></tr>
-      <tr><td>Who／Whose</td><td>人／誰的</td></tr>
-      <tr><td>Why</td><td>原因</td></tr>
-      <tr><td>How／How often／How many／How much</td><td>方式／頻率／數量／價錢</td></tr>
-      <tr><td>How about…?</td><td>邀請／建議（唔係問方式）</td></tr>
-      <tr><td>Which</td><td>有限選擇</td></tr>
+      <tr><td>Who</td><td>人</td></tr>
+      <tr><td>Why</td><td>原因（答句常有 Because）</td></tr>
+      <tr><td>How</td><td>方式／點樣做</td></tr>
+      <tr><td>How often</td><td>頻率</td></tr>
+      <tr><td>How many</td><td>可數數量</td></tr>
+      <tr><td>How much</td><td>價錢／不可數數量</td></tr>
       </tbody></table>`,
   },
   {

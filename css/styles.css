@@ -339,6 +339,33 @@ button:disabled {
   flex: 1;
 }
 
+.q-card .q-dialogue {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.q-card .q-dialogue .q-prompt,
+.q-card .q-dialogue .q-reply {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+
+.q-card .q-reply {
+  color: var(--muted);
+  font-weight: 650;
+}
+
+.q-card .q-speaker {
+  color: var(--primary);
+  font-weight: 800;
+  margin-right: 0.15rem;
+}
+
 .options {
   display: grid;
   grid-template-columns: 1fr;

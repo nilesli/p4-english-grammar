@@ -648,12 +648,27 @@
     card.id = "q-" + q.id;
     const head = document.createElement("div");
     head.className = "q-head";
+    var askSp = q.speakerAsk || "A";
+    var replySp = q.speakerReply || "B";
+    var promptHtml;
+    if (q.reply) {
+      promptHtml =
+        '<div class="q-dialogue">' +
+        '<p class="q-prompt q-ask"><span class="q-speaker">' +
+        escapeHtml(askSp) +
+        ":</span> " +
+        escapeHtml(q.prompt) +
+        "</p>" +
+        '<p class="q-reply"><span class="q-speaker">' +
+        escapeHtml(replySp) +
+        ":</span> " +
+        escapeHtml(q.reply) +
+        "</p></div>";
+    } else {
+      promptHtml = '<p class="q-prompt">' + escapeHtml(q.prompt) + "</p>";
+    }
     head.innerHTML =
-      '<span class="q-idx">' +
-      (i + 1) +
-      '</span><p class="q-prompt">' +
-      escapeHtml(q.prompt) +
-      "</p>";
+      '<span class="q-idx">' + (i + 1) + "</span>" + promptHtml;
     card.appendChild(head);
     const opts = document.createElement("div");
     opts.className = "options";
@@ -783,6 +798,18 @@
 
   function snipForQuestion(q) {
     if (!q) return "";
+    if (q.reply && q.prompt) {
+      return trimSnip(
+        (q.speakerAsk || "A") +
+          ": " +
+          q.prompt +
+          " / " +
+          (q.speakerReply || "B") +
+          ": " +
+          q.reply,
+        48
+      );
+    }
     if (q.prompt) return trimSnip(q.prompt, 40);
     if (Array.isArray(q.tokens) && q.tokens.length) {
       return trimSnip(q.tokens.join(" "), 40);

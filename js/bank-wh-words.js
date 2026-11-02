@@ -1,1103 +1,398 @@
-/** auto bank · r9 weakspot · 20261101r9 · tips = 思路 only, no answer leak */
+/** 疑問詞對話填充 · r11 · 20261102r11 · tips = 思路 only, no answer leak
+ * 範圍：How／How much／How many／How often／Who／What／Where／Why
+ * 每題短對話：問句 + 答句（答句核對前都顯示）
+ */
 window.P4_BANK_WH_WORDS = [
+  // —— How much（價錢）×3 ——
   {
-    "id": "w1",
-    "prompt": "______ is on the cinema menu today — a comedy or a cartoon?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. Where"
-      },
-      {
-        "value": "C",
-        "label": "C. When"
-      },
-      {
-        "value": "D",
-        "label": "D. Who"
-      }
+    id: "w1",
+    speakerAsk: "A",
+    prompt: "______ is this apple?",
+    speakerReply: "B",
+    reply: "It is ten dollars.",
+    options: [
+      { value: "A", label: "A. How much" },
+      { value: "B", label: "B. How many" },
+      { value: "C", label: "C. How often" },
+      { value: "D", label: "D. What" }
     ],
-    "answer": "A",
-    "tip": "睇答句會講咩：事物／資料、人名、定地點？先決定問邊類。",
-    "teach": "What → 問事物／資料。What is on the menu…?"
+    answer: "A",
+    tip: "睇答句：講咗價錢／金額。問「幾錢」嗰類。",
+    teach: "How much → 問價錢或不可數數量。How much is this apple?"
   },
   {
-    "id": "w2",
-    "prompt": "______ do you usually spend your spare time?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. Where"
-      },
-      {
-        "value": "C",
-        "label": "C. When"
-      },
-      {
-        "value": "D",
-        "label": "D. Why"
-      }
+    id: "w2",
+    speakerAsk: "A",
+    prompt: "______ are these grapes?",
+    speakerReply: "B",
+    reply: "They are twenty dollars a bag.",
+    options: [
+      { value: "A", label: "A. How many" },
+      { value: "B", label: "B. How much" },
+      { value: "C", label: "C. Where" },
+      { value: "D", label: "D. Who" }
     ],
-    "answer": "B",
-    "tip": "答句會講地點或位置——問「喺邊」類，唔係問人或原因。",
-    "teach": "Where → 問地方。Where do you spend…?"
+    answer: "B",
+    tip: "答句有 dollars／價錢字眼——問金額，唔係問個數。",
+    teach: "How much → 問價錢。How much are these grapes?"
   },
   {
-    "id": "w3",
-    "prompt": "______ is the film show at the cinema?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. Where"
-      },
-      {
-        "value": "C",
-        "label": "C. When"
-      },
-      {
-        "value": "D",
-        "label": "D. Who"
-      }
+    id: "w3",
+    speakerAsk: "A",
+    prompt: "Excuse me. ______ is that bottle of milk?",
+    speakerReply: "B",
+    reply: "It is twelve dollars.",
+    options: [
+      { value: "A", label: "A. How often" },
+      { value: "B", label: "B. Why" },
+      { value: "C", label: "C. How much" },
+      { value: "D", label: "D. How" }
     ],
-    "answer": "C",
-    "tip": "答句會講時間／鐘點——問時間類疑問詞。",
-    "teach": "When → 問時間。"
+    answer: "C",
+    tip: "店員／顧客對話，答句報價——先諗問價錢。",
+    teach: "How much → 問價錢。How much is that bottle of milk?"
+  },
+  // —— How many（可數數量）×3 ——
+  {
+    id: "w4",
+    speakerAsk: "A",
+    prompt: "______ oranges do you want?",
+    speakerReply: "B",
+    reply: "I want six oranges, please.",
+    options: [
+      { value: "A", label: "A. How much" },
+      { value: "B", label: "B. How many" },
+      { value: "C", label: "C. How often" },
+      { value: "D", label: "D. What" }
+    ],
+    answer: "B",
+    tip: "答句有數字＋可數嘢（oranges）——問「幾多個」。",
+    teach: "How many → 問可數名詞數量。How many oranges…?"
   },
   {
-    "id": "w4",
-    "prompt": "______ is that girl holding the shopping list?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. Where"
-      },
-      {
-        "value": "C",
-        "label": "C. When"
-      },
-      {
-        "value": "D",
-        "label": "D. Who"
-      }
+    id: "w5",
+    speakerAsk: "A",
+    prompt: "______ eggs are in the basket?",
+    speakerReply: "B",
+    reply: "There are eight eggs.",
+    options: [
+      { value: "A", label: "A. How" },
+      { value: "B", label: "B. How much" },
+      { value: "C", label: "C. How many" },
+      { value: "D", label: "D. Where" }
     ],
-    "answer": "D",
-    "tip": "答句會講人名／邊個做——問人類。",
-    "teach": "Who → 問人。"
+    answer: "C",
+    tip: "答句講「有幾多粒／個」可數物品，唔係講價錢。",
+    teach: "How many → 問可數數量。How many eggs…?"
   },
   {
-    "id": "w5",
-    "prompt": "______ are you late for the picnic?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. Where"
-      },
-      {
-        "value": "C",
-        "label": "C. Why"
-      },
-      {
-        "value": "D",
-        "label": "D. How"
-      }
+    id: "w6",
+    speakerAsk: "A",
+    prompt: "______ bags of rice do we need?",
+    speakerReply: "B",
+    reply: "We need two bags.",
+    options: [
+      { value: "A", label: "A. How many" },
+      { value: "B", label: "B. How much" },
+      { value: "C", label: "C. Who" },
+      { value: "D", label: "D. Why" }
     ],
-    "answer": "C",
-    "tip": "答句會講原因——問「點解」類。",
-    "teach": "Why → 問原因。"
+    answer: "A",
+    tip: "答句係數字＋bags——問件數／袋數。",
+    teach: "How many → 問可數數量。How many bags…?"
+  },
+  // —— How often（頻率）×3 ——
+  {
+    id: "w7",
+    speakerAsk: "A",
+    prompt: "______ do you go to the supermarket?",
+    speakerReply: "B",
+    reply: "I go there twice a week.",
+    options: [
+      { value: "A", label: "A. How much" },
+      { value: "B", label: "B. How many" },
+      { value: "C", label: "C. How often" },
+      { value: "D", label: "D. Where" }
+    ],
+    answer: "C",
+    tip: "答句有 twice a week 之類——講「幾耐去一次」。",
+    teach: "How often → 問頻率。How often do you go…?"
   },
   {
-    "id": "w6",
-    "prompt": "______ do you go to the country park?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. How"
-      },
-      {
-        "value": "B",
-        "label": "B. Who"
-      },
-      {
-        "value": "C",
-        "label": "C. Which"
-      },
-      {
-        "value": "D",
-        "label": "D. Whose"
-      }
+    id: "w8",
+    speakerAsk: "A",
+    prompt: "______ does Mum buy fresh bread?",
+    speakerReply: "B",
+    reply: "She buys it every morning.",
+    options: [
+      { value: "A", label: "A. Who" },
+      { value: "B", label: "B. How often" },
+      { value: "C", label: "C. How much" },
+      { value: "D", label: "D. What" }
     ],
-    "answer": "A",
-    "tip": "答句會講搭車／步行等「點樣去」——問方式，唔係邀請建議。",
-    "teach": "How → 問方法／情況。"
+    answer: "B",
+    tip: "答句 every morning＝規律次數，唔係問邊個或幾錢。",
+    teach: "How often → 問頻率。How often does Mum buy…?"
   },
   {
-    "id": "w7",
-    "prompt": "______ often do you go to the cinema?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. How"
-      },
-      {
-        "value": "C",
-        "label": "C. When"
-      },
-      {
-        "value": "D",
-        "label": "D. Why"
-      }
+    id: "w9",
+    speakerAsk: "A",
+    prompt: "______ do you help at the shop?",
+    speakerReply: "B",
+    reply: "I help once a month.",
+    options: [
+      { value: "A", label: "A. How" },
+      { value: "B", label: "B. Why" },
+      { value: "C", label: "C. How many" },
+      { value: "D", label: "D. How often" }
     ],
-    "answer": "B",
-    "tip": "後面有 often：成個片語問「幾耐一次」；開頭詞要同頻率一齊用。",
-    "teach": "How often → 問多久一次。"
+    answer: "D",
+    tip: "答句 once a month——講頻率，唔係講方法。",
+    teach: "How often → 問頻率。How often do you help…?"
+  },
+  // —— How（方式）×3 ——
+  {
+    id: "w10",
+    speakerAsk: "A",
+    prompt: "______ do you carry the heavy bags?",
+    speakerReply: "B",
+    reply: "I use a shopping trolley.",
+    options: [
+      { value: "A", label: "A. How" },
+      { value: "B", label: "B. How much" },
+      { value: "C", label: "C. Who" },
+      { value: "D", label: "D. Where" }
+    ],
+    answer: "A",
+    tip: "答句講用咩工具／方法去做，唔係講價錢或地方。",
+    teach: "How → 問方式。How do you carry…?"
   },
   {
-    "id": "w8",
-    "prompt": "______ many snacks are on your shopping list?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. How"
-      },
-      {
-        "value": "C",
-        "label": "C. Which"
-      },
-      {
-        "value": "D",
-        "label": "D. Where"
-      }
+    id: "w11",
+    speakerAsk: "A",
+    prompt: "______ can I pay for the fruit?",
+    speakerReply: "B",
+    reply: "You can pay by Octopus or cash.",
+    options: [
+      { value: "A", label: "A. What" },
+      { value: "B", label: "B. How" },
+      { value: "C", label: "C. How many" },
+      { value: "D", label: "D. Why" }
     ],
-    "answer": "B",
-    "tip": "後面 many + 複數名詞：問可數「有幾多」；開頭詞要配 many。",
-    "teach": "How many + 複數名詞。"
+    answer: "B",
+    tip: "答句講付款方式（by…），即「點樣俾錢」。",
+    teach: "How → 問方式。How can I pay…?"
   },
   {
-    "id": "w9",
-    "prompt": "______ bag is this? It is on the picnic mat.",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. Who"
-      },
-      {
-        "value": "B",
-        "label": "B. Whose"
-      },
-      {
-        "value": "C",
-        "label": "C. Which"
-      },
-      {
-        "value": "D",
-        "label": "D. Whom"
-      }
+    id: "w12",
+    speakerAsk: "A",
+    prompt: "______ do you keep the eggs fresh?",
+    speakerReply: "B",
+    reply: "I put them in the fridge.",
+    options: [
+      { value: "A", label: "A. How often" },
+      { value: "B", label: "B. How much" },
+      { value: "C", label: "C. How" },
+      { value: "D", label: "D. Who" }
     ],
-    "answer": "B",
-    "tip": "答句講「邊個嘅」——問擁有者。",
-    "teach": "Whose → 問擁有。"
+    answer: "C",
+    tip: "答句講做法步驟（put…），問「點樣做」。",
+    teach: "How → 問方式。How do you keep…?"
+  },
+  // —— Who（人）×3 ——
+  {
+    id: "w13",
+    speakerAsk: "A",
+    prompt: "______ is the shop assistant in the green shirt?",
+    speakerReply: "B",
+    reply: "She is Miss Chan.",
+    options: [
+      { value: "A", label: "A. What" },
+      { value: "B", label: "B. Where" },
+      { value: "C", label: "C. Why" },
+      { value: "D", label: "D. Who" }
+    ],
+    answer: "D",
+    tip: "答句係人名——問「邊個」。",
+    teach: "Who → 問人。Who is the shop assistant…?"
   },
   {
-    "id": "w10",
-    "prompt": "______ dessert do you like more, jelly or ice cream?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. Which"
-      },
-      {
-        "value": "C",
-        "label": "C. Who"
-      },
-      {
-        "value": "D",
-        "label": "D. Where"
-      }
+    id: "w14",
+    speakerAsk: "A",
+    prompt: "______ helped you find the rice?",
+    speakerReply: "B",
+    reply: "Uncle Tom helped me.",
+    options: [
+      { value: "A", label: "A. Who" },
+      { value: "B", label: "B. How" },
+      { value: "C", label: "C. How much" },
+      { value: "D", label: "D. What" }
     ],
-    "answer": "B",
-    "tip": "題目已畀兩個選擇：有限範圍入面揀邊樣，唔係開放問事物。",
-    "teach": "Which → 有限選擇。"
+    answer: "A",
+    tip: "答句講邊個幫手——問人，唔係問方法。",
+    teach: "Who → 問人。Who helped you…?"
   },
   {
-    "id": "w11",
-    "prompt": "______ time does the show start?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. Where"
-      },
-      {
-        "value": "C",
-        "label": "C. Who"
-      },
-      {
-        "value": "D",
-        "label": "D. Why"
-      }
+    id: "w15",
+    speakerAsk: "A",
+    prompt: "______ is packing the groceries for us?",
+    speakerReply: "B",
+    reply: "Dad is packing them.",
+    options: [
+      { value: "A", label: "A. Where" },
+      { value: "B", label: "B. Who" },
+      { value: "C", label: "C. How often" },
+      { value: "D", label: "D. How many" }
     ],
-    "answer": "A",
-    "tip": "後面有 time：問鐘點；開頭詞要同 time 一齊用。",
-    "teach": "What time…?"
+    answer: "B",
+    tip: "答句主語係人（Dad）——問邊個喺度做。",
+    teach: "Who → 問人。Who is packing…?"
+  },
+  // —— What（事物／資料）×3 ——
+  {
+    id: "w16",
+    speakerAsk: "A",
+    prompt: "______ would you like from the fruit section?",
+    speakerReply: "B",
+    reply: "I would like some bananas.",
+    options: [
+      { value: "A", label: "A. Who" },
+      { value: "B", label: "B. Where" },
+      { value: "C", label: "C. What" },
+      { value: "D", label: "D. Why" }
+    ],
+    answer: "C",
+    tip: "答句講想要嘅嘢（bananas）——問事物。",
+    teach: "What → 問事物／資料。What would you like…?"
   },
   {
-    "id": "w12",
-    "prompt": "______ is the supermarket? It is next to the cinema.",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. Where"
-      },
-      {
-        "value": "C",
-        "label": "C. When"
-      },
-      {
-        "value": "D",
-        "label": "D. Who"
-      }
+    id: "w17",
+    speakerAsk: "A",
+    prompt: "______ is on special offer today?",
+    speakerReply: "B",
+    reply: "The chicken is on special offer.",
+    options: [
+      { value: "A", label: "A. What" },
+      { value: "B", label: "B. How much" },
+      { value: "C", label: "C. How many" },
+      { value: "D", label: "D. Who" }
     ],
-    "answer": "B",
-    "tip": "答句講位置／地方——問地點類。",
-    "teach": "Where is…?"
+    answer: "A",
+    tip: "答句講邊樣貨品特價——問「咩嘢」。",
+    teach: "What → 問事物。What is on special offer…?"
   },
   {
-    "id": "w13",
-    "prompt": "______ did you cry at the picnic?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. Where"
-      },
-      {
-        "value": "C",
-        "label": "C. Why"
-      },
-      {
-        "value": "D",
-        "label": "D. Which"
-      }
+    id: "w18",
+    speakerAsk: "A",
+    prompt: "______ do we need to buy for dinner?",
+    speakerReply: "B",
+    reply: "We need fish and vegetables.",
+    options: [
+      { value: "A", label: "A. How" },
+      { value: "B", label: "B. Where" },
+      { value: "C", label: "C. Why" },
+      { value: "D", label: "D. What" }
     ],
-    "answer": "C",
-    "tip": "答句講原因——問「點解」類。",
-    "teach": "Why did…?"
+    answer: "D",
+    tip: "答句列食物名稱——問要買咩。",
+    teach: "What → 問事物。What do we need to buy…?"
+  },
+  // —— Where（地方）×3 ——
+  {
+    id: "w19",
+    speakerAsk: "A",
+    prompt: "______ can I find the milk?",
+    speakerReply: "B",
+    reply: "It is in Aisle 3.",
+    options: [
+      { value: "A", label: "A. Who" },
+      { value: "B", label: "B. Where" },
+      { value: "C", label: "C. What" },
+      { value: "D", label: "D. How much" }
+    ],
+    answer: "B",
+    tip: "答句講貨架／通道位置——問「喺邊」。",
+    teach: "Where → 問地方。Where can I find…?"
   },
   {
-    "id": "w14",
-    "prompt": "______ is ordering dessert at that table?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. Who"
-      },
-      {
-        "value": "C",
-        "label": "C. Where"
-      },
-      {
-        "value": "D",
-        "label": "D. When"
-      }
+    id: "w20",
+    speakerAsk: "A",
+    prompt: "______ is the checkout?",
+    speakerReply: "B",
+    reply: "It is near the exit.",
+    options: [
+      { value: "A", label: "A. How" },
+      { value: "B", label: "B. Why" },
+      { value: "C", label: "C. Where" },
+      { value: "D", label: "D. How often" }
     ],
-    "answer": "B",
-    "tip": "答句講邊個人做動作——問人類。",
-    "teach": "Who is…?"
+    answer: "C",
+    tip: "答句 near the exit＝位置——問地點。",
+    teach: "Where → 問地方。Where is the checkout?"
   },
   {
-    "id": "w15",
-    "prompt": "______ much is this dessert on the menu?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. How"
-      },
-      {
-        "value": "C",
-        "label": "C. Which"
-      },
-      {
-        "value": "D",
-        "label": "D. Where"
-      }
+    id: "w21",
+    speakerAsk: "A",
+    prompt: "______ did you put the shopping list?",
+    speakerReply: "B",
+    reply: "I put it on the kitchen table.",
+    options: [
+      { value: "A", label: "A. Where" },
+      { value: "B", label: "B. Who" },
+      { value: "C", label: "C. How many" },
+      { value: "D", label: "D. What" }
     ],
-    "answer": "B",
-    "tip": "後面有 much，又講價錢／不可數份量：開頭詞要配 much（價錢線索），唔係問人／地。",
-    "teach": "How much…?（價錢／不可數）"
+    answer: "A",
+    tip: "答句 on the…＝放咗喺邊——問地方。",
+    teach: "Where → 問地方。Where did you put…?"
+  },
+  // —— Why（原因）×3 ——
+  {
+    id: "w22",
+    speakerAsk: "A",
+    prompt: "______ are the strawberries so cheap today?",
+    speakerReply: "B",
+    reply: "Because they are on sale.",
+    options: [
+      { value: "A", label: "A. What" },
+      { value: "B", label: "B. Where" },
+      { value: "C", label: "C. How" },
+      { value: "D", label: "D. Why" }
+    ],
+    answer: "D",
+    tip: "答句 Because…——講原因。",
+    teach: "Why → 問原因。Why are the strawberries…?"
   },
   {
-    "id": "w16",
-    "prompt": "______ colour is your school uniform?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. Where"
-      },
-      {
-        "value": "C",
-        "label": "C. Who"
-      },
-      {
-        "value": "D",
-        "label": "D. When"
-      }
+    id: "w23",
+    speakerAsk: "A",
+    prompt: "______ is the shop closed now?",
+    speakerReply: "B",
+    reply: "Because it is a public holiday.",
+    options: [
+      { value: "A", label: "A. Why" },
+      { value: "B", label: "B. Who" },
+      { value: "C", label: "C. How much" },
+      { value: "D", label: "D. How many" }
     ],
-    "answer": "A",
-    "tip": "後面有 colour：問顏色／性質；開頭詞要同 colour 一齊用。",
-    "teach": "What colour…?"
+    answer: "A",
+    tip: "答句用 Because 解釋——問「點解」。",
+    teach: "Why → 問原因。Why is the shop closed…?"
   },
   {
-    "id": "w17",
-    "prompt": "______ do you usually have lunch after the show?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. Where"
-      },
-      {
-        "value": "C",
-        "label": "C. Who"
-      },
-      {
-        "value": "D",
-        "label": "D. Whose"
-      }
+    id: "w24",
+    speakerAsk: "A",
+    prompt: "______ do we need a bigger trolley?",
+    speakerReply: "B",
+    reply: "Because we have a lot of things to buy.",
+    options: [
+      { value: "A", label: "A. How often" },
+      { value: "B", label: "B. Where" },
+      { value: "C", label: "C. Why" },
+      { value: "D", label: "D. What" }
     ],
-    "answer": "B",
-    "tip": "答句講地點——問地方類。",
-    "teach": "Where do you…?"
-  },
-  {
-    "id": "w18",
-    "prompt": "______ old is your sister?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. How"
-      },
-      {
-        "value": "C",
-        "label": "C. Which"
-      },
-      {
-        "value": "D",
-        "label": "D. When"
-      }
-    ],
-    "answer": "B",
-    "tip": "後面有 old：問年紀；開頭詞要配 old。",
-    "teach": "How old…?"
-  },
-  {
-    "id": "w19",
-    "prompt": "______ bus goes to the country park, the 1A or the 2B?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. Which"
-      },
-      {
-        "value": "C",
-        "label": "C. Who"
-      },
-      {
-        "value": "D",
-        "label": "D. Where"
-      }
-    ],
-    "answer": "B",
-    "tip": "已畀兩個巴士號：有限選擇入面揀，唔係開放問事物。",
-    "teach": "Which + 名詞。"
-  },
-  {
-    "id": "w20",
-    "prompt": "______ is the matter with the order?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. Where"
-      },
-      {
-        "value": "C",
-        "label": "C. When"
-      },
-      {
-        "value": "D",
-        "label": "D. Who"
-      }
-    ],
-    "answer": "A",
-    "tip": "問「有咩事／咩問題」——問事物／情況類。",
-    "teach": "What is the matter?"
-  },
-  {
-    "id": "w21",
-    "prompt": "______ long does it take to walk to the cinema?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. How"
-      },
-      {
-        "value": "C",
-        "label": "C. Which"
-      },
-      {
-        "value": "D",
-        "label": "D. Who"
-      }
-    ],
-    "answer": "B",
-    "tip": "後面有 long：問需時幾耐；開頭詞要配 long。",
-    "teach": "How long…?"
-  },
-  {
-    "id": "w22",
-    "prompt": "______ wrote this note on the shopping list?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. Who"
-      },
-      {
-        "value": "C",
-        "label": "C. Where"
-      },
-      {
-        "value": "D",
-        "label": "D. When"
-      }
-    ],
-    "answer": "B",
-    "tip": "答句講邊個人做「寫」——問人類。",
-    "teach": "Who + 動詞…?"
-  },
-  {
-    "id": "w23",
-    "prompt": "______ much are the tickets for the evening show?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. How"
-      },
-      {
-        "value": "C",
-        "label": "C. Which"
-      },
-      {
-        "value": "D",
-        "label": "D. Where"
-      }
-    ],
-    "answer": "B",
-    "tip": "購物問價錢，後面有 much：靠價錢／much 線索揀開頭詞，唔好寫死單一英文詞。",
-    "teach": "How much…? 問價錢。"
-  },
-  {
-    "id": "w24",
-    "prompt": "______ do you usually go to the supermarket — by bus or on foot?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. How"
-      },
-      {
-        "value": "B",
-        "label": "B. Who"
-      },
-      {
-        "value": "C",
-        "label": "C. Which"
-      },
-      {
-        "value": "D",
-        "label": "D. Whose"
-      }
-    ],
-    "answer": "A",
-    "tip": "答句講搭車定步行——問出行方式，唔係「約＋about」邀請。",
-    "teach": "How → 問方式。"
-  },
-  {
-    "id": "w25",
-    "prompt": "______ many bottles of juice are on the picnic shopping list?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. How"
-      },
-      {
-        "value": "C",
-        "label": "C. Which"
-      },
-      {
-        "value": "D",
-        "label": "D. Where"
-      }
-    ],
-    "answer": "B",
-    "tip": "many + 複數：問可數數量；開頭詞配 many。",
-    "teach": "How many + 複數名詞。"
-  },
-  {
-    "id": "w26",
-    "prompt": "______ much milk do we need for dessert?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. How"
-      },
-      {
-        "value": "C",
-        "label": "C. Which"
-      },
-      {
-        "value": "D",
-        "label": "D. Who"
-      }
-    ],
-    "answer": "B",
-    "tip": "milk 不可數＋much：問份量／不可數「幾多」；開頭詞配 much。",
-    "teach": "How much + 不可數名詞。"
-  },
-  {
-    "id": "w27",
-    "prompt": "______ do you feel after running in the country park?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. How"
-      },
-      {
-        "value": "B",
-        "label": "B. Who"
-      },
-      {
-        "value": "C",
-        "label": "C. Which"
-      },
-      {
-        "value": "D",
-        "label": "D. Whose"
-      }
-    ],
-    "answer": "A",
-    "tip": "答句講感覺／狀態（累、開心等）——問狀態／程度類。",
-    "teach": "How → 問情況／感覺。"
-  },
-  {
-    "id": "w28",
-    "prompt": "______ much is the ice cream on this menu?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. How"
-      },
-      {
-        "value": "C",
-        "label": "C. Which"
-      },
-      {
-        "value": "D",
-        "label": "D. Where"
-      }
-    ],
-    "answer": "B",
-    "tip": "menu 價錢：much／價錢線索，開頭詞要配得上。",
-    "teach": "How much is…?"
-  },
-  {
-    "id": "w29",
-    "prompt": "At the supermarket: ______ much is this carton of soya milk?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. How"
-      },
-      {
-        "value": "C",
-        "label": "C. Which"
-      },
-      {
-        "value": "D",
-        "label": "D. Where"
-      }
-    ],
-    "answer": "B",
-    "tip": "超市問價錢；後面 much——用價錢線索，唔係問地點或人。",
-    "teach": "How much is…? 問價錢。"
-  },
-  {
-    "id": "w30",
-    "prompt": "Shopkeeper: Can I help you? Customer: ______ is the peanut butter, please?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. Where"
-      },
-      {
-        "value": "C",
-        "label": "C. When"
-      },
-      {
-        "value": "D",
-        "label": "D. Who"
-      }
-    ],
-    "answer": "B",
-    "tip": "答句會講貨架喺邊——問地點。",
-    "teach": "Where is…? 問位置。"
-  },
-  {
-    "id": "w31",
-    "prompt": "______ put this chocolate on our shopping list?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. Who"
-      },
-      {
-        "value": "C",
-        "label": "C. Where"
-      },
-      {
-        "value": "D",
-        "label": "D. When"
-      }
-    ],
-    "answer": "B",
-    "tip": "答句講邊個人「放」——問人。",
-    "teach": "Who + 動詞…?"
-  },
-  {
-    "id": "w32",
-    "prompt": "______ do we need from the bakery — bread or cakes?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. Where"
-      },
-      {
-        "value": "C",
-        "label": "C. Who"
-      },
-      {
-        "value": "D",
-        "label": "D. When"
-      }
-    ],
-    "answer": "A",
-    "tip": "答句講需要咩嘢——問事物／資料。",
-    "teach": "What do we need…?"
-  },
-  {
-    "id": "w33",
-    "prompt": "______ are these grapes so expensive today?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. Where"
-      },
-      {
-        "value": "C",
-        "label": "C. Why"
-      },
-      {
-        "value": "D",
-        "label": "D. Who"
-      }
-    ],
-    "answer": "C",
-    "tip": "答句講原因——問「點解」類。",
-    "teach": "Why are…?"
-  },
-  {
-    "id": "w34",
-    "prompt": "______ do you usually pay at the supermarket — by Octopus or cash?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. How"
-      },
-      {
-        "value": "B",
-        "label": "B. Who"
-      },
-      {
-        "value": "C",
-        "label": "C. Which"
-      },
-      {
-        "value": "D",
-        "label": "D. Whose"
-      }
-    ],
-    "answer": "A",
-    "tip": "答句講付款方式（現金／卡等）——問「點樣做」；同「約＋about」邀請句分開。",
-    "teach": "How → 問方式。"
-  },
-  {
-    "id": "w35",
-    "prompt": "We have finished shopping. ______ about a picnic in the country park this Sunday?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. How"
-      },
-      {
-        "value": "B",
-        "label": "B. What"
-      },
-      {
-        "value": "C",
-        "label": "C. Why"
-      },
-      {
-        "value": "D",
-        "label": "D. Who"
-      }
-    ],
-    "answer": "A",
-    "tip": "呢句係邀請／建議去做某事（後面有 about＋活動），唔係問搭車方式或價錢。",
-    "teach": "How about + 名詞／V-ing？＝建議。"
-  },
-  {
-    "id": "w36",
-    "prompt": "Mum: ______ about ordering dessert after dinner? Tom: Great idea!",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. How"
-      },
-      {
-        "value": "B",
-        "label": "B. Where"
-      },
-      {
-        "value": "C",
-        "label": "C. When"
-      },
-      {
-        "value": "D",
-        "label": "D. Who"
-      }
-    ],
-    "answer": "A",
-    "tip": "答句係同意建議；句型係「約／提議＋about＋內容」，唔係問地方或時間。",
-    "teach": "How about ordering…?"
-  },
-  {
-    "id": "w37",
-    "prompt": "______ about some orange juice with our picnic snacks?",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. How"
-      },
-      {
-        "value": "B",
-        "label": "B. What"
-      },
-      {
-        "value": "C",
-        "label": "C. Which"
-      },
-      {
-        "value": "D",
-        "label": "D. Why"
-      }
-    ],
-    "answer": "A",
-    "tip": "建議加飲品：about 後面係建議內容——邀請建議句型，同「問出行方式」唔同。",
-    "teach": "How about some…?"
-  },
-  {
-    "id": "w38",
-    "prompt": "Friend: ______ about watching a show at the cinema tonight? You: Sorry, I am busy.",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. How"
-      },
-      {
-        "value": "B",
-        "label": "B. Who"
-      },
-      {
-        "value": "C",
-        "label": "C. Where"
-      },
-      {
-        "value": "D",
-        "label": "D. Whose"
-      }
-    ],
-    "answer": "A",
-    "tip": "朋友提出活動建議：開頭係邀請建議＋about，唔係問人／地／價錢。",
-    "teach": "How about watching…?"
-  },
-  {
-    "id": "w39",
-    "prompt": "At the supermarket:\nA: ______ did you pick Natural Raisins instead of Cola?\nB: Because they are healthier for the picnic.",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. Why"
-      },
-      {
-        "value": "C",
-        "label": "C. Where"
-      },
-      {
-        "value": "D",
-        "label": "D. Who"
-      }
-    ],
-    "answer": "B",
-    "tip": "下一句用 Because＝問原因；唔好當佢問『邊樣嘢』或地點。",
-    "teach": "Why …? Because …"
-  },
-  {
-    "id": "w40",
-    "prompt": "Before the picnic:\nA: ______ are we leaving so early?\nB: Because the country park gets crowded after ten.",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. How"
-      },
-      {
-        "value": "B",
-        "label": "B. What"
-      },
-      {
-        "value": "C",
-        "label": "C. Why"
-      },
-      {
-        "value": "D",
-        "label": "D. Who"
-      }
-    ],
-    "answer": "C",
-    "tip": "下一句用 Because＝問原因；唔係問方法或事物。",
-    "teach": "Why are we leaving…? Because…"
-  },
-  {
-    "id": "w41",
-    "prompt": "At the cinema ticket desk:\nA: ______ do you want the morning show?\nB: Because the afternoon tickets are sold out.",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. Where"
-      },
-      {
-        "value": "C",
-        "label": "C. Who"
-      },
-      {
-        "value": "D",
-        "label": "D. Why"
-      }
-    ],
-    "answer": "D",
-    "tip": "下一句用 Because＝問原因；唔好揀問事物／地點／人。",
-    "teach": "Why do you want…? Because…"
-  },
-  {
-    "id": "w42",
-    "prompt": "Shopping list chat:\nA: ______ did Mum buy soya milk today?\nB: Because we have no milk left for breakfast.",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. Who"
-      },
-      {
-        "value": "B",
-        "label": "B. Why"
-      },
-      {
-        "value": "C",
-        "label": "C. What"
-      },
-      {
-        "value": "D",
-        "label": "D. How"
-      }
-    ],
-    "answer": "B",
-    "tip": "下一句用 Because＝問原因；唔好誤當成問『買咩』。",
-    "teach": "Why did Mum buy…? Because…"
-  },
-  {
-    "id": "w43",
-    "prompt": "After the film:\nA: ______ was Ken quiet in the cinema?\nB: Because he did not like the ending.",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. What"
-      },
-      {
-        "value": "B",
-        "label": "B. How"
-      },
-      {
-        "value": "C",
-        "label": "C. Where"
-      },
-      {
-        "value": "D",
-        "label": "D. Why"
-      }
-    ],
-    "answer": "D",
-    "tip": "下一句用 Because＝問原因；答句解釋動機，唔係問樣貌或地方。",
-    "teach": "Why was Ken quiet…? Because…"
-  },
-  {
-    "id": "w44",
-    "prompt": "Picnic packing:\nA: ______ did you put the drinks in the cooler bag?\nB: Because they stay cold that way.",
-    "options": [
-      {
-        "value": "A",
-        "label": "A. Why"
-      },
-      {
-        "value": "B",
-        "label": "B. What"
-      },
-      {
-        "value": "C",
-        "label": "C. Who"
-      },
-      {
-        "value": "D",
-        "label": "D. Where"
-      }
-    ],
-    "answer": "A",
-    "tip": "下一句用 Because＝問原因；唔好當問事物或地點。",
-    "teach": "Why did you put…? Because…"
+    answer: "C",
+    tip: "答句 Because… 解釋目的／原因。",
+    teach: "Why → 問原因。Why do we need…?"
   }
 ];
