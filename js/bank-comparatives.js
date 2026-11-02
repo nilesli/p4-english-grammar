@@ -1,1153 +1,1153 @@
-/** auto bank · r9 weakspot · 20261101r9 · tips = 思路 only, no answer leak */
+/** 比較級／最高級完整片段 · r12 · 20261102r12 · options 含 than／the；tips = 思路 only, no answer leak */
 window.P4_BANK_COMPARATIVES = [
   {
     "id": "cp1",
-    "prompt": "Tom is ______ than Ken at the country park. (tall)",
+    "prompt": "Tom is ______ Ken at the country park. (tall)",
     "options": [
       {
         "value": "A",
-        "label": "A. taller"
+        "label": "A. taller than"
       },
       {
         "value": "B",
-        "label": "B. tallest"
+        "label": "B. the tallest"
       },
       {
         "value": "C",
-        "label": "C. more tall"
+        "label": "C. more tall than"
       },
       {
         "value": "D",
-        "label": "D. most tall"
+        "label": "D. the most tall"
       }
     ],
     "answer": "A",
-    "tip": "見到 than＝兩者比；括號 tall 係短詞——多數加字尾變成比較級，唔好用 more。",
-    "teach": "tall → taller than。"
+    "tip": "句意係兩者相比；短詞多數加比較級字尾，唔好用 more 硬砌。",
+    "teach": "taller than。"
   },
   {
     "id": "cp2",
-    "prompt": "This is the ______ building in our town. (tall)",
+    "prompt": "This is ______ building in our town. (tall)",
     "options": [
       {
         "value": "A",
-        "label": "A. taller"
+        "label": "A. taller than"
       },
       {
         "value": "B",
-        "label": "B. tallest"
+        "label": "B. the tallest"
       },
       {
         "value": "C",
-        "label": "C. more tall"
+        "label": "C. more tall than"
       },
       {
         "value": "D",
-        "label": "D. most taller"
+        "label": "D. the most taller"
       }
     ],
     "answer": "B",
-    "tip": "見到 the … in＝範圍內最高；短詞用字尾最高級形。",
+    "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
     "teach": "the tallest。"
   },
   {
     "id": "cp3",
-    "prompt": "This cinema show is ______ than that one. (interesting)",
+    "prompt": "This cinema show is ______ that one. (interesting)",
     "options": [
       {
         "value": "A",
-        "label": "A. interestinger"
+        "label": "A. interestinger than"
       },
       {
         "value": "B",
-        "label": "B. more interesting"
+        "label": "B. more interesting than"
       },
       {
         "value": "C",
-        "label": "C. most interesting"
+        "label": "C. the most interesting"
       },
       {
         "value": "D",
-        "label": "D. interesting"
+        "label": "D. interesting than"
       }
     ],
     "answer": "B",
-    "tip": "見到 than；呢個形容詞音節多＝長詞 → 唔好加 -er，要用『前面加詞』嗰種比較法。",
-    "teach": "more + adj + than。"
+    "tip": "句意係兩者相比；長詞用 more + 原級，唔好硬加 -er。",
+    "teach": "more interesting than。"
   },
   {
     "id": "cp4",
-    "prompt": "This story is the ______ in the book. (interesting)",
+    "prompt": "This story is ______ in the book. (interesting)",
     "options": [
       {
         "value": "A",
-        "label": "A. more interesting"
+        "label": "A. more interesting than"
       },
       {
         "value": "B",
-        "label": "B. most interesting"
+        "label": "B. the most interesting"
       },
       {
         "value": "C",
-        "label": "C. interestinger"
+        "label": "C. interestinger than"
       },
       {
         "value": "D",
-        "label": "D. interestingest"
+        "label": "D. the interestingest"
       }
     ],
     "answer": "B",
-    "tip": "見到 the … in：最高級；長詞唔用 -est，要用『前面加詞』嗰種最高級。",
-    "teach": "the most + adj。"
+    "tip": "句意係範圍內「最…」（of／in／of all）；長詞用 most + 原級，唔好亂加 -est。",
+    "teach": "the most interesting。"
   },
   {
     "id": "cp5",
-    "prompt": "My show scores are ______ this year than last year. (good)",
+    "prompt": "My show scores this year are ______ last year. (good)",
     "options": [
       {
         "value": "A",
-        "label": "A. gooder"
+        "label": "A. gooder than"
       },
       {
         "value": "B",
-        "label": "B. better"
+        "label": "B. better than"
       },
       {
         "value": "C",
-        "label": "C. best"
+        "label": "C. the best"
       },
       {
         "value": "D",
-        "label": "D. more good"
+        "label": "D. more good than"
       }
     ],
     "answer": "B",
-    "tip": "見到 than；good 係不規則——要記特別比較級形，唔係 gooder。",
-    "teach": "good → better → best。"
+    "tip": "句意係兩者相比（今年同舊年）；呢個字唔跟一般字尾規則，要記特別比較級形。",
+    "teach": "better than。"
   },
   {
     "id": "cp6",
-    "prompt": "She is the ______ student in our class. (good)",
+    "prompt": "She is ______ student in our class. (good)",
     "options": [
       {
         "value": "A",
-        "label": "A. better"
+        "label": "A. better than"
       },
       {
         "value": "B",
-        "label": "B. best"
+        "label": "B. the best"
       },
       {
         "value": "C",
-        "label": "C. goodest"
+        "label": "C. the goodest"
       },
       {
         "value": "D",
-        "label": "D. more good"
+        "label": "D. more good than"
       }
     ],
     "answer": "B",
-    "tip": "見到 the … in：最高級；good 不規則，記特別最高級形。",
+    "tip": "句意係範圍內「最…」；呢個字唔跟一般字尾規則，要記特別最高級形。",
     "teach": "the best。"
   },
   {
     "id": "cp7",
-    "prompt": "The weather today is ______ than yesterday. (bad)",
+    "prompt": "The weather today is ______ yesterday. (bad)",
     "options": [
       {
         "value": "A",
-        "label": "A. badder"
+        "label": "A. badder than"
       },
       {
         "value": "B",
-        "label": "B. worse"
+        "label": "B. worse than"
       },
       {
         "value": "C",
-        "label": "C. worst"
+        "label": "C. the worst"
       },
       {
         "value": "D",
-        "label": "D. more bad"
+        "label": "D. more bad than"
       }
     ],
     "answer": "B",
-    "tip": "見到 than；bad 不規則——比較級有特別形。",
-    "teach": "bad → worse → worst。"
+    "tip": "句意係兩者相比；呢個字唔跟一般字尾規則，要記特別比較級形。",
+    "teach": "worse than。"
   },
   {
     "id": "cp8",
-    "prompt": "That was the ______ day of the picnic trip. (bad)",
+    "prompt": "That was ______ day of the picnic trip. (bad)",
     "options": [
       {
         "value": "A",
-        "label": "A. worse"
+        "label": "A. worse than"
       },
       {
         "value": "B",
-        "label": "B. worst"
+        "label": "B. the worst"
       },
       {
         "value": "C",
-        "label": "C. badder"
+        "label": "C. badder than"
       },
       {
         "value": "D",
-        "label": "D. most bad"
+        "label": "D. the most bad"
       }
     ],
     "answer": "B",
-    "tip": "見到 the … of：最高級；bad 不規則最高級。",
+    "tip": "句意係範圍內「最…」；呢個字唔跟一般字尾規則，要記特別最高級形。",
     "teach": "the worst。"
   },
   {
     "id": "cp9",
-    "prompt": "Running to the cinema is ______ than walking. (fast)",
+    "prompt": "Running to the cinema is ______ walking. (fast)",
     "options": [
       {
         "value": "A",
-        "label": "A. faster"
+        "label": "A. faster than"
       },
       {
         "value": "B",
-        "label": "B. fastest"
+        "label": "B. the fastest"
       },
       {
         "value": "C",
-        "label": "C. more fast"
+        "label": "C. more fast than"
       },
       {
         "value": "D",
-        "label": "D. most fast"
+        "label": "D. the most fast"
       }
     ],
     "answer": "A",
-    "tip": "見到 than：兩者；短詞加 -er 系列。",
-    "teach": "-er than。"
+    "tip": "句意係兩者相比；短詞多數加比較級字尾，唔好用 more 硬砌。",
+    "teach": "faster than。"
   },
   {
     "id": "cp10",
-    "prompt": "Who is the ______ runner in your team? (fast)",
+    "prompt": "Who is ______ runner in your team? (fast)",
     "options": [
       {
         "value": "A",
-        "label": "A. faster"
+        "label": "A. faster than"
       },
       {
         "value": "B",
-        "label": "B. fastest"
+        "label": "B. the fastest"
       },
       {
         "value": "C",
-        "label": "C. more fast"
+        "label": "C. more fast than"
       },
       {
         "value": "D",
-        "label": "D. most faster"
+        "label": "D. the most faster"
       }
     ],
     "answer": "B",
-    "tip": "見到 the … in：最高級；短詞 -est 系列。",
-    "teach": "the + -est。"
+    "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
+    "teach": "the fastest。"
   },
   {
     "id": "cp11",
-    "prompt": "This shopping bag is ______ than that one. (heavy)",
+    "prompt": "This shopping bag is ______ that one. (heavy)",
     "options": [
       {
         "value": "A",
-        "label": "A. heavier"
+        "label": "A. heavier than"
       },
       {
         "value": "B",
-        "label": "B. more heavy"
+        "label": "B. more heavy than"
       },
       {
         "value": "C",
-        "label": "C. heaviest"
+        "label": "C. the heaviest"
       },
       {
         "value": "D",
-        "label": "D. most heavy"
+        "label": "D. the most heavy"
       }
     ],
     "answer": "A",
-    "tip": "見到 than；以 y 結尾：先改拼寫（y→i）再加比較級字尾。",
-    "teach": "heavy → heavier。"
+    "tip": "句意係兩者相比；以 y 結尾：y→i 再加比較級字尾。",
+    "teach": "heavier than。"
   },
   {
     "id": "cp12",
-    "prompt": "This mountain is the ______ in our country. (high)",
+    "prompt": "This mountain is ______ in our country. (high)",
     "options": [
       {
         "value": "A",
-        "label": "A. higher"
+        "label": "A. higher than"
       },
       {
         "value": "B",
-        "label": "B. highest"
+        "label": "B. the highest"
       },
       {
         "value": "C",
-        "label": "C. more high"
+        "label": "C. more high than"
       },
       {
         "value": "D",
-        "label": "D. most high"
+        "label": "D. the most high"
       }
     ],
     "answer": "B",
-    "tip": "見到 the … in：最高級；短詞 -est。",
-    "teach": "最高級。"
+    "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
+    "teach": "the highest。"
   },
   {
     "id": "cp13",
-    "prompt": "Her room is ______ than mine. (tidy)",
+    "prompt": "Her room is ______ mine. (tidy)",
     "options": [
       {
         "value": "A",
-        "label": "A. tidier"
+        "label": "A. tidier than"
       },
       {
         "value": "B",
-        "label": "B. more tidy"
+        "label": "B. more tidy than"
       },
       {
         "value": "C",
-        "label": "C. tidiest"
+        "label": "C. the tidiest"
       },
       {
         "value": "D",
-        "label": "D. most tidy"
+        "label": "D. the most tidy"
       }
     ],
     "answer": "A",
-    "tip": "見到 than；y 結尾：y→i 再加比較級字尾。",
-    "teach": "-ier than。"
+    "tip": "句意係兩者相比；以 y 結尾：y→i 再加比較級字尾。",
+    "teach": "tidier than。"
   },
   {
     "id": "cp14",
-    "prompt": "This menu is ______ than the last one. (difficult)",
+    "prompt": "This menu is ______ the last one. (difficult)",
     "options": [
       {
         "value": "A",
-        "label": "A. difficulter"
+        "label": "A. difficulter than"
       },
       {
         "value": "B",
-        "label": "B. more difficult"
+        "label": "B. more difficult than"
       },
       {
         "value": "C",
-        "label": "C. most difficult"
+        "label": "C. the most difficult"
       },
       {
         "value": "D",
-        "label": "D. difficultest"
+        "label": "D. the difficultest"
       }
     ],
     "answer": "B",
-    "tip": "見到 than；呢個形容詞係長詞 → 用『前面加詞』比較，唔好 -er。",
+    "tip": "句意係兩者相比；長詞用 more + 原級，唔好硬加 -er。",
     "teach": "more difficult than。"
   },
   {
     "id": "cp15",
-    "prompt": "He feels ______ today than yesterday after the picnic. (good)",
+    "prompt": "After the picnic, he feels ______ yesterday. (good)",
     "options": [
       {
         "value": "A",
-        "label": "A. better"
+        "label": "A. better than"
       },
       {
         "value": "B",
-        "label": "B. best"
+        "label": "B. the best"
       },
       {
         "value": "C",
-        "label": "C. gooder"
+        "label": "C. gooder than"
       },
       {
         "value": "D",
-        "label": "D. more good"
+        "label": "D. more good than"
       }
     ],
     "answer": "A",
-    "tip": "見到 than；good 不規則比較級。",
-    "teach": "feel better。"
+    "tip": "句意係兩者相比（今日同尋日）；呢個字唔跟一般字尾規則，要記特別比較級形。",
+    "teach": "better than。"
   },
   {
     "id": "cp16",
-    "prompt": "Of the three desserts, the red jelly is the ______.",
+    "prompt": "Of the three desserts, the red jelly is ______.",
     "options": [
       {
         "value": "A",
-        "label": "A. prettier"
+        "label": "A. prettier than"
       },
       {
         "value": "B",
-        "label": "B. prettiest"
+        "label": "B. the prettiest"
       },
       {
         "value": "C",
-        "label": "C. more pretty"
+        "label": "C. more pretty than"
       },
       {
         "value": "D",
-        "label": "D. most prettier"
+        "label": "D. the most prettier"
       }
     ],
     "answer": "B",
-    "tip": "Of the three／the：三者揀「最…」——用最高級。",
+    "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
     "teach": "the prettiest。"
   },
   {
     "id": "cp17",
-    "prompt": "My school bag for the picnic is ______ than yours. (big)",
+    "prompt": "My school bag for the picnic is ______ yours. (big)",
     "options": [
       {
         "value": "A",
-        "label": "A. bigger"
+        "label": "A. bigger than"
       },
       {
         "value": "B",
-        "label": "B. more big"
+        "label": "B. more big than"
       },
       {
         "value": "C",
-        "label": "C. biggest"
+        "label": "C. the biggest"
       },
       {
         "value": "D",
-        "label": "D. most big"
+        "label": "D. the most big"
       }
     ],
     "answer": "A",
-    "tip": "見到 than；短母音＋單輔音結尾：要唔要重寫輔音再加 -er？",
-    "teach": "big → bigger。"
+    "tip": "句意係兩者相比；短母音＋單輔音結尾——要唔要重寫輔音再加比較級字尾？",
+    "teach": "bigger than。"
   },
   {
     "id": "cp18",
-    "prompt": "Summer is ______ than spring. (hot)",
+    "prompt": "Summer is ______ spring. (hot)",
     "options": [
       {
         "value": "A",
-        "label": "A. hotter"
+        "label": "A. hotter than"
       },
       {
         "value": "B",
-        "label": "B. more hot"
+        "label": "B. more hot than"
       },
       {
         "value": "C",
-        "label": "C. hottest"
+        "label": "C. the hottest"
       },
       {
         "value": "D",
-        "label": "D. most hot"
+        "label": "D. the most hot"
       }
     ],
     "answer": "A",
-    "tip": "見到 than；hot 短母音＋t：重寫輔音再加比較級字尾。",
+    "tip": "句意係兩者相比；短母音＋單輔音結尾——要唔要重寫輔音再加比較級字尾？",
     "teach": "hotter than。"
   },
   {
     "id": "cp19",
-    "prompt": "This cake tastes ______ than that one. (bad)",
+    "prompt": "This cake tastes ______ that one. (bad)",
     "options": [
       {
         "value": "A",
-        "label": "A. worse"
+        "label": "A. worse than"
       },
       {
         "value": "B",
-        "label": "B. worst"
+        "label": "B. the worst"
       },
       {
         "value": "C",
-        "label": "C. badder"
+        "label": "C. badder than"
       },
       {
         "value": "D",
-        "label": "D. more bad"
+        "label": "D. more bad than"
       }
     ],
     "answer": "A",
-    "tip": "見到 than；bad 不規則比較級。",
+    "tip": "句意係兩者相比；呢個字唔跟一般字尾規則，要記特別比較級形。",
     "teach": "worse than。"
   },
   {
     "id": "cp20",
-    "prompt": "She is ______ than her brother in Class 4A. (old)",
+    "prompt": "She is ______ her brother in Class 4A. (old)",
     "options": [
       {
         "value": "A",
-        "label": "A. older"
+        "label": "A. older than"
       },
       {
         "value": "B",
-        "label": "B. oldest"
+        "label": "B. the oldest"
       },
       {
         "value": "C",
-        "label": "C. more old"
+        "label": "C. more old than"
       },
       {
         "value": "D",
-        "label": "D. most old"
+        "label": "D. the most old"
       }
     ],
     "answer": "A",
-    "tip": "見到 than：兩者；短詞比較級字尾。",
-    "teach": "old → older。"
+    "tip": "句意係兩者相比；短詞多數加比較級字尾，唔好用 more 硬砌。",
+    "teach": "older than。"
   },
   {
     "id": "cp21",
-    "prompt": "This is the ______ film of all at the cinema. (exciting)",
+    "prompt": "This is ______ film of all at the cinema. (exciting)",
     "options": [
       {
         "value": "A",
-        "label": "A. more exciting"
+        "label": "A. more exciting than"
       },
       {
         "value": "B",
-        "label": "B. most exciting"
+        "label": "B. the most exciting"
       },
       {
         "value": "C",
-        "label": "C. excitinger"
+        "label": "C. excitinger than"
       },
       {
         "value": "D",
-        "label": "D. excitingest"
+        "label": "D. the excitingest"
       }
     ],
     "answer": "B",
-    "tip": "見到 the … of all：最高級；長詞用『前面加詞』最高級，唔係 -est。",
+    "tip": "句意係範圍內「最…」（of／in／of all）；長詞用 most + 原級，唔好亂加 -est。",
     "teach": "the most exciting。"
   },
   {
     "id": "cp22",
-    "prompt": "Walking is ______ than taking the bus in heavy traffic sometimes. (slow)",
+    "prompt": "Walking is ______ taking the bus in heavy traffic sometimes. (slow)",
     "options": [
       {
         "value": "A",
-        "label": "A. slower"
+        "label": "A. slower than"
       },
       {
         "value": "B",
-        "label": "B. slowest"
+        "label": "B. the slowest"
       },
       {
         "value": "C",
-        "label": "C. more slow"
+        "label": "C. more slow than"
       },
       {
         "value": "D",
-        "label": "D. most slow"
+        "label": "D. the most slow"
       }
     ],
     "answer": "A",
-    "tip": "見到 than：兩者；短詞比較級字尾。",
-    "teach": "slow → slower。"
+    "tip": "句意係兩者相比；短詞多數加比較級字尾，唔好用 more 硬砌。",
+    "teach": "slower than。"
   },
   {
     "id": "cp23",
-    "prompt": "Mike is ______ than me. (thin)",
+    "prompt": "Mike is ______ me. (thin)",
     "options": [
       {
         "value": "A",
-        "label": "A. thinner"
+        "label": "A. thinner than"
       },
       {
         "value": "B",
-        "label": "B. more thin"
+        "label": "B. more thin than"
       },
       {
         "value": "C",
-        "label": "C. thinnest"
+        "label": "C. the thinnest"
       },
       {
         "value": "D",
-        "label": "D. most thin"
+        "label": "D. the most thin"
       }
     ],
     "answer": "A",
-    "tip": "見到 than：兩者；短詞＋單輔音結尾——重寫輔音再加比較級字尾（唔好漏重寫）。",
-    "teach": "thin → thinner than。"
+    "tip": "句意係兩者相比；短母音＋單輔音結尾——要唔要重寫輔音再加比較級字尾？",
+    "teach": "thinner than。"
   },
   {
     "id": "cp24",
-    "prompt": "At the picnic shop, Natural Raisins are ______ than Cola. (cheap)",
+    "prompt": "At the picnic shop, Natural Raisins are ______ Cola. (cheap)",
     "options": [
       {
         "value": "A",
-        "label": "A. cheaper"
+        "label": "A. cheaper than"
       },
       {
         "value": "B",
-        "label": "B. cheapper"
+        "label": "B. cheapper than"
       },
       {
         "value": "C",
-        "label": "C. cheapest"
+        "label": "C. the cheapest"
       },
       {
         "value": "D",
-        "label": "D. more cheap"
+        "label": "D. more cheap than"
       }
     ],
     "answer": "A",
-    "tip": "見到 than：比價錢；短詞加 -er——留意拼寫唔好亂多重寫輔音。",
-    "teach": "cheap → cheaper（唔係 cheapper）。"
+    "tip": "句意係兩者比價錢；短詞加比較級字尾——留意拼寫唔好亂多重寫輔音。",
+    "teach": "cheaper than（留意拼寫）。"
   },
   {
     "id": "cp25",
-    "prompt": "Look at the price list. Orange juice is the ______ drink of the three. (cheap)",
+    "prompt": "Look at the price list. Orange juice is ______ drink of the three. (cheap)",
     "options": [
       {
         "value": "A",
-        "label": "A. cheaper"
+        "label": "A. cheaper than"
       },
       {
         "value": "B",
-        "label": "B. cheapest"
+        "label": "B. the cheapest"
       },
       {
         "value": "C",
-        "label": "C. cheapper"
+        "label": "C. cheapper than"
       },
       {
         "value": "D",
-        "label": "D. cheappest"
+        "label": "D. the cheappest"
       }
     ],
     "answer": "B",
-    "tip": "見到 the … of the three：最高級；短詞 -est，拼寫唔好多重寫。",
-    "teach": "the cheapest（唔係 cheappest）。"
+    "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
+    "teach": "the cheapest。"
   },
   {
     "id": "cp26",
-    "prompt": "Salad is ______ than fries on our picnic menu. (healthy)",
+    "prompt": "Salad is ______ fries on our picnic menu. (healthy)",
     "options": [
       {
         "value": "A",
-        "label": "A. healthier"
+        "label": "A. healthier than"
       },
       {
         "value": "B",
-        "label": "B. more healthy"
+        "label": "B. more healthy than"
       },
       {
         "value": "C",
-        "label": "C. healthiest"
+        "label": "C. the healthiest"
       },
       {
         "value": "D",
-        "label": "D. most healthy"
+        "label": "D. the most healthy"
       }
     ],
     "answer": "A",
-    "tip": "見到 than；healthy 以 y 結尾：y→i 再加比較級字尾。",
-    "teach": "healthy → healthier。"
+    "tip": "句意係兩者相比；以 y 結尾：y→i 再加比較級字尾。",
+    "teach": "healthier than。"
   },
   {
     "id": "cp27",
-    "prompt": "Of all the picnic snacks, fruit is the ______. (healthy)",
+    "prompt": "Of all the picnic snacks, fruit is ______. (healthy)",
     "options": [
       {
         "value": "A",
-        "label": "A. healthier"
+        "label": "A. healthier than"
       },
       {
         "value": "B",
-        "label": "B. healthiest"
+        "label": "B. the healthiest"
       },
       {
         "value": "C",
-        "label": "C. more healthy"
+        "label": "C. more healthy than"
       },
       {
         "value": "D",
-        "label": "D. most healthy"
+        "label": "D. the most healthy"
       }
     ],
     "answer": "B",
-    "tip": "Of all／the：最高級；y→i 再加最高級字尾。",
+    "tip": "句意係範圍內「最…」；以 y 結尾：y→i 再加最高級字尾。",
     "teach": "the healthiest。"
   },
   {
     "id": "cp28",
-    "prompt": "This shopping bag is ______ than that heavy one. (light)",
+    "prompt": "This shopping bag is ______ that heavy one. (light)",
     "options": [
       {
         "value": "A",
-        "label": "A. lighter"
+        "label": "A. lighter than"
       },
       {
         "value": "B",
-        "label": "B. more light"
+        "label": "B. more light than"
       },
       {
         "value": "C",
-        "label": "C. lightest"
+        "label": "C. the lightest"
       },
       {
         "value": "D",
-        "label": "D. most light"
+        "label": "D. the most light"
       }
     ],
     "answer": "A",
-    "tip": "見到 than：兩者；短詞比較級字尾。",
-    "teach": "light → lighter。"
+    "tip": "句意係兩者相比；短詞多數加比較級字尾，唔好用 more 硬砌。",
+    "teach": "lighter than。"
   },
   {
     "id": "cp29",
-    "prompt": "Which bag is the ______ in the supermarket trolley? (light)",
+    "prompt": "Which bag is ______ in the supermarket trolley? (light)",
     "options": [
       {
         "value": "A",
-        "label": "A. lighter"
+        "label": "A. lighter than"
       },
       {
         "value": "B",
-        "label": "B. lightest"
+        "label": "B. the lightest"
       },
       {
         "value": "C",
-        "label": "C. more light"
+        "label": "C. more light than"
       },
       {
         "value": "D",
-        "label": "D. most light"
+        "label": "D. the most light"
       }
     ],
     "answer": "B",
-    "tip": "見到 the … in：最高級；短詞 -est。",
+    "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
     "teach": "the lightest。"
   },
   {
     "id": "cp30",
-    "prompt": "My shoes are ______ than yours after the country park walk. (dirty)",
+    "prompt": "My shoes are ______ yours after the country park walk. (dirty)",
     "options": [
       {
         "value": "A",
-        "label": "A. dirtier"
+        "label": "A. dirtier than"
       },
       {
         "value": "B",
-        "label": "B. more dirty"
+        "label": "B. more dirty than"
       },
       {
         "value": "C",
-        "label": "C. dirtiest"
+        "label": "C. the dirtiest"
       },
       {
         "value": "D",
-        "label": "D. most dirty"
+        "label": "D. the most dirty"
       }
     ],
     "answer": "A",
-    "tip": "見到 than；dirty 以 y 結尾：y→i + 比較級字尾。",
-    "teach": "dirty → dirtier。"
+    "tip": "句意係兩者相比；以 y 結尾：y→i 再加比較級字尾。",
+    "teach": "dirtier than。"
   },
   {
     "id": "cp31",
-    "prompt": "In our juice brand survey, Bananas are ______ than cherries. (popular)",
+    "prompt": "In our juice brand survey, Bananas are ______ cherries. (popular)",
     "options": [
       {
         "value": "A",
-        "label": "A. popularer"
+        "label": "A. popularer than"
       },
       {
         "value": "B",
-        "label": "B. more popular"
+        "label": "B. more popular than"
       },
       {
         "value": "C",
-        "label": "C. most popular"
+        "label": "C. the most popular"
       },
       {
         "value": "D",
-        "label": "D. popularest"
+        "label": "D. the popularest"
       }
     ],
     "answer": "B",
-    "tip": "見到 than；呢個係長詞形容詞 → 用『前面加詞』比較，唔係 -er。",
+    "tip": "句意係兩者相比；長詞用 more + 原級，唔好硬加 -er。",
     "teach": "more popular than。"
   },
   {
     "id": "cp32",
-    "prompt": "This chocolate cake is ______ than the plain bread. (delicious)",
+    "prompt": "This chocolate cake is ______ the plain bread. (delicious)",
     "options": [
       {
         "value": "A",
-        "label": "A. deliciouser"
+        "label": "A. deliciouser than"
       },
       {
         "value": "B",
-        "label": "B. more delicious"
+        "label": "B. more delicious than"
       },
       {
         "value": "C",
-        "label": "C. most delicious"
+        "label": "C. the most delicious"
       },
       {
         "value": "D",
-        "label": "D. deliciousest"
+        "label": "D. the deliciousest"
       }
     ],
     "answer": "B",
-    "tip": "見到 than；長詞用『前面加詞』+ 原級形容詞。",
+    "tip": "句意係兩者相比；長詞用 more + 原級，唔好硬加 -er。",
     "teach": "more delicious than。"
   },
   {
     "id": "cp33",
-    "prompt": "On the price list, Sunshine Mixed Nuts is the ______ snack. (expensive)",
+    "prompt": "On the price list, Sunshine Mixed Nuts is ______ snack. (expensive)",
     "options": [
       {
         "value": "A",
-        "label": "A. more expensive"
+        "label": "A. more expensive than"
       },
       {
         "value": "B",
-        "label": "B. most expensive"
+        "label": "B. the most expensive"
       },
       {
         "value": "C",
-        "label": "C. expensiver"
+        "label": "C. expensiver than"
       },
       {
         "value": "D",
-        "label": "D. expensivest"
+        "label": "D. the expensivest"
       }
     ],
     "answer": "B",
-    "tip": "見到 the …：最高級；長詞用『前面加詞』+ 原級。",
+    "tip": "句意係範圍內「最…」（of／in／of all）；長詞用 most + 原級，唔好亂加 -est。",
     "teach": "the most expensive。"
   },
   {
     "id": "cp34",
-    "prompt": "The cinema show was ______ than the school play. (exciting)",
+    "prompt": "The cinema show was ______ the school play. (exciting)",
     "options": [
       {
         "value": "A",
-        "label": "A. excitinger"
+        "label": "A. excitinger than"
       },
       {
         "value": "B",
-        "label": "B. more exciting"
+        "label": "B. more exciting than"
       },
       {
         "value": "C",
-        "label": "C. most exciting"
+        "label": "C. the most exciting"
       },
       {
         "value": "D",
-        "label": "D. excitingest"
+        "label": "D. the excitingest"
       }
     ],
     "answer": "B",
-    "tip": "見到 than；長詞用『前面加詞』比較法。",
+    "tip": "句意係兩者相比；長詞用 more + 原級，唔好硬加 -er。",
     "teach": "more exciting than。"
   },
   {
     "id": "cp35",
-    "prompt": "Waiting in the long supermarket queue is ______ than shopping online. (boring)",
+    "prompt": "Waiting in the long supermarket queue is ______ shopping online. (boring)",
     "options": [
       {
         "value": "A",
-        "label": "A. boringer"
+        "label": "A. boringer than"
       },
       {
         "value": "B",
-        "label": "B. more boring"
+        "label": "B. more boring than"
       },
       {
         "value": "C",
-        "label": "C. most boring"
+        "label": "C. the most boring"
       },
       {
         "value": "D",
-        "label": "D. boringest"
+        "label": "D. the boringest"
       }
     ],
     "answer": "B",
-    "tip": "見到 than；長詞用『前面加詞』比較法。",
+    "tip": "句意係兩者相比；長詞用 more + 原級，唔好硬加 -er。",
     "teach": "more boring than。"
   },
   {
     "id": "cp36",
-    "prompt": "Climbing that rock in the country park is ______ than walking on the path. (dangerous)",
+    "prompt": "Climbing that rock in the country park is ______ walking on the path. (dangerous)",
     "options": [
       {
         "value": "A",
-        "label": "A. dangerouser"
+        "label": "A. dangerouser than"
       },
       {
         "value": "B",
-        "label": "B. more dangerous"
+        "label": "B. more dangerous than"
       },
       {
         "value": "C",
-        "label": "C. most dangerous"
+        "label": "C. the most dangerous"
       },
       {
         "value": "D",
-        "label": "D. dangerousest"
+        "label": "D. the dangerousest"
       }
     ],
     "answer": "B",
-    "tip": "見到 than；長詞用『前面加詞』比較法。",
+    "tip": "句意係兩者相比；長詞用 more + 原級，唔好硬加 -er。",
     "teach": "more dangerous than。"
   },
   {
     "id": "cp37",
-    "prompt": "Leaving your shopping list at home is a ______ mistake than forgetting one item. (careless)",
+    "prompt": "Forgetting the whole shopping list is ______ forgetting one item. (careless)",
     "options": [
       {
         "value": "A",
-        "label": "A. carelesser"
+        "label": "A. carelesser than"
       },
       {
         "value": "B",
-        "label": "B. more careless"
+        "label": "B. more careless than"
       },
       {
         "value": "C",
-        "label": "C. most careless"
+        "label": "C. the most careless"
       },
       {
         "value": "D",
-        "label": "D. carelessest"
+        "label": "D. the carelessest"
       }
     ],
     "answer": "B",
-    "tip": "見到 than；長詞用『前面加詞』比較法。",
+    "tip": "句意係兩者相比；長詞用 more + 原級，唔好硬加 -er。",
     "teach": "more careless than。"
   },
   {
     "id": "cp38",
-    "prompt": "Of the three juice brands in our class survey, Fresh Orange is the ______. (popular)",
+    "prompt": "Of the three juice brands in our class survey, Fresh Orange is ______. (popular)",
     "options": [
       {
         "value": "A",
-        "label": "A. more popular"
+        "label": "A. more popular than"
       },
       {
         "value": "B",
-        "label": "B. most popular"
+        "label": "B. the most popular"
       },
       {
         "value": "C",
-        "label": "C. popularer"
+        "label": "C. popularer than"
       },
       {
         "value": "D",
-        "label": "D. popularest"
+        "label": "D. the popularest"
       }
     ],
     "answer": "B",
-    "tip": "Of the three／the：最高級；長詞用『前面加詞』最高級。",
+    "tip": "句意係範圍內「最…」（of／in／of all）；長詞用 most + 原級，唔好亂加 -est。",
     "teach": "the most popular。"
   },
   {
     "id": "cp39",
-    "prompt": "On the bakery price list, this loaf is ______ than that one. (cheap)",
+    "prompt": "On the bakery price list, this loaf is ______ that one. (cheap)",
     "options": [
       {
         "value": "A",
-        "label": "A. cheapper"
+        "label": "A. cheapper than"
       },
       {
         "value": "B",
-        "label": "B. cheaper"
+        "label": "B. cheaper than"
       },
       {
         "value": "C",
-        "label": "C. more cheap"
+        "label": "C. more cheap than"
       },
       {
         "value": "D",
-        "label": "D. cheapest"
+        "label": "D. the cheapest"
       }
     ],
     "answer": "B",
-    "tip": "見到 than：兩者比價錢；短詞加 -er——唔好亂雙寫輔音，亦唔好用 more 硬砌。",
-    "teach": "cheap → cheaper（唔係 cheapper／more cheap）。"
+    "tip": "句意係兩者比價錢；短詞加比較級字尾——留意拼寫唔好亂多重寫輔音。",
+    "teach": "cheaper than（留意拼寫）。"
   },
   {
     "id": "cp40",
-    "prompt": "Natural Raisins are the ______ snack of the three on the picnic list. (cheap)",
+    "prompt": "Natural Raisins are ______ snack of the three on the picnic list. (cheap)",
     "options": [
       {
         "value": "A",
-        "label": "A. cheaper"
+        "label": "A. cheaper than"
       },
       {
         "value": "B",
-        "label": "B. cheappest"
+        "label": "B. the cheappest"
       },
       {
         "value": "C",
-        "label": "C. cheapest"
+        "label": "C. the cheapest"
       },
       {
         "value": "D",
-        "label": "D. more cheap"
+        "label": "D. more cheap than"
       }
     ],
     "answer": "C",
-    "tip": "the … of the three：最高級；短詞 -est，拼寫唔好亂雙寫輔音。",
-    "teach": "the cheapest（唔係 cheappest）。"
+    "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
+    "teach": "the cheapest。"
   },
   {
     "id": "cp41",
-    "prompt": "At the drink stall, apple juice is ______ than cola today. (cheap)",
+    "prompt": "At the drink stall, apple juice is ______ cola today. (cheap)",
     "options": [
       {
         "value": "A",
-        "label": "A. cheaper"
+        "label": "A. cheaper than"
       },
       {
         "value": "B",
-        "label": "B. cheapper"
+        "label": "B. cheapper than"
       },
       {
         "value": "C",
-        "label": "C. cheapest"
+        "label": "C. the cheapest"
       },
       {
         "value": "D",
-        "label": "D. more cheaper"
+        "label": "D. more cheaper than"
       }
     ],
     "answer": "A",
-    "tip": "than＝兩者比；短詞 -er，留意輔音唔好多重寫，亦唔好 more + -er 重疊。",
-    "teach": "cheaper than（唔係 cheapper／more cheaper）。"
+    "tip": "句意係兩者比價錢；短詞加比較級字尾——留意拼寫唔好亂多重寫輔音。",
+    "teach": "cheaper than（留意拼寫）。"
   },
   {
     "id": "cp42",
-    "prompt": "Look at the supermarket board. Soya milk is the ______ drink this week. (cheap)",
+    "prompt": "Look at the supermarket board. Soya milk is ______ drink this week. (cheap)",
     "options": [
       {
         "value": "A",
-        "label": "A. cheapper"
+        "label": "A. cheapper than"
       },
       {
         "value": "B",
-        "label": "B. cheaper"
+        "label": "B. cheaper than"
       },
       {
         "value": "C",
-        "label": "C. cheappest"
+        "label": "C. the cheappest"
       },
       {
         "value": "D",
-        "label": "D. cheapest"
+        "label": "D. the cheapest"
       }
     ],
     "answer": "D",
-    "tip": "the + 形容詞：最高級；短詞 -est，唔好亂雙寫輔音。",
+    "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
     "teach": "the cheapest。"
   },
   {
     "id": "cp43",
-    "prompt": "Dried grapes in that packet are ______ than the fresh ones on sale. (cheap)",
+    "prompt": "Dried grapes in that packet are ______ the fresh ones on sale. (cheap)",
     "options": [
       {
         "value": "A",
-        "label": "A. more cheap"
+        "label": "A. more cheap than"
       },
       {
         "value": "B",
-        "label": "B. cheapper"
+        "label": "B. cheapper than"
       },
       {
         "value": "C",
-        "label": "C. cheaper"
+        "label": "C. cheaper than"
       },
       {
         "value": "D",
-        "label": "D. cheapest"
+        "label": "D. the cheapest"
       }
     ],
     "answer": "C",
-    "tip": "than：比較級；短詞直接加 -er，唔好 more、亦唔好亂雙寫。",
+    "tip": "句意係兩者比價錢；短詞加比較級字尾——留意拼寫唔好亂多重寫輔音。",
     "teach": "cheaper than。"
   },
   {
     "id": "cp44",
-    "prompt": "Of the three breads on the shelf, the brown loaf is the ______. (cheap)",
+    "prompt": "Of the three breads on the shelf, the brown loaf is ______. (cheap)",
     "options": [
       {
         "value": "A",
-        "label": "A. cheaper"
+        "label": "A. cheaper than"
       },
       {
         "value": "B",
-        "label": "B. cheapest"
+        "label": "B. the cheapest"
       },
       {
         "value": "C",
-        "label": "C. cheapper"
+        "label": "C. cheapper than"
       },
       {
         "value": "D",
-        "label": "D. more cheap"
+        "label": "D. more cheap than"
       }
     ],
     "answer": "B",
-    "tip": "Of the three／the：最高級；短詞 -est，拼寫唔好亂雙寫輔音。",
-    "teach": "the cheapest of the three。"
+    "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
+    "teach": "the cheapest。"
   },
   {
     "id": "cp45",
-    "prompt": "This cinema show is ______ than last week's cartoon. (interesting)",
+    "prompt": "This cinema show is ______ last week's cartoon. (interesting)",
     "options": [
       {
         "value": "A",
-        "label": "A. more intesting"
+        "label": "A. more intesting than"
       },
       {
         "value": "B",
-        "label": "B. more interesting"
+        "label": "B. more interesting than"
       },
       {
         "value": "C",
-        "label": "C. interestinger"
+        "label": "C. interestinger than"
       },
       {
         "value": "D",
-        "label": "D. most interesting"
+        "label": "D. the most interesting"
       }
     ],
     "answer": "B",
-    "tip": "than＋長詞：用『前面加詞』比較法；順便檢查拼寫有冇漏字母。",
-    "teach": "more interesting（唔係 more intesting／interestinger）。"
+    "tip": "句意係兩者相比；長詞用 more + 原級，唔好硬加 -er。",
+    "teach": "more interesting than（留意拼寫）。"
   },
   {
     "id": "cp46",
-    "prompt": "Of the three storybooks, this one is the ______. (interesting)",
+    "prompt": "Of the three storybooks, this one is ______. (interesting)",
     "options": [
       {
         "value": "A",
-        "label": "A. most intesting"
+        "label": "A. the most intesting"
       },
       {
         "value": "B",
-        "label": "B. more interesting"
+        "label": "B. more interesting than"
       },
       {
         "value": "C",
-        "label": "C. most interesting"
+        "label": "C. the most interesting"
       },
       {
         "value": "D",
-        "label": "D. interestingest"
+        "label": "D. the interestingest"
       }
     ],
     "answer": "C",
-    "tip": "Of the three／the：長詞最高級用『前面加詞』；檢查拼寫有冇漏字母。",
-    "teach": "the most interesting（唔係 most intesting）。"
+    "tip": "句意係範圍內「最…」（of／in／of all）；長詞用 most + 原級，唔好亂加 -est。",
+    "teach": "the most interesting（留意拼寫）。"
   }
 ];
