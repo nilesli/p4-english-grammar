@@ -1,4 +1,4 @@
-/** 比較級／最高級完整片段 · r14 fill · 20261105r14 · answerText 含 than／the；tips = 思路 only, no answer leak */
+/** 比較級／最高級完整片段 · r15 images · 20261105r15 · answerText 含 than／the；tips = 思路 only, no answer leak */
 window.P4_BANK_COMPARATIVES = [
   {
     "id": "cp1",
@@ -24,7 +24,9 @@ window.P4_BANK_COMPARATIVES = [
     "answer": "A",
     "tip": "句意係兩者相比；短詞多數加比較級字尾，唔好用 more 硬砌。",
     "teach": "taller than。",
-    "answerText": "taller than"
+    "answerText": "taller than",
+    "image": "tall-boys.png",
+    "imageAlt": "兩個男孩比高／two boys comparing height"
   },
   {
     "id": "cp2",
@@ -50,7 +52,9 @@ window.P4_BANK_COMPARATIVES = [
     "answer": "B",
     "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
     "teach": "the tallest。",
-    "answerText": "the tallest"
+    "answerText": "the tallest",
+    "image": "tall-building.png",
+    "imageAlt": "高樓大廈／tall building"
   },
   {
     "id": "cp3",
@@ -284,7 +288,9 @@ window.P4_BANK_COMPARATIVES = [
     "answer": "A",
     "tip": "句意係兩者相比；以 y 結尾：y→i 再加比較級字尾。",
     "teach": "heavier than。",
-    "answerText": "heavier than"
+    "answerText": "heavier than",
+    "image": "bags-heavy-light.png",
+    "imageAlt": "重袋同輕袋／heavy and light bags"
   },
   {
     "id": "cp12",
@@ -414,7 +420,9 @@ window.P4_BANK_COMPARATIVES = [
     "answer": "B",
     "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
     "teach": "the prettiest。",
-    "answerText": "the prettiest"
+    "answerText": "the prettiest",
+    "image": "three-desserts.png",
+    "imageAlt": "三款甜品／three desserts"
   },
   {
     "id": "cp17",
@@ -440,7 +448,9 @@ window.P4_BANK_COMPARATIVES = [
     "answer": "A",
     "tip": "句意係兩者相比；短母音＋單輔音結尾——要唔要重寫輔音再加比較級字尾？",
     "teach": "bigger than。",
-    "answerText": "bigger than"
+    "answerText": "bigger than",
+    "image": "bags-size.png",
+    "imageAlt": "大小袋比較／bags of different sizes"
   },
   {
     "id": "cp18",
@@ -596,7 +606,9 @@ window.P4_BANK_COMPARATIVES = [
     "answer": "A",
     "tip": "句意係兩者相比；短母音＋單輔音結尾——要唔要重寫輔音再加比較級字尾？",
     "teach": "thinner than。",
-    "answerText": "thinner than"
+    "answerText": "thinner than",
+    "image": "thin-boys.png",
+    "imageAlt": "兩個男孩比瘦／two boys comparing thinness"
   },
   {
     "id": "cp24",
@@ -622,7 +634,9 @@ window.P4_BANK_COMPARATIVES = [
     "answer": "A",
     "tip": "句意係兩者比價錢；短詞加比較級字尾——留意拼寫唔好亂多重寫輔音。",
     "teach": "cheaper than（留意拼寫）。",
-    "answerText": "cheaper than"
+    "answerText": "cheaper than",
+    "image": "two-raisins-cola.png",
+    "imageAlt": "葡萄乾同可樂兩件貨／raisins and cola with prices"
   },
   {
     "id": "cp25",
@@ -648,7 +662,9 @@ window.P4_BANK_COMPARATIVES = [
     "answer": "B",
     "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
     "teach": "the cheapest。",
-    "answerText": "the cheapest"
+    "answerText": "the cheapest",
+    "image": "price-drinks-3.png",
+    "imageAlt": "三款飲品價目／price board for three drinks"
   },
   {
     "id": "cp26",
@@ -726,7 +742,9 @@ window.P4_BANK_COMPARATIVES = [
     "answer": "A",
     "tip": "句意係兩者相比；短詞多數加比較級字尾，唔好用 more 硬砌。",
     "teach": "lighter than。",
-    "answerText": "lighter than"
+    "answerText": "lighter than",
+    "image": "bags-heavy-light.png",
+    "imageAlt": "重袋同輕袋／heavy and light bags"
   },
   {
     "id": "cp29",
@@ -752,7 +770,9 @@ window.P4_BANK_COMPARATIVES = [
     "answer": "B",
     "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
     "teach": "the lightest。",
-    "answerText": "the lightest"
+    "answerText": "the lightest",
+    "image": "bags-three-light.png",
+    "imageAlt": "三個袋比輕／three bags, lightest"
   },
   {
     "id": "cp30",
@@ -856,7 +876,9 @@ window.P4_BANK_COMPARATIVES = [
     "answer": "B",
     "tip": "句意係範圍內「最…」（of／in／of all）；長詞用 most + 原級，唔好亂加 -est。",
     "teach": "the most expensive。",
-    "answerText": "the most expensive"
+    "answerText": "the most expensive",
+    "image": "price-snacks-3.png",
+    "imageAlt": "三款零食價目／price board for three snacks"
   },
   {
     "id": "cp34",
@@ -1012,7 +1034,9 @@ window.P4_BANK_COMPARATIVES = [
     "answer": "B",
     "tip": "句意係兩者比價錢；短詞加比較級字尾——留意拼寫唔好亂多重寫輔音。",
     "teach": "cheaper than（留意拼寫）。",
-    "answerText": "cheaper than"
+    "answerText": "cheaper than",
+    "image": "price-bakery.png",
+    "imageAlt": "麵包店價目／bakery price board"
   },
   {
     "id": "cp40",
@@ -1038,7 +1062,9 @@ window.P4_BANK_COMPARATIVES = [
     "answer": "C",
     "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
     "teach": "the cheapest。",
-    "answerText": "the cheapest"
+    "answerText": "the cheapest",
+    "image": "price-snacks-3.png",
+    "imageAlt": "三款零食價目／price board for three snacks"
   },
   {
     "id": "cp41",
@@ -1064,7 +1090,9 @@ window.P4_BANK_COMPARATIVES = [
     "answer": "A",
     "tip": "句意係兩者比價錢；短詞加比較級字尾——留意拼寫唔好亂多重寫輔音。",
     "teach": "cheaper than（留意拼寫）。",
-    "answerText": "cheaper than"
+    "answerText": "cheaper than",
+    "image": "two-apple-cola.png",
+    "imageAlt": "蘋果同可樂兩件貨／apple and cola with prices"
   },
   {
     "id": "cp42",
@@ -1090,7 +1118,9 @@ window.P4_BANK_COMPARATIVES = [
     "answer": "D",
     "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
     "teach": "the cheapest。",
-    "answerText": "the cheapest"
+    "answerText": "the cheapest",
+    "image": "price-drinks-3.png",
+    "imageAlt": "三款飲品價目／price board for three drinks"
   },
   {
     "id": "cp43",
@@ -1116,7 +1146,9 @@ window.P4_BANK_COMPARATIVES = [
     "answer": "C",
     "tip": "句意係兩者比價錢；短詞加比較級字尾——留意拼寫唔好亂多重寫輔音。",
     "teach": "cheaper than。",
-    "answerText": "cheaper than"
+    "answerText": "cheaper than",
+    "image": "two-dried-fresh-grapes.png",
+    "imageAlt": "乾提子同新鮮提子／dried and fresh grapes"
   },
   {
     "id": "cp44",
@@ -1142,7 +1174,9 @@ window.P4_BANK_COMPARATIVES = [
     "answer": "B",
     "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
     "teach": "the cheapest。",
-    "answerText": "the cheapest"
+    "answerText": "the cheapest",
+    "image": "price-bakery.png",
+    "imageAlt": "麵包店價目／bakery price board"
   },
   {
     "id": "cp45",

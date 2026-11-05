@@ -1,6 +1,6 @@
 /**
  * 小四英文温習 · Practice app
- * r13 · ?v=20261105r14 · fill-in + on-screen keyboard (tenses / advanced / comparatives)
+ * r15 · ?v=20261105r15 · optional question images (quantifiers + selected comparatives)
  */
 (function () {
   const ROUND_SIZE = 8;
@@ -905,6 +905,17 @@
     head.innerHTML =
       '<span class="q-idx">' + (i + 1) + "</span>" + promptHtml;
     card.appendChild(head);
+    if (q.image) {
+      const fig = document.createElement("figure");
+      fig.className = "q-figure";
+      const img = document.createElement("img");
+      img.src = "assets/questions/" + q.image + "?v=20261105r15";
+      img.alt = q.imageAlt || "";
+      img.loading = "lazy";
+      img.decoding = "async";
+      fig.appendChild(img);
+      card.appendChild(fig);
+    }
     if (isFillTopic(state.topicId)) {
       card.appendChild(
         makeFillInput(q, { ariaLabel: "第" + (i + 1) + "題填充" })

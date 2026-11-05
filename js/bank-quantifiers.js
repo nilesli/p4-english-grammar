@@ -1,4 +1,4 @@
-/** auto bank · r9 weakspot · 20261101r9 · tips = 思路 only, no answer leak */
+/** auto bank · r15 images · 20261105r15 · tips = 思路 only, no answer leak */
 window.P4_BANK_QUANTIFIERS = [
   {
     "id": "q1",
@@ -23,7 +23,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "A",
     "tip": "花生醬係糊狀醬料：超市常見用邊種容器裝？金屬罐、玻璃／塑膠廣口樽、定成條／成串？",
-    "teach": "a jar of peanut butter。"
+    "teach": "a jar of peanut butter。",
+    "image": "jar-peanut-butter.png",
+    "imageAlt": "一樽花生醬／a jar of peanut butter"
   },
   {
     "id": "q2",
@@ -48,7 +50,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "B",
     "tip": "薯片係鬆脆零食：多數用邊種包裝？紙盒飲品、袋裝、定麵包形？",
-    "teach": "a packet of crisps。"
+    "teach": "a packet of crisps。",
+    "image": "packet-snacks.png",
+    "imageAlt": "一包零食／a packet of snacks"
   },
   {
     "id": "q3",
@@ -73,7 +77,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "A",
     "tip": "豆漿／牛奶類飲品：超市常見係紙盒裝定成條朱古力形？",
-    "teach": "a carton of soya milk。"
+    "teach": "a carton of soya milk。",
+    "image": "carton-drink.png",
+    "imageAlt": "一盒飲品／a carton of drink"
   },
   {
     "id": "q4",
@@ -98,7 +104,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "A",
     "tip": "一整條朱古力（唔係盒入面好多粒）：形狀似「長條」定「成串水果」？",
-    "teach": "a bar of chocolate（vs a box of chocolates）。"
+    "teach": "a bar of chocolate（vs a box of chocolates）。",
+    "image": "bar-chocolate.png",
+    "imageAlt": "一條朱古力／a bar of chocolate"
   },
   {
     "id": "q5",
@@ -123,7 +131,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "B",
     "tip": "葡萄通常連枝賣：係成串、定袋裝零食、定紙盒奶？",
-    "teach": "a bunch of grapes。"
+    "teach": "a bunch of grapes。",
+    "image": "bunch-grapes.png",
+    "imageAlt": "一串提子／a bunch of grapes"
   },
   {
     "id": "q6",
@@ -148,7 +158,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "B",
     "tip": "麵包成條賣：想緊係麵包形量詞、定醬料樽、定金屬罐？",
-    "teach": "a loaf of bread。"
+    "teach": "a loaf of bread。",
+    "image": "loaf-bread.png",
+    "imageAlt": "一條麵包／a loaf of bread"
   },
   {
     "id": "q7",
@@ -173,7 +185,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "A",
     "tip": "堅果常見金屬罐裝；留意有冇明顯唔合英文習慣嘅配對（例如亂用 beans 配堅果）。",
-    "teach": "a tin of nuts（唔係 beans of nuts）。"
+    "teach": "a tin of nuts（唔係 beans of nuts）。",
+    "image": "tin-nuts.png",
+    "imageAlt": "一罐果仁／a tin of nuts"
   },
   {
     "id": "q8",
@@ -198,7 +212,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "A",
     "tip": "糊狀醬料多用廣口玻璃／塑膠樽；同金屬罐（tin）分清楚邊種啱醬。",
-    "teach": "peanut butter → a jar of。"
+    "teach": "peanut butter → a jar of。",
+    "image": "jar-peanut-butter.png",
+    "imageAlt": "一樽花生醬／a jar of peanut butter"
   },
   {
     "id": "q9",
@@ -223,7 +239,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "B",
     "tip": "「好多粒細嘅、裝喺盒」——唔係一整條；分清盒裝粒裝同長條形。",
-    "teach": "a box of chocolates ≠ a bar of chocolate。"
+    "teach": "a box of chocolates ≠ a bar of chocolate。",
+    "image": "box-chocolates.png",
+    "imageAlt": "一盒朱古力／a box of chocolates"
   },
   {
     "id": "q10",
@@ -248,7 +266,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "B",
     "tip": "金屬罐裝堅果；beans 亂配係常見錯寫，可先排除。",
-    "teach": "a tin of nuts ✓；beans of nuts ✗。"
+    "teach": "a tin of nuts ✓；beans of nuts ✗。",
+    "image": "tin-nuts.png",
+    "imageAlt": "一罐果仁／a tin of nuts"
   },
   {
     "id": "q11",
@@ -273,7 +293,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "A",
     "tip": "餅乾鬆脆零食：袋裝定紙盒奶、定麵包形較常見？",
-    "teach": "a packet of biscuits。"
+    "teach": "a packet of biscuits。",
+    "image": "packet-snacks.png",
+    "imageAlt": "一包零食／a packet of snacks"
   },
   {
     "id": "q12",
@@ -298,7 +320,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "A",
     "tip": "果醬同花生醬一樣係糊狀：廣口樽裝同金屬罐、成串，邊種較啱？",
-    "teach": "a jar of jam。"
+    "teach": "a jar of jam。",
+    "image": "jar-jam.png",
+    "imageAlt": "一樽果醬／a jar of jam"
   },
   {
     "id": "q13",
@@ -323,7 +347,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "A",
     "tip": "盒裝果汁：紙盒飲品類容器，唔係長條朱古力或成串水果。",
-    "teach": "a carton of orange juice。"
+    "teach": "a carton of orange juice。",
+    "image": "carton-drink.png",
+    "imageAlt": "一盒飲品／a carton of drink"
   },
   {
     "id": "q14",
@@ -348,7 +374,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "B",
     "tip": "「一長條」朱古力——同「一盒好多粒」唔同；先睇形狀再揀。",
-    "teach": "a bar of chocolate。"
+    "teach": "a bar of chocolate。",
+    "image": "bar-chocolate.png",
+    "imageAlt": "一條朱古力／a bar of chocolate"
   },
   {
     "id": "q15",
@@ -373,7 +401,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "A",
     "tip": "水果連住一齊賣：串／束類，定袋裝、定麵包形？",
-    "teach": "a bunch of bananas。"
+    "teach": "a bunch of bananas。",
+    "image": "bunch-bananas.png",
+    "imageAlt": "一串香蕉／a bunch of bananas"
   },
   {
     "id": "q16",
@@ -423,7 +453,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "A",
     "tip": "吞拿魚超市常見金屬罐；同玻璃廣口樽、袋裝零食分清。",
-    "teach": "a tin of tuna。"
+    "teach": "a tin of tuna。",
+    "image": "tin-tuna.png",
+    "imageAlt": "一罐吞拿魚／a tin of tuna"
   },
   {
     "id": "q18",
@@ -448,7 +480,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "A",
     "tip": "兩格：麵包用邊種「成條」量詞？花生醬用邊種「糊狀樽裝」？各自對應，唔好互換。",
-    "teach": "a loaf of bread；a jar of peanut butter。"
+    "teach": "a loaf of bread；a jar of peanut butter。",
+    "image": "loaf-bread.png",
+    "imageAlt": "麵包同花生醬／a loaf of bread (and peanut butter)"
   },
   {
     "id": "q19",
@@ -473,7 +507,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "B",
     "tip": "糊狀廣口樽裝醬料——同金屬罐、成條、紙盒分清，唔好見『罐』就亂揀。",
-    "teach": "a jar of peanut butter（唔係 a tin of）。"
+    "teach": "a jar of peanut butter（唔係 a tin of）。",
+    "image": "jar-peanut-butter.png",
+    "imageAlt": "一樽花生醬／a jar of peanut butter"
   },
   {
     "id": "q20",
@@ -498,7 +534,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "C",
     "tip": "花生醬＝糊狀：諗廣口樽，唔好用金屬罐或長條形量詞。",
-    "teach": "a jar of peanut butter。"
+    "teach": "a jar of peanut butter。",
+    "image": "jar-peanut-butter.png",
+    "imageAlt": "一樽花生醬／a jar of peanut butter"
   },
   {
     "id": "q21",
@@ -523,7 +561,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "C",
     "tip": "一整條朱古力＝成條形；同『一盒好多粒』唔同，先睇形狀再揀。",
-    "teach": "a bar of chocolate（唔係 a box of chocolates）。"
+    "teach": "a bar of chocolate（唔係 a box of chocolates）。",
+    "image": "bar-chocolate.png",
+    "imageAlt": "一條朱古力／a bar of chocolate"
   },
   {
     "id": "q22",
@@ -548,7 +588,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "B",
     "tip": "好多粒細嘅、裝喺盒——唔係成一長條；分清盒裝同成條。",
-    "teach": "a box of chocolates。"
+    "teach": "a box of chocolates。",
+    "image": "box-chocolates.png",
+    "imageAlt": "一盒朱古力／a box of chocolates"
   },
   {
     "id": "q23",
@@ -573,7 +615,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "C",
     "tip": "堅果常見金屬罐；『beans 配堅果』係亂配，可先排除。",
-    "teach": "a tin of nuts（唔係 beans of nuts）。"
+    "teach": "a tin of nuts（唔係 beans of nuts）。",
+    "image": "tin-nuts.png",
+    "imageAlt": "一罐果仁／a tin of nuts"
   },
   {
     "id": "q24",
@@ -623,7 +667,9 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "B",
     "tip": "題目已講唔要金屬罐：糊狀醬揀廣口樽裝嗰種。",
-    "teach": "a jar of peanut butter。"
+    "teach": "a jar of peanut butter。",
+    "image": "jar-peanut-butter.png",
+    "imageAlt": "一樽花生醬／a jar of peanut butter"
   },
   {
     "id": "q26",
@@ -648,6 +694,8 @@ window.P4_BANK_QUANTIFIERS = [
     ],
     "answer": "D",
     "tip": "一條形、唔係整盒送禮裝——用成條量詞。",
-    "teach": "a bar of chocolate。"
+    "teach": "a bar of chocolate。",
+    "image": "bar-chocolate.png",
+    "imageAlt": "一條朱古力／a bar of chocolate"
   }
 ];
