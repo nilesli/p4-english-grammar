@@ -1,6 +1,6 @@
 /**
  * 小四英文温習 · Practice app
- * r15 · ?v=20261105r15 · optional question images (quantifiers + selected comparatives)
+ * r16 · ?v=20261105r16 · optional question images (quantifiers + comparatives + frequency week-ticks)
  */
 (function () {
   const ROUND_SIZE = 8;
@@ -909,7 +909,7 @@
       const fig = document.createElement("figure");
       fig.className = "q-figure";
       const img = document.createElement("img");
-      img.src = "assets/questions/" + q.image + "?v=20261105r15";
+      img.src = "assets/questions/" + q.image + "?v=20261105r16";
       img.alt = q.imageAlt || "";
       img.loading = "lazy";
       img.decoding = "async";

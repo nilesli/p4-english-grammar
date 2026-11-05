@@ -1,4 +1,4 @@
-/** auto bank · r8 tips · 20261030r8 · tips = 思路 only, no answer leak */
+/** auto bank · r16 frequency week-tick images · 20261105r16 · tips = 思路 only, no answer leak */
 window.P4_BANK_FREQUENCY = [
   {
     "id": "f1",
@@ -23,7 +23,9 @@ window.P4_BANK_FREQUENCY = [
     ],
     "answer": "B",
     "tip": "括號寫 every night：成日／每一晚都會做？定間中、定幾乎唔會？先排除兩邊極端。",
-    "teach": "always＝總是。"
+    "teach": "always＝總是。",
+    "image": "freq_brush_always.png",
+    "imageAlt": "刷牙＋一星期全日剔（always）"
   },
   {
     "id": "f2",
@@ -48,7 +50,9 @@ window.P4_BANK_FREQUENCY = [
     ],
     "answer": "C",
     "tip": "後句話佢早到：咁「遲到」呢件事發生嘅機會係成日、多數、定係幾乎零？",
-    "teach": "never＝從不。"
+    "teach": "never＝從不。",
+    "image": "freq_late_never.png",
+    "imageAlt": "遲到無剔／早到（never）"
   },
   {
     "id": "f3",
@@ -73,7 +77,9 @@ window.P4_BANK_FREQUENCY = [
     ],
     "answer": "C",
     "tip": "後句 but not every day：即唔係「每一次都」，亦唔係「從來唔會」——多數會但留有例外。",
-    "teach": "usually＝通常。"
+    "teach": "usually＝通常。",
+    "image": "freq_dessert_usually.png",
+    "imageAlt": "叫甜品＋多數日剔（usually）"
   },
   {
     "id": "f4",
@@ -98,7 +104,9 @@ window.P4_BANK_FREQUENCY = [
     ],
     "answer": "A",
     "tip": "講 spare time／Sundays 嘅習慣：係成日、多數、間中、定幾乎唔會？句意偏「好常見」。",
-    "teach": "often＝經常。"
+    "teach": "often＝經常。",
+    "image": "freq_football_often.png",
+    "imageAlt": "踢波＋好多日剔（often）"
   },
   {
     "id": "f5",
@@ -123,7 +131,9 @@ window.P4_BANK_FREQUENCY = [
     ],
     "answer": "B",
     "tip": "Only on special days：即唔係成日、亦唔係零——間中先發生。",
-    "teach": "sometimes＝有時。"
+    "teach": "sometimes＝有時。",
+    "image": "freq_tv_sat_sun.png",
+    "imageAlt": "睇電視＋六日剔（sometimes）"
   },
   {
     "id": "f6",
@@ -198,7 +208,9 @@ window.P4_BANK_FREQUENCY = [
     ],
     "answer": "C",
     "tip": "後句話佢好小心：忘記呢件事嘅機會係高定幾乎零？",
-    "teach": "never。"
+    "teach": "never。",
+    "image": "freq_homework_never.png",
+    "imageAlt": "功課無剔（never）"
   },
   {
     "id": "f9",
@@ -223,7 +235,9 @@ window.P4_BANK_FREQUENCY = [
     ],
     "answer": "A",
     "tip": "多數逢星期五都會：唔係「每一次」、亦唔係「從來唔」——偏向「大多數時候」。",
-    "teach": "usually。"
+    "teach": "usually。",
+    "image": "freq_fish_usually.png",
+    "imageAlt": "煮魚＋多數日剔（usually）"
   },
   {
     "id": "f10",
@@ -248,7 +262,9 @@ window.P4_BANK_FREQUENCY = [
     ],
     "answer": "A",
     "tip": "每次都肚餓：程度係成日做？空格喺 be 後面，頻率詞貼住 be。",
-    "teach": "I am always…"
+    "teach": "I am always…",
+    "image": "freq_run_daily.png",
+    "imageAlt": "跑步＋一星期全日剔（always）"
   },
   {
     "id": "f11",
@@ -273,7 +289,9 @@ window.P4_BANK_FREQUENCY = [
     ],
     "answer": "A",
     "tip": "間中先去：唔係成日、唔係零；揀「有時會」嗰個程度。",
-    "teach": "sometimes。"
+    "teach": "sometimes。",
+    "image": "freq_cook_weekend.png",
+    "imageAlt": "煮餸＋週末剔（sometimes）"
   },
   {
     "id": "f12",
@@ -348,7 +366,9 @@ window.P4_BANK_FREQUENCY = [
     ],
     "answer": "C",
     "tip": "唔鍾意某樣嘢：做嗰樣嘅機會係高定幾乎零？",
-    "teach": "never。"
+    "teach": "never。",
+    "image": "freq_cycle_never.png",
+    "imageAlt": "踩單車無剔（never）"
   },
   {
     "id": "f15",
@@ -373,7 +393,9 @@ window.P4_BANK_FREQUENCY = [
     ],
     "answer": "A",
     "tip": "逢次都準時完成：程度係成日都會？先排除「幾乎唔會」「間中」。",
-    "teach": "always + finishes。"
+    "teach": "always + finishes。",
+    "image": "freq_read_always.png",
+    "imageAlt": "睇書＋一星期全日剔（always）"
   },
   {
     "id": "f16",
@@ -448,7 +470,9 @@ window.P4_BANK_FREQUENCY = [
     ],
     "answer": "C",
     "tip": "落雨就唔步行：步行呢件事喺呢個情況係成日、定幾乎唔會？",
-    "teach": "never。"
+    "teach": "never。",
+    "image": "freq_rain_bus_never.png",
+    "imageAlt": "落雨搭巴士／步行無剔（never）"
   },
   {
     "id": "f19",
@@ -473,7 +497,9 @@ window.P4_BANK_FREQUENCY = [
     ],
     "answer": "A",
     "tip": "「經常幫忙」：程度偏高但未必每一次——同「幾乎零」「間中」分開。",
-    "teach": "often + helps。"
+    "teach": "often + helps。",
+    "image": "freq_dance_mwf.png",
+    "imageAlt": "跳舞＋一三五剔（often）"
   },
   {
     "id": "f20",
@@ -498,7 +524,9 @@ window.P4_BANK_FREQUENCY = [
     ],
     "answer": "B",
     "tip": "一個月左右一次：頻率偏低但仍會發生——唔係成日、亦唔係零。",
-    "teach": "sometimes。"
+    "teach": "sometimes。",
+    "image": "freq_visit_friday.png",
+    "imageAlt": "探訪＋星期五剔（sometimes）"
   },
   {
     "id": "f21",
@@ -523,7 +551,9 @@ window.P4_BANK_FREQUENCY = [
     ],
     "answer": "A",
     "tip": "逢星期日都忙：程度係成日；空格喺 is 後面，頻率詞貼住 be。",
-    "teach": "be + always。"
+    "teach": "be + always。",
+    "image": "freq_swim_always.png",
+    "imageAlt": "游水＋一星期全日剔（always）"
   },
   {
     "id": "f22",
@@ -548,6 +578,8 @@ window.P4_BANK_FREQUENCY = [
     ],
     "answer": "B",
     "tip": "幾乎每天：偏向「大多數時候」，唔等於「每一次都」或「間中先」。",
-    "teach": "usually。"
+    "teach": "usually。",
+    "image": "freq_exercise_usually.png",
+    "imageAlt": "做運動＋多數日剔（usually）"
   }
 ];
