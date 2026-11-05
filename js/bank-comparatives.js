@@ -1,4 +1,4 @@
-/** 比較級／最高級完整片段 · r13 fill · 20261105r13 · answerText 含 than／the；tips = 思路 only, no answer leak */
+/** 比較級／最高級完整片段 · r14 fill · 20261105r14 · answerText 含 than／the；tips = 思路 only, no answer leak */
 window.P4_BANK_COMPARATIVES = [
   {
     "id": "cp1",
@@ -392,7 +392,7 @@ window.P4_BANK_COMPARATIVES = [
   },
   {
     "id": "cp16",
-    "prompt": "Of the three desserts, the red jelly is ______.",
+    "prompt": "Of the three desserts, the red jelly is ______. (pretty)",
     "options": [
       {
         "value": "A",
