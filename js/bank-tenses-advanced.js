@@ -1,4 +1,4 @@
-/** auto bank · r14 fill · 20261105r14 · answerText for typed fill; tips = 思路 only, no answer leak */
+/** auto bank · r17 fill prompts · 20261105r17 · answerText + prompt (base hint); tips = 思路 only, no answer leak */
 window.P4_BANK_TENSES_ADVANCED = [
   {
     "id": "adv-email-picnic",
@@ -34,7 +34,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "C",
         "tip": "有 Last Sunday：整段係過去野餐；呢個動詞唔係加 -ed 類——記不規則過去形。",
         "teach": "go 過去式係不規則。見到 last／yesterday 唔好留原形。",
-        "answerText": "went"
+        "answerText": "went",
+        "prompt": "(go)"
       },
       {
         "type": "text",
@@ -64,7 +65,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "C",
         "tip": "仍係 last Sunday 朝早：規則動詞點變過去？",
         "teach": "規則動詞：加 -ed。",
-        "answerText": "prepared"
+        "answerText": "prepared",
+        "prompt": "(prepare)"
       },
       {
         "type": "text",
@@ -94,7 +96,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "C",
         "tip": "同一日過去事：呢個動詞不規則，揀正確過去形。",
         "teach": "buy 係不規則過去式。",
-        "answerText": "bought"
+        "answerText": "bought",
+        "prompt": "(buy)"
       },
       {
         "type": "text",
@@ -124,7 +127,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "C",
         "tip": "When we arrived 已係過去時間線；find 不規則。",
         "teach": "find 係不規則。故事敍述用過去式。",
-        "answerText": "found"
+        "answerText": "found",
+        "prompt": "(find)"
       },
       {
         "type": "text",
@@ -154,7 +158,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "C",
         "tip": "野餐當日已食完：過去式；呢個動詞唔係加 -ed。",
         "teach": "eat 過去式唔係 eated。",
-        "answerText": "ate"
+        "answerText": "ate",
+        "prompt": "(eat)"
       },
       {
         "type": "text",
@@ -184,7 +189,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "C",
         "tip": "After lunch 仍喺 last Sunday 故事線；不規則過去形。",
         "teach": "run 係不規則。寫作故事多數用過去式。",
-        "answerText": "ran"
+        "answerText": "ran",
+        "prompt": "(run)"
       },
       {
         "type": "text",
@@ -214,7 +220,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "C",
         "tip": "前面 I was…，so 後面跟過去；規則動詞加 -ed。",
         "teach": "so 句：so I + 過去式。規則動詞加 -ed。",
-        "answerText": "watched"
+        "answerText": "watched",
+        "prompt": "(watch)"
       },
       {
         "type": "text",
@@ -244,7 +251,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "A",
         "tip": "At weekends／usually＝習慣 → 現在式；主語 I → 用原形定加 -s？",
         "teach": "習慣用現在式：I／you／we／they + 原形。",
-        "answerText": "play"
+        "answerText": "play",
+        "prompt": "(play)"
       },
       {
         "type": "text",
@@ -274,7 +282,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "B",
         "tip": "often＝習慣；主語 My sister≈she → 動詞要加 -s。",
         "teach": "第三人稱單數現在式加 -s／-es。",
-        "answerText": "wins"
+        "answerText": "wins",
+        "prompt": "(win)"
       },
       {
         "type": "text",
@@ -304,7 +313,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "A",
         "tip": "問對方平時習慣；主語 you → 現在式助動詞揀邊個？",
         "teach": "現在式問句：you → Do + 原形。",
-        "answerText": "Do"
+        "answerText": "Do",
+        "prompt": "(do)"
       },
       {
         "type": "text",
@@ -346,7 +356,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "C",
         "tip": "後面提到 yesterday：問過去用邊個助動詞？後面動詞保持原形。",
         "teach": "過去式問句：Did + 主語 + 動詞原形。",
-        "answerText": "did"
+        "answerText": "did",
+        "prompt": "(do)"
       },
       {
         "type": "text",
@@ -376,7 +387,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "C",
         "tip": "答 yesterday 已做嘅事：規則動詞變過去式。",
         "teach": "規則動詞加 -ed。",
-        "answerText": "started"
+        "answerText": "started",
+        "prompt": "(start)"
       },
       {
         "type": "text",
@@ -406,7 +418,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "D",
         "tip": "講昨晚當時情況；主語 instructions 複數 → be 過去式單／複？",
         "teach": "be 過去式：複數／you → were；單數 → was。",
-        "answerText": "were"
+        "answerText": "were",
+        "prompt": "(be)"
       },
       {
         "type": "text",
@@ -436,7 +449,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "C",
         "tip": "前面 I was…，so 跟過去；規則動詞加 -ed。",
         "teach": "so 句要用過去式。",
-        "answerText": "asked"
+        "answerText": "asked",
+        "prompt": "(ask)"
       },
       {
         "type": "text",
@@ -466,7 +480,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "C",
         "tip": "仍係昨晚完成；make 不規則過去形。",
         "teach": "make 係不規則過去式。",
-        "answerText": "made"
+        "answerText": "made",
+        "prompt": "(make)"
       },
       {
         "type": "text",
@@ -496,7 +511,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "C",
         "tip": "跟住問 last night：仍係過去問句；後面動詞原形。",
         "teach": "Did you…? 問過去；後面用原形。",
-        "answerText": "Did"
+        "answerText": "Did",
+        "prompt": "(do)"
       },
       {
         "type": "text",
@@ -526,7 +542,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "A",
         "tip": "講昨晚：呢個動詞過去式字形同原形一樣（讀音唔同）——唔好亂加 -ed。",
         "teach": "read 過去式字形相同；唔係 readed。",
-        "answerText": "read"
+        "answerText": "read",
+        "prompt": "(read)"
       },
       {
         "type": "text",
@@ -556,7 +573,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "A",
         "tip": "Every day＝習慣；主語 I → 原形。",
         "teach": "習慣：I／you／we／they + 原形。",
-        "answerText": "review"
+        "answerText": "review",
+        "prompt": "(review)"
       },
       {
         "type": "text",
@@ -586,7 +604,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "B",
         "tip": "often＝習慣；主語 Dad≈he → 加 -s。",
         "teach": "第三人稱單數現在式加 -s。",
-        "answerText": "checks"
+        "answerText": "checks",
+        "prompt": "(check)"
       },
       {
         "type": "text",
@@ -616,7 +635,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "B",
         "tip": "有 now：而家正在發生 → be + V-ing；複數主語要用邊個 be？",
         "teach": "而家正在做：Where are we going now?",
-        "answerText": "are we going"
+        "answerText": "are we going",
+        "prompt": "(be go)"
       },
       {
         "type": "text",
@@ -658,7 +678,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "B",
         "tip": "有 Last year：過去狀態；主語單數 → be 過去式邊個？",
         "teach": "Last year … was …",
-        "answerText": "was"
+        "answerText": "was",
+        "prompt": "(be)"
       },
       {
         "type": "text",
@@ -688,7 +709,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "C",
         "tip": "仍 Last year：規則動詞變過去。",
         "teach": "work → worked。",
-        "answerText": "worked"
+        "answerText": "worked",
+        "prompt": "(work)"
       },
       {
         "type": "text",
@@ -718,7 +740,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "C",
         "tip": "過去否定：邊個助動詞＋否定詞＋動詞原形？",
         "teach": "did not have（過去否定）。",
-        "answerText": "did not have"
+        "answerText": "did not have",
+        "prompt": "(not have)"
       },
       {
         "type": "text",
@@ -748,7 +771,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "A",
         "tip": "講上年喜好：love 用過去；後面動詞多數用 -ing。",
         "teach": "loved eating（love + V-ing）。",
-        "answerText": "loved eating"
+        "answerText": "loved eating",
+        "prompt": "(love eat)"
       },
       {
         "type": "text",
@@ -778,7 +802,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "A",
         "tip": "不定詞後面用原形短語；表示『持續』嗰個動詞後面要用 -ing。",
         "teach": "keep + V-ing：keep running。",
-        "answerText": "keep running"
+        "answerText": "keep running",
+        "prompt": "(keep run)"
       },
       {
         "type": "text",
@@ -808,7 +833,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "A",
         "tip": "有 Now：而家狀態；單數主語用邊個 be 現在式？",
         "teach": "Now … is …",
-        "answerText": "is"
+        "answerText": "is",
+        "prompt": "(be)"
       },
       {
         "type": "text",
@@ -838,7 +864,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "B",
         "tip": "而家習慣；he → 動詞加 -s；go 後面活動多用 -ing。",
         "teach": "goes cycling（go + V-ing）。",
-        "answerText": "goes cycling"
+        "answerText": "goes cycling",
+        "prompt": "(go cycle)"
       },
       {
         "type": "text",
@@ -868,7 +895,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "B",
         "tip": "sometimes＝習慣；主語 He → 現在式加 -s。",
         "teach": "sometimes plays。",
-        "answerText": "plays"
+        "answerText": "plays",
+        "prompt": "(play)"
       },
       {
         "type": "text",
@@ -898,7 +926,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "B",
         "tip": "never 仍係而家習慣；He → 動詞加 -s。",
         "teach": "never sees。",
-        "answerText": "sees"
+        "answerText": "sees",
+        "prompt": "(see)"
       },
       {
         "type": "text",
@@ -940,7 +969,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "B",
         "tip": "Last year＋單數主語：過去 be；唔好把 be 亂加 -er 砌假詞。",
         "teach": "was（唔係 ber）。",
-        "answerText": "was"
+        "answerText": "was",
+        "prompt": "(be)"
       },
       {
         "type": "text",
@@ -970,7 +1000,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "C",
         "tip": "仍係上年：規則動詞變過去；唔好加 -er 變成『工人』形。",
         "teach": "worked（唔係 worker）。",
-        "answerText": "worked"
+        "answerText": "worked",
+        "prompt": "(work)"
       },
       {
         "type": "text",
@@ -1000,7 +1031,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "C",
         "tip": "過去否定：助動詞過去形＋否定＋原形；唔好把 do 亂加 -er。",
         "teach": "did not have（唔係 doer…）。",
-        "answerText": "did not have"
+        "answerText": "did not have",
+        "prompt": "(not have)"
       },
       {
         "type": "text",
@@ -1030,7 +1062,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "A",
         "tip": "過去喜好：love 用過去；後面活動用 -ing，唔好加 -er 變『食家』形。",
         "teach": "loved eating（唔係 eater）。",
-        "answerText": "loved eating"
+        "answerText": "loved eating",
+        "prompt": "(love eat)"
       },
       {
         "type": "text",
@@ -1060,7 +1093,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "B",
         "tip": "接住講過去決定：規則動詞過去形；唔好亂加 -er。",
         "teach": "joined。",
-        "answerText": "joined"
+        "answerText": "joined",
+        "prompt": "(join)"
       },
       {
         "type": "text",
@@ -1090,7 +1124,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "B",
         "tip": "to 後面用原形短語；表示『持續』嗰個詞後面要 -ing，唔好 -er。",
         "teach": "keep doing（唔係 keep doer）。",
-        "answerText": "keep doing"
+        "answerText": "keep doing",
+        "prompt": "(keep do)"
       },
       {
         "type": "text",
@@ -1120,7 +1155,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "C",
         "tip": "有 Now：而家狀態；單數主語用現在 be，唔好亂加 -er。",
         "teach": "is（唔係 ber）。",
-        "answerText": "is"
+        "answerText": "is",
+        "prompt": "(be)"
       },
       {
         "type": "text",
@@ -1150,7 +1186,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "B",
         "tip": "而家習慣；he → 動詞加 -s；go 後面活動用 -ing，唔好 cycler。",
         "teach": "goes cycling（唔係 go cycler）。",
-        "answerText": "goes cycling"
+        "answerText": "goes cycling",
+        "prompt": "(go cycle)"
       },
       {
         "type": "text",
@@ -1180,7 +1217,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "C",
         "tip": "而家習慣＋He：現在式加 -s；唔好拼成 plaier 類假詞。",
         "teach": "plays（唔係 plaier）。",
-        "answerText": "plays"
+        "answerText": "plays",
+        "prompt": "(play)"
       },
       {
         "type": "text",
@@ -1210,7 +1248,8 @@ window.P4_BANK_TENSES_ADVANCED = [
         "answer": "C",
         "tip": "never＝而家習慣；He → 加 -s；唔好亂加 -er 砌 seer。",
         "teach": "sees（唔係 seer）。",
-        "answerText": "sees"
+        "answerText": "sees",
+        "prompt": "(see)"
       },
       {
         "type": "text",

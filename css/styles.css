@@ -1266,6 +1266,16 @@ button:focus:not(:focus-visible) { outline: none; }
   background: #dbeafe;
 }
 
+.inline-blank-fill .blank-hint {
+  display: inline-block;
+  margin-left: 0.15rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 650;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
 .result-box .typed-line {
   margin: 0.15rem 0 0.35rem;
   font-weight: 650;

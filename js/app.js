@@ -1,6 +1,6 @@
 /**
  * 小四英文温習 · Practice app
- * r16 · ?v=20261105r16 · optional question images (quantifiers + comparatives + frequency week-ticks)
+ * r17 · ?v=20261105r17 · advanced tense fill prompts + r16 images
  */
 (function () {
   const ROUND_SIZE = 8;
@@ -815,6 +815,12 @@
           ariaLabel: "第" + num + "格填充",
         })
       );
+      if (q.prompt) {
+        var hint = document.createElement("span");
+        hint.className = "blank-hint";
+        hint.textContent = q.prompt;
+        box.appendChild(hint);
+      }
       return box;
     }
     const opts = document.createElement("span");
@@ -909,7 +915,7 @@
       const fig = document.createElement("figure");
       fig.className = "q-figure";
       const img = document.createElement("img");
-      img.src = "assets/questions/" + q.image + "?v=20261105r16";
+      img.src = "assets/questions/" + q.image + "?v=20261105r17";
       img.alt = q.imageAlt || "";
       img.loading = "lazy";
       img.decoding = "async";
