@@ -129,6 +129,12 @@ function normalizeSession(partial) {
         .filter((s) => s.id)
         .slice(0, 80)
     : [];
+  const typedAnswers = {};
+  if (partial.typedAnswers && typeof partial.typedAnswers === 'object') {
+    Object.keys(partial.typedAnswers).slice(0, 40).forEach((k) => {
+      typedAnswers[String(k).slice(0, 40)] = String(partial.typedAnswers[k] || '').slice(0, 80);
+    });
+  }
   return {
     when: whenHk,
     whenIso: partial.whenIso || new Date().toISOString(),
@@ -141,6 +147,7 @@ function normalizeSession(partial) {
     tips: Number(partial.tips) || 0,
     wrongIds,
     wrongSnips,
+    typedAnswers,
     createdAtClient: new Date().toISOString(),
   };
 }

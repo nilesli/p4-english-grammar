@@ -1,4 +1,4 @@
-/** 比較級／最高級完整片段 · r12 · 20261102r12 · options 含 than／the；tips = 思路 only, no answer leak */
+/** 比較級／最高級完整片段 · r13 fill · 20261105r13 · answerText 含 than／the；tips = 思路 only, no answer leak */
 window.P4_BANK_COMPARATIVES = [
   {
     "id": "cp1",
@@ -23,7 +23,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "A",
     "tip": "句意係兩者相比；短詞多數加比較級字尾，唔好用 more 硬砌。",
-    "teach": "taller than。"
+    "teach": "taller than。",
+    "answerText": "taller than"
   },
   {
     "id": "cp2",
@@ -48,7 +49,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
-    "teach": "the tallest。"
+    "teach": "the tallest。",
+    "answerText": "the tallest"
   },
   {
     "id": "cp3",
@@ -73,7 +75,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係兩者相比；長詞用 more + 原級，唔好硬加 -er。",
-    "teach": "more interesting than。"
+    "teach": "more interesting than。",
+    "answerText": "more interesting than"
   },
   {
     "id": "cp4",
@@ -98,7 +101,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係範圍內「最…」（of／in／of all）；長詞用 most + 原級，唔好亂加 -est。",
-    "teach": "the most interesting。"
+    "teach": "the most interesting。",
+    "answerText": "the most interesting"
   },
   {
     "id": "cp5",
@@ -123,7 +127,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係兩者相比（今年同舊年）；呢個字唔跟一般字尾規則，要記特別比較級形。",
-    "teach": "better than。"
+    "teach": "better than。",
+    "answerText": "better than"
   },
   {
     "id": "cp6",
@@ -148,7 +153,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係範圍內「最…」；呢個字唔跟一般字尾規則，要記特別最高級形。",
-    "teach": "the best。"
+    "teach": "the best。",
+    "answerText": "the best"
   },
   {
     "id": "cp7",
@@ -173,7 +179,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係兩者相比；呢個字唔跟一般字尾規則，要記特別比較級形。",
-    "teach": "worse than。"
+    "teach": "worse than。",
+    "answerText": "worse than"
   },
   {
     "id": "cp8",
@@ -198,7 +205,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係範圍內「最…」；呢個字唔跟一般字尾規則，要記特別最高級形。",
-    "teach": "the worst。"
+    "teach": "the worst。",
+    "answerText": "the worst"
   },
   {
     "id": "cp9",
@@ -223,7 +231,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "A",
     "tip": "句意係兩者相比；短詞多數加比較級字尾，唔好用 more 硬砌。",
-    "teach": "faster than。"
+    "teach": "faster than。",
+    "answerText": "faster than"
   },
   {
     "id": "cp10",
@@ -248,7 +257,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
-    "teach": "the fastest。"
+    "teach": "the fastest。",
+    "answerText": "the fastest"
   },
   {
     "id": "cp11",
@@ -273,7 +283,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "A",
     "tip": "句意係兩者相比；以 y 結尾：y→i 再加比較級字尾。",
-    "teach": "heavier than。"
+    "teach": "heavier than。",
+    "answerText": "heavier than"
   },
   {
     "id": "cp12",
@@ -298,7 +309,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
-    "teach": "the highest。"
+    "teach": "the highest。",
+    "answerText": "the highest"
   },
   {
     "id": "cp13",
@@ -323,7 +335,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "A",
     "tip": "句意係兩者相比；以 y 結尾：y→i 再加比較級字尾。",
-    "teach": "tidier than。"
+    "teach": "tidier than。",
+    "answerText": "tidier than"
   },
   {
     "id": "cp14",
@@ -348,7 +361,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係兩者相比；長詞用 more + 原級，唔好硬加 -er。",
-    "teach": "more difficult than。"
+    "teach": "more difficult than。",
+    "answerText": "more difficult than"
   },
   {
     "id": "cp15",
@@ -373,7 +387,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "A",
     "tip": "句意係兩者相比（今日同尋日）；呢個字唔跟一般字尾規則，要記特別比較級形。",
-    "teach": "better than。"
+    "teach": "better than。",
+    "answerText": "better than"
   },
   {
     "id": "cp16",
@@ -398,7 +413,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
-    "teach": "the prettiest。"
+    "teach": "the prettiest。",
+    "answerText": "the prettiest"
   },
   {
     "id": "cp17",
@@ -423,7 +439,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "A",
     "tip": "句意係兩者相比；短母音＋單輔音結尾——要唔要重寫輔音再加比較級字尾？",
-    "teach": "bigger than。"
+    "teach": "bigger than。",
+    "answerText": "bigger than"
   },
   {
     "id": "cp18",
@@ -448,7 +465,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "A",
     "tip": "句意係兩者相比；短母音＋單輔音結尾——要唔要重寫輔音再加比較級字尾？",
-    "teach": "hotter than。"
+    "teach": "hotter than。",
+    "answerText": "hotter than"
   },
   {
     "id": "cp19",
@@ -473,7 +491,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "A",
     "tip": "句意係兩者相比；呢個字唔跟一般字尾規則，要記特別比較級形。",
-    "teach": "worse than。"
+    "teach": "worse than。",
+    "answerText": "worse than"
   },
   {
     "id": "cp20",
@@ -498,7 +517,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "A",
     "tip": "句意係兩者相比；短詞多數加比較級字尾，唔好用 more 硬砌。",
-    "teach": "older than。"
+    "teach": "older than。",
+    "answerText": "older than"
   },
   {
     "id": "cp21",
@@ -523,7 +543,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係範圍內「最…」（of／in／of all）；長詞用 most + 原級，唔好亂加 -est。",
-    "teach": "the most exciting。"
+    "teach": "the most exciting。",
+    "answerText": "the most exciting"
   },
   {
     "id": "cp22",
@@ -548,7 +569,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "A",
     "tip": "句意係兩者相比；短詞多數加比較級字尾，唔好用 more 硬砌。",
-    "teach": "slower than。"
+    "teach": "slower than。",
+    "answerText": "slower than"
   },
   {
     "id": "cp23",
@@ -573,7 +595,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "A",
     "tip": "句意係兩者相比；短母音＋單輔音結尾——要唔要重寫輔音再加比較級字尾？",
-    "teach": "thinner than。"
+    "teach": "thinner than。",
+    "answerText": "thinner than"
   },
   {
     "id": "cp24",
@@ -598,7 +621,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "A",
     "tip": "句意係兩者比價錢；短詞加比較級字尾——留意拼寫唔好亂多重寫輔音。",
-    "teach": "cheaper than（留意拼寫）。"
+    "teach": "cheaper than（留意拼寫）。",
+    "answerText": "cheaper than"
   },
   {
     "id": "cp25",
@@ -623,7 +647,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
-    "teach": "the cheapest。"
+    "teach": "the cheapest。",
+    "answerText": "the cheapest"
   },
   {
     "id": "cp26",
@@ -648,7 +673,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "A",
     "tip": "句意係兩者相比；以 y 結尾：y→i 再加比較級字尾。",
-    "teach": "healthier than。"
+    "teach": "healthier than。",
+    "answerText": "healthier than"
   },
   {
     "id": "cp27",
@@ -673,7 +699,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係範圍內「最…」；以 y 結尾：y→i 再加最高級字尾。",
-    "teach": "the healthiest。"
+    "teach": "the healthiest。",
+    "answerText": "the healthiest"
   },
   {
     "id": "cp28",
@@ -698,7 +725,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "A",
     "tip": "句意係兩者相比；短詞多數加比較級字尾，唔好用 more 硬砌。",
-    "teach": "lighter than。"
+    "teach": "lighter than。",
+    "answerText": "lighter than"
   },
   {
     "id": "cp29",
@@ -723,7 +751,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
-    "teach": "the lightest。"
+    "teach": "the lightest。",
+    "answerText": "the lightest"
   },
   {
     "id": "cp30",
@@ -748,7 +777,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "A",
     "tip": "句意係兩者相比；以 y 結尾：y→i 再加比較級字尾。",
-    "teach": "dirtier than。"
+    "teach": "dirtier than。",
+    "answerText": "dirtier than"
   },
   {
     "id": "cp31",
@@ -773,7 +803,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係兩者相比；長詞用 more + 原級，唔好硬加 -er。",
-    "teach": "more popular than。"
+    "teach": "more popular than。",
+    "answerText": "more popular than"
   },
   {
     "id": "cp32",
@@ -798,7 +829,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係兩者相比；長詞用 more + 原級，唔好硬加 -er。",
-    "teach": "more delicious than。"
+    "teach": "more delicious than。",
+    "answerText": "more delicious than"
   },
   {
     "id": "cp33",
@@ -823,7 +855,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係範圍內「最…」（of／in／of all）；長詞用 most + 原級，唔好亂加 -est。",
-    "teach": "the most expensive。"
+    "teach": "the most expensive。",
+    "answerText": "the most expensive"
   },
   {
     "id": "cp34",
@@ -848,7 +881,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係兩者相比；長詞用 more + 原級，唔好硬加 -er。",
-    "teach": "more exciting than。"
+    "teach": "more exciting than。",
+    "answerText": "more exciting than"
   },
   {
     "id": "cp35",
@@ -873,7 +907,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係兩者相比；長詞用 more + 原級，唔好硬加 -er。",
-    "teach": "more boring than。"
+    "teach": "more boring than。",
+    "answerText": "more boring than"
   },
   {
     "id": "cp36",
@@ -898,7 +933,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係兩者相比；長詞用 more + 原級，唔好硬加 -er。",
-    "teach": "more dangerous than。"
+    "teach": "more dangerous than。",
+    "answerText": "more dangerous than"
   },
   {
     "id": "cp37",
@@ -923,7 +959,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係兩者相比；長詞用 more + 原級，唔好硬加 -er。",
-    "teach": "more careless than。"
+    "teach": "more careless than。",
+    "answerText": "more careless than"
   },
   {
     "id": "cp38",
@@ -948,7 +985,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係範圍內「最…」（of／in／of all）；長詞用 most + 原級，唔好亂加 -est。",
-    "teach": "the most popular。"
+    "teach": "the most popular。",
+    "answerText": "the most popular"
   },
   {
     "id": "cp39",
@@ -973,7 +1011,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係兩者比價錢；短詞加比較級字尾——留意拼寫唔好亂多重寫輔音。",
-    "teach": "cheaper than（留意拼寫）。"
+    "teach": "cheaper than（留意拼寫）。",
+    "answerText": "cheaper than"
   },
   {
     "id": "cp40",
@@ -998,7 +1037,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "C",
     "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
-    "teach": "the cheapest。"
+    "teach": "the cheapest。",
+    "answerText": "the cheapest"
   },
   {
     "id": "cp41",
@@ -1023,7 +1063,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "A",
     "tip": "句意係兩者比價錢；短詞加比較級字尾——留意拼寫唔好亂多重寫輔音。",
-    "teach": "cheaper than（留意拼寫）。"
+    "teach": "cheaper than（留意拼寫）。",
+    "answerText": "cheaper than"
   },
   {
     "id": "cp42",
@@ -1048,7 +1089,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "D",
     "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
-    "teach": "the cheapest。"
+    "teach": "the cheapest。",
+    "answerText": "the cheapest"
   },
   {
     "id": "cp43",
@@ -1073,7 +1115,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "C",
     "tip": "句意係兩者比價錢；短詞加比較級字尾——留意拼寫唔好亂多重寫輔音。",
-    "teach": "cheaper than。"
+    "teach": "cheaper than。",
+    "answerText": "cheaper than"
   },
   {
     "id": "cp44",
@@ -1098,7 +1141,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係範圍內「最…」（of／in／of the three）；短詞多數加最高級字尾。",
-    "teach": "the cheapest。"
+    "teach": "the cheapest。",
+    "answerText": "the cheapest"
   },
   {
     "id": "cp45",
@@ -1123,7 +1167,8 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "B",
     "tip": "句意係兩者相比；長詞用 more + 原級，唔好硬加 -er。",
-    "teach": "more interesting than（留意拼寫）。"
+    "teach": "more interesting than（留意拼寫）。",
+    "answerText": "more interesting than"
   },
   {
     "id": "cp46",
@@ -1148,6 +1193,7 @@ window.P4_BANK_COMPARATIVES = [
     ],
     "answer": "C",
     "tip": "句意係範圍內「最…」（of／in／of all）；長詞用 most + 原級，唔好亂加 -est。",
-    "teach": "the most interesting（留意拼寫）。"
+    "teach": "the most interesting（留意拼寫）。",
+    "answerText": "the most interesting"
   }
 ];

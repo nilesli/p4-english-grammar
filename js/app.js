@@ -1,6 +1,6 @@
 /**
  * 小四英文温習 · Practice app
- * r10 · ?v=20261101r10 · wrong tracking + Firebase session upload
+ * r13 · ?v=20261105r13 · fill-in + on-screen keyboard (tenses / advanced / comparatives)
  */
 (function () {
   const ROUND_SIZE = 8;
@@ -121,7 +121,216 @@
     ixMeta: [],
     lastWrongs: [],
     lastUploadStatus: "",
+    activeFillId: null,
+    osk: null,
   };
+
+  var FILL_TOPIC_IDS = { tenses: true, comparatives: true };
+
+  function isFillTopic(topicId) {
+    return !!(topicId && FILL_TOPIC_IDS[topicId]);
+  }
+
+  function normalizeAnswer(s) {
+    return String(s == null ? "" : s)
+      .replace(/\s+/g, " ")
+      .trim()
+      .toLowerCase();
+  }
+
+  function stripOptionLabel(label) {
+    return String(label || "").replace(/^[A-D]\.\s*/i, "").trim();
+  }
+
+  function getAnswerText(q) {
+    if (!q) return "";
+    if (q.answerText) return String(q.answerText);
+    var opts = q.options || [];
+    for (var i = 0; i < opts.length; i++) {
+      if (opts[i].value === q.answer) return stripOptionLabel(opts[i].label);
+    }
+    return String(q.answer || "");
+  }
+
+  function isAnswerCorrect(q, typed) {
+    return normalizeAnswer(typed) === normalizeAnswer(getAnswerText(q));
+  }
+
+  function ensureOskDock() {
+    var dock = document.getElementById("osk-dock");
+    if (dock) return dock;
+    dock = document.createElement("div");
+    dock.id = "osk-dock";
+    dock.className = "osk-dock";
+    dock.hidden = true;
+    var practice = document.getElementById("practice");
+    if (practice && practice.parentNode) {
+      practice.parentNode.insertBefore(dock, practice.nextSibling);
+    } else {
+      document.body.appendChild(dock);
+    }
+    return dock;
+  }
+
+  function insertWithSpacing(current, chunk, isShortcut) {
+    var cur = String(current == null ? "" : current);
+    var piece = String(chunk == null ? "" : chunk);
+    if (!piece) return cur;
+    if (!isShortcut) return cur + piece;
+    // shortcut words (than / the): sensible spacing
+    if (cur.length && !/\s$/.test(cur)) cur += " ";
+    cur += piece;
+    if (!/\s$/.test(cur)) cur += " ";
+    return cur;
+  }
+
+  function setFillValue(qid, value, syncOsk) {
+    if (state.checked) return;
+    state.answers[qid] = value;
+    var input = document.querySelector('.fill-input[data-qid="' + qid + '"]');
+    if (input) {
+      input.value = value;
+      input.classList.toggle("fill-empty", !String(value).length);
+    }
+    var mirror = document.getElementById("fill-display-" + qid);
+    if (mirror) {
+      if (String(value).length) {
+        mirror.textContent = value;
+        mirror.classList.remove("fill-empty");
+      } else {
+        mirror.textContent = "";
+        mirror.classList.add("fill-empty");
+      }
+    }
+  }
+
+  function focusFill(qid) {
+    if (state.checked) return;
+    state.activeFillId = qid;
+    document.querySelectorAll(".fill-wrap").forEach(function (w) {
+      w.classList.toggle("fill-active", w.getAttribute("data-qid") === qid);
+    });
+    document.querySelectorAll(".inline-blank").forEach(function (w) {
+      w.classList.toggle("fill-active", w.id === "blank-" + qid);
+    });
+    syncOskVisibility();
+  }
+
+  function onOskInsert(chunk, meta) {
+    var qid = state.activeFillId;
+    if (!qid || state.checked) return;
+    var cur = state.answers[qid] || "";
+    var next = insertWithSpacing(cur, chunk, meta && meta.shortcut);
+    setFillValue(qid, next);
+  }
+
+  function onOskBackspace() {
+    var qid = state.activeFillId;
+    if (!qid || state.checked) return;
+    var cur = String(state.answers[qid] || "");
+    setFillValue(qid, cur.slice(0, -1));
+  }
+
+  function onOskClear() {
+    var qid = state.activeFillId;
+    if (!qid || state.checked) return;
+    setFillValue(qid, "");
+  }
+
+  function syncOskVisibility() {
+    var dock = ensureOskDock();
+    var fill = isFillTopic(state.topicId);
+    if (!fill || state.checked) {
+      dock.hidden = true;
+      document.body.classList.remove("has-osk");
+      if (state.osk) state.osk.setDisabled(true);
+      return;
+    }
+    dock.hidden = false;
+    document.body.classList.add("has-osk");
+    if (!state.osk && window.P4Osk) {
+      state.osk = window.P4Osk.create({
+        root: dock,
+        onInsert: onOskInsert,
+        onBackspace: onOskBackspace,
+        onClear: onOskClear,
+        shortcuts: state.topicId === "comparatives" ? ["than", "the"] : [],
+      });
+    } else if (state.osk) {
+      state.osk.setShortcuts(state.topicId === "comparatives" ? ["than", "the"] : []);
+      state.osk.setDisabled(false);
+    }
+    // auto-focus first empty fill if none
+    if (!state.activeFillId && state.questions.length) {
+      focusFill(state.questions[0].id);
+    }
+  }
+
+  function makeFillInput(q, opts) {
+    opts = opts || {};
+    var wrap = document.createElement(opts.inline ? "span" : "div");
+    wrap.className = (opts.inline ? "fill-wrap fill-wrap-inline" : "fill-wrap") +
+      (state.activeFillId === q.id ? " fill-active" : "");
+    wrap.setAttribute("data-qid", q.id);
+
+    var input = document.createElement("input");
+    input.type = "text";
+    input.className = "fill-input" + (opts.inline ? " fill-input-inline" : "");
+    input.setAttribute("data-qid", q.id);
+    input.setAttribute("autocomplete", "off");
+    input.setAttribute("autocapitalize", "off");
+    input.setAttribute("autocorrect", "off");
+    input.setAttribute("spellcheck", "false");
+    input.setAttribute("inputmode", "none");
+    input.setAttribute("readonly", "readonly");
+    input.setAttribute("aria-label", opts.ariaLabel || "填充答案");
+    var ansLen = Math.max(4, getAnswerText(q).length);
+    if (opts.inline) {
+      input.style.width = Math.min(14, Math.max(5, ansLen + 1)) + "ch";
+      input.style.minWidth = "4.5rem";
+    }
+    var cur = state.answers[q.id] || "";
+    input.value = cur;
+    if (!cur) input.classList.add("fill-empty");
+
+    if (state.checked) {
+      input.classList.add(isAnswerCorrect(q, cur) ? "fill-ok" : "fill-bad");
+      input.disabled = true;
+    } else {
+      function activate(e) {
+        if (e) e.preventDefault();
+        focusFill(q.id);
+      }
+      wrap.addEventListener("click", activate);
+      input.addEventListener("focus", activate);
+      // allow paste / rare hardware keyboard without opening iPad predictive bar much
+      input.addEventListener("keydown", function (e) {
+        if (state.checked) return;
+        if (e.key === "Backspace") {
+          e.preventDefault();
+          onOskBackspace();
+        } else if (e.key === "Escape") {
+          e.preventDefault();
+          onOskClear();
+        } else if (e.key.length === 1 && !e.metaKey && !e.ctrlKey && !e.altKey) {
+          e.preventDefault();
+          onOskInsert(e.key, { shortcut: false });
+        }
+      });
+    }
+
+    var mark = document.createElement("span");
+    mark.className = "fill-mark";
+    mark.setAttribute("aria-hidden", "true");
+    if (state.checked) {
+      mark.textContent = isAnswerCorrect(q, cur) ? "✓" : "✗";
+      mark.classList.add(isAnswerCorrect(q, cur) ? "ok" : "bad");
+    }
+
+    wrap.appendChild(input);
+    wrap.appendChild(mark);
+    return wrap;
+  }
 
   const el = {};
   function $(id) {
@@ -322,6 +531,10 @@
     if (practice) practice.hidden = true;
     clearHash();
     document.title = "小四英文温習 · 預覽";
+    state.activeFillId = null;
+    var dock = document.getElementById("osk-dock");
+    if (dock) dock.hidden = true;
+    document.body.classList.remove("has-osk");
     renderTopWrongs();
     bindNickname();
     try {
@@ -356,7 +569,7 @@
     if (el.pageTitle) el.pageTitle.textContent = "小四英文温習 · " + t.short;
     if (el.pageSub) {
       if (t.hasAdvanced) {
-        el.pageSub.textContent = "基礎 MC／進階短文（小四程度）";
+        el.pageSub.textContent = "基礎填充／進階短文填充（小四程度）";
       } else if (t.id === "sentence-order") {
         el.pageSub.textContent = "字卡拼句 · 每回合隨機 8 題";
       } else if (t.id === "punctuation") {
@@ -403,15 +616,25 @@
     }
     if (el.modeHint) {
       el.modeHint.textContent = adv
-        ? "進階：一篇短文／對話，約 8–10 格填時態（小四程度）。"
-        : "基礎：隨機 8 題四選一。";
+        ? "進階：一篇短文／對話，格內自己打時態（畫面鍵盤）。"
+        : isFillTopic(state.topicId)
+          ? "基礎：隨機 8 題填充（畫面鍵盤輸入）。"
+          : "基礎：隨機 8 題四選一。";
       el.modeHint.hidden = !(state.topic && state.topic.hasAdvanced);
     }
     if (el.practiceIntro) {
       var ik = interactiveKind();
-      if (adv) {
+      if (adv && isFillTopic(state.topicId)) {
+        el.practiceIntro.textContent =
+          "先掃全文時間詞，再撳空格用畫面鍵盤打答案。未諗到先撳「小提示」；每格第一次撳先計一次。";
+      } else if (adv) {
         el.practiceIntro.textContent =
           "先掃全文時間詞，再逐格判斷而家定過去。未諗到先撳「小提示」；每格第一次撳先計一次。";
+      } else if (isFillTopic(state.topicId)) {
+        el.practiceIntro.textContent =
+          state.topicId === "comparatives"
+            ? "用畫面鍵盤打完整片段（例如 taller than／the tallest）。可用 than／the 快捷掣。提示只畀思路。"
+            : "用畫面鍵盤打答案（唔使揀 A/B/C/D）。未諗到先撳「小提示」；提示只畀思路，唔會直接講答案。";
       } else if (ik === "sentence") {
         el.practiceIntro.textContent =
           "將打亂字卡排成正確句子（撳字卡放入答案列；再撳可退回）。可用「清答案列」。提示唔會講出全句。";
@@ -437,6 +660,7 @@
     state.questions = [];
     state.ixMeta = [];
     state.lastWrongs = [];
+    state.activeFillId = null;
 
     if (state.mode === "advanced" && state.topic && state.topic.hasAdvanced) {
       state.passage = pickPassage(getAdvancedBank(), state.seed);
@@ -504,6 +728,7 @@
         else renderQuestions();
       }
     }
+    syncOskVisibility();
   }
 
   function renderQuestions() {
@@ -576,12 +801,22 @@
 
   function buildInlineBlank(q, num) {
     const box = document.createElement("span");
-    box.className = "inline-blank";
+    box.className = "inline-blank" + (isFillTopic(state.topicId) ? " inline-blank-fill" : "");
     box.id = "blank-" + q.id;
+    if (state.activeFillId === q.id) box.classList.add("fill-active");
     const label = document.createElement("span");
     label.className = "blank-num";
     label.textContent = "(" + num + ")";
     box.appendChild(label);
+    if (isFillTopic(state.topicId)) {
+      box.appendChild(
+        makeFillInput(q, {
+          inline: true,
+          ariaLabel: "第" + num + "格填充",
+        })
+      );
+      return box;
+    }
     const opts = document.createElement("span");
     opts.className = "blank-options";
     opts.setAttribute("role", "group");
@@ -644,7 +879,7 @@
 
   function buildCard(q, i) {
     const card = document.createElement("article");
-    card.className = "q-card";
+    card.className = "q-card" + (isFillTopic(state.topicId) ? " q-card-fill" : "");
     card.id = "q-" + q.id;
     const head = document.createElement("div");
     head.className = "q-head";
@@ -670,32 +905,38 @@
     head.innerHTML =
       '<span class="q-idx">' + (i + 1) + "</span>" + promptHtml;
     card.appendChild(head);
-    const opts = document.createElement("div");
-    opts.className = "options";
-    opts.setAttribute("role", "group");
-    q.options.forEach(function (opt) {
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = "opt-btn";
-      btn.setAttribute("data-value", opt.value);
-      btn.textContent = opt.label;
-      if (state.answers[q.id] === opt.value) btn.classList.add("selected");
-      if (state.checked) {
-        btn.disabled = true;
-        if (opt.value === q.answer) btn.classList.add("correct");
-        else if (
-          state.answers[q.id] === opt.value &&
-          opt.value !== q.answer
-        )
-          btn.classList.add("wrong");
-      } else {
-        btn.addEventListener("click", function () {
-          selectAnswer(q.id, opt.value);
-        });
-      }
-      opts.appendChild(btn);
-    });
-    card.appendChild(opts);
+    if (isFillTopic(state.topicId)) {
+      card.appendChild(
+        makeFillInput(q, { ariaLabel: "第" + (i + 1) + "題填充" })
+      );
+    } else {
+      const opts = document.createElement("div");
+      opts.className = "options";
+      opts.setAttribute("role", "group");
+      q.options.forEach(function (opt) {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "opt-btn";
+        btn.setAttribute("data-value", opt.value);
+        btn.textContent = opt.label;
+        if (state.answers[q.id] === opt.value) btn.classList.add("selected");
+        if (state.checked) {
+          btn.disabled = true;
+          if (opt.value === q.answer) btn.classList.add("correct");
+          else if (
+            state.answers[q.id] === opt.value &&
+            opt.value !== q.answer
+          )
+            btn.classList.add("wrong");
+        } else {
+          btn.addEventListener("click", function () {
+            selectAnswer(q.id, opt.value);
+          });
+        }
+        opts.appendChild(btn);
+      });
+      card.appendChild(opts);
+    }
     const actions = document.createElement("div");
     actions.className = "q-actions";
     const tipBtn = document.createElement("button");
@@ -721,24 +962,32 @@
   function buildResult(q) {
     const picked = state.answers[q.id] || "";
     const box = document.createElement("div");
-    const ok = picked === q.answer;
-    if (!picked) {
+    const fill = isFillTopic(state.topicId);
+    const correctLabel = fill ? getAnswerText(q) : q.answer;
+    const ok = fill ? isAnswerCorrect(q, picked) : picked === q.answer;
+    if (!String(picked).trim()) {
       box.className = "result-box miss";
       box.innerHTML =
-        '<div class="lead">未作答</div>正確係 ' +
-        escapeHtml(q.answer) +
-        "。" +
-        escapeHtml(q.teach);
+        '<div class="lead">未作答 ✗</div>正確係 <strong>' +
+        escapeHtml(correctLabel) +
+        "</strong>。" +
+        escapeHtml(q.teach || "");
     } else if (ok) {
       box.className = "result-box ok";
-      box.innerHTML = '<div class="lead">正確</div>' + escapeHtml(q.teach);
+      box.innerHTML =
+        '<div class="lead">正確 ✓</div>' + escapeHtml(q.teach || "");
     } else {
       box.className = "result-box bad";
+      var typedLine = fill
+        ? '<div class="typed-line">你寫：' + escapeHtml(picked) + "</div>"
+        : "";
       box.innerHTML =
-        '<div class="lead">再睇睇</div>正確係 ' +
-        escapeHtml(q.answer) +
-        "。" +
-        escapeHtml(q.teach);
+        '<div class="lead">再睇睇 ✗</div>' +
+        typedLine +
+        "正確係 <strong>" +
+        escapeHtml(correctLabel) +
+        "</strong>。" +
+        escapeHtml(q.teach || "");
     }
     return box;
   }
@@ -828,16 +1077,24 @@
   function collectRoundWrongs() {
     var wrongs = [];
     var ik = interactiveKind();
+    var fill = isFillTopic(state.topicId);
     state.questions.forEach(function (q) {
       var ok = false;
       if (ik && window.P4Interactive) {
         var meta = window.P4Interactive.getMeta(state.ixMeta, q.id);
         ok = window.P4Interactive.isCorrect(q, meta);
+      } else if (fill) {
+        ok = isAnswerCorrect(q, state.answers[q.id]);
       } else {
         ok = state.answers[q.id] === q.answer;
       }
       if (!ok) {
-        wrongs.push({ id: q.id, text: snipForQuestion(q) });
+        var snip = snipForQuestion(q);
+        if (fill) {
+          var typed = String(state.answers[q.id] || "").trim();
+          snip = snip + (typed ? "（你寫:" + typed.slice(0, 24) + "）" : "（未作答）");
+        }
+        wrongs.push({ id: q.id, text: snip, typed: state.answers[q.id] || "" });
       }
     });
     return wrongs;
@@ -850,7 +1107,9 @@
         return n + (window.P4Interactive.isCorrect(q, meta) ? 1 : 0);
       }, 0);
     }
+    var fill = isFillTopic(state.topicId);
     return state.questions.reduce(function (n, q) {
+      if (fill) return n + (isAnswerCorrect(q, state.answers[q.id]) ? 1 : 0);
       return n + (state.answers[q.id] === q.answer ? 1 : 0);
     }, 0);
   }
@@ -863,6 +1122,12 @@
     const wrongs = collectRoundWrongs();
     state.lastWrongs = wrongs;
     var whenStr = window.P4Storage ? window.P4Storage.hkNowString() : "";
+    var typedAnswers = {};
+    if (isFillTopic(state.topicId)) {
+      state.questions.forEach(function (q) {
+        typedAnswers[q.id] = String(state.answers[q.id] || "");
+      });
+    }
     var sessionRec = {
       when: whenStr,
       whenIso: new Date().toISOString(),
@@ -875,6 +1140,7 @@
         return w.id;
       }),
       wrongSnips: wrongs,
+      typedAnswers: typedAnswers,
       nickname: window.P4Storage ? window.P4Storage.getNickname() : "細妹",
       deviceId: window.P4Storage ? window.P4Storage.getDeviceId() : "",
     };
@@ -888,6 +1154,7 @@
         tips: sessionRec.tips,
         wrongIds: sessionRec.wrongIds,
         wrongSnips: sessionRec.wrongSnips,
+        typedAnswers: sessionRec.typedAnswers,
       });
     }
     state.lastUploadStatus = "pending";

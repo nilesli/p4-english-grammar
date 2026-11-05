@@ -1,4 +1,4 @@
-/** auto bank · r8 tips · 20261030r8 · tips = 思路 only, no answer leak */
+/** auto bank · r13 fill · 20261105r13 · answerText for typed fill; tips = 思路 only, no answer leak */
 window.P4_BANK_TENSES = [
   {
     "id": "t1",
@@ -23,7 +23,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "A",
     "tip": "括號 now：講而家狀態 → 現在式 be；主語 Mum 單數定複數？",
-    "teach": "現在式：講而家狀態用 is／am／are。"
+    "teach": "現在式：講而家狀態用 is／am／are。",
+    "answerText": "is"
   },
   {
     "id": "t2",
@@ -48,7 +49,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "C",
     "tip": "有 Last night：事先發生 → 過去式；規則動詞多數加邊種字尾？",
-    "teach": "過去式：有 last night／yesterday／ago。"
+    "teach": "過去式：有 last night／yesterday／ago。",
+    "answerText": "ordered"
   },
   {
     "id": "t3",
@@ -73,7 +75,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "C",
     "tip": "有 yesterday afternoon：清楚過去；eat 唔係加 -ed 嗰類——記不規則過去形。",
-    "teach": "不規則動詞：eat 嘅過去式唔係 eated。"
+    "teach": "不規則動詞：eat 嘅過去式唔係 eated。",
+    "answerText": "ate"
   },
   {
     "id": "t4",
@@ -98,7 +101,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "A",
     "tip": "講而家喜好用現在式否定；主語係 I（唔係 he／she）→ 否定助動詞點揀？",
-    "teach": "I／you／we／they → don't；he／she／it → doesn't。"
+    "teach": "I／you／we／they → don't；he／she／it → doesn't。",
+    "answerText": "don't"
   },
   {
     "id": "t5",
@@ -123,7 +127,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "C",
     "tip": "有 Yesterday：過去 be；主語 we＝複數 → 單數／複數過去 be 分清。",
-    "teach": "be 過去：I／he／she／it → was；you／we／they → were。"
+    "teach": "be 過去：I／he／she／it → was；you／we／they → were。",
+    "answerText": "were"
   },
   {
     "id": "t6",
@@ -148,7 +153,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "C",
     "tip": "有 Last Sunday morning：過去；規則動詞加 -ed。",
-    "teach": "規則動詞過去式加 -ed。"
+    "teach": "規則動詞過去式加 -ed。",
+    "answerText": "listened"
   },
   {
     "id": "t7",
@@ -173,7 +179,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "B",
     "tip": "often／on Mondays＝習慣 → 現在式；主語 She → 動詞要唔要加 -s？",
-    "teach": "習慣 → 現在式；he／she／it 加 -s。"
+    "teach": "習慣 → 現在式；he／she／it 加 -s。",
+    "answerText": "reads"
   },
   {
     "id": "t8",
@@ -198,7 +205,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "C",
     "tip": "前面 I was…，so 後面都要跟過去；go 係不規則。",
-    "teach": "so 連接兩件過去事。"
+    "teach": "so 連接兩件過去事。",
+    "answerText": "went"
   },
   {
     "id": "t9",
@@ -223,7 +231,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "B",
     "tip": "at weekends＝習慣；主語 Sam＝單數 → 現在式助動詞？後面 go 原形。",
-    "teach": "he／she／名字 → Does + 原形。"
+    "teach": "he／she／名字 → Does + 原形。",
+    "answerText": "Does"
   },
   {
     "id": "t10",
@@ -248,7 +257,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "C",
     "tip": "有 last year：過去問句用邊個助動詞？後面動詞保持原形。",
-    "teach": "Did + 主語 + 動詞原形。"
+    "teach": "Did + 主語 + 動詞原形。",
+    "answerText": "did"
   },
   {
     "id": "t11",
@@ -273,7 +283,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "C",
     "tip": "有 Last Sunday：唔好用原形；規則動詞變過去。",
-    "teach": "細妹常見錯：見到過去時間詞仍寫現在式。"
+    "teach": "細妹常見錯：見到過去時間詞仍寫現在式。",
+    "answerText": "watched"
   },
   {
     "id": "t12",
@@ -298,7 +309,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "A",
     "tip": "括號 now：問而家價錢；curry 單數 → be 現在式邊個？",
-    "teach": "問而家事實用現在式。"
+    "teach": "問而家事實用現在式。",
+    "answerText": "is"
   },
   {
     "id": "t13",
@@ -323,7 +335,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "B",
     "tip": "every day＝習慣：現在式；主語 He → 加 -s。",
-    "teach": "第三人稱單數加 -s／-es。"
+    "teach": "第三人稱單數加 -s／-es。",
+    "answerText": "texts"
   },
   {
     "id": "t14",
@@ -348,7 +361,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "C",
     "tip": "前面 I was…，so 跟過去；make 係不規則。",
-    "teach": "make 嘅過去式唔係 makked。"
+    "teach": "make 嘅過去式唔係 makked。",
+    "answerText": "made"
   },
   {
     "id": "t15",
@@ -373,7 +387,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "C",
     "tip": "故事已發生：過去式；run 係不規則。",
-    "teach": "寫作故事多數用過去式。"
+    "teach": "寫作故事多數用過去式。",
+    "answerText": "ran"
   },
   {
     "id": "t16",
@@ -398,7 +413,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "A",
     "tip": "講平時喜好：現在式；主語 I → 原形（唔加 -s）。",
-    "teach": "喜好／習慣通常用現在式。"
+    "teach": "喜好／習慣通常用現在式。",
+    "answerText": "like"
   },
   {
     "id": "t17",
@@ -423,7 +439,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "C",
     "tip": "有 last Sunday：規則動詞變過去。",
-    "teach": "規則動詞加 -ed。"
+    "teach": "規則動詞加 -ed。",
+    "answerText": "painted"
   },
   {
     "id": "t18",
@@ -448,7 +465,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "A",
     "tip": "括號 habit：而家習慣；主語 you → 助動詞？",
-    "teach": "I／you／we／they 問句用 Do。"
+    "teach": "I／you／we／they 問句用 Do。",
+    "answerText": "Do"
   },
   {
     "id": "t19",
@@ -473,7 +491,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "B",
     "tip": "講舊時 then：兩格都係過去 be；主語 she 單數。",
-    "teach": "講過去年齡用 was／were。"
+    "teach": "講過去年齡用 was／were。",
+    "answerText": "was / was"
   },
   {
     "id": "t20",
@@ -498,7 +517,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "B",
     "tip": "括號 habit：平時；主語 Mum → 動詞加 -s。",
-    "teach": "一般事實／能力用現在式。"
+    "teach": "一般事實／能力用現在式。",
+    "answerText": "cooks"
   },
   {
     "id": "t21",
@@ -523,7 +543,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "C",
     "tip": "前面 I was…，so 跟過去；規則動詞加 -ed。",
-    "teach": "so I + 過去式。"
+    "teach": "so I + 過去式。",
+    "answerText": "watched"
   },
   {
     "id": "t22",
@@ -548,7 +569,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "B",
     "tip": "有 now：而家正在發生 → be + V-ing；主語複數用邊個 be？",
-    "teach": "而家正在做：be + V-ing。"
+    "teach": "而家正在做：be + V-ing。",
+    "answerText": "are / going"
   },
   {
     "id": "t23",
@@ -573,7 +595,8 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "C",
     "tip": "有 last year：過去式；buy 係不規則。",
-    "teach": "buy 嘅過去式唔係 buyed。"
+    "teach": "buy 嘅過去式唔係 buyed。",
+    "answerText": "bought"
   },
   {
     "id": "t24",
@@ -598,6 +621,7 @@ window.P4_BANK_TENSES = [
     ],
     "answer": "B",
     "tip": "括號 now；主語 rooms 複數 → be 現在式邊個？",
-    "teach": "複數主語用 are／were。"
+    "teach": "複數主語用 are／were。",
+    "answerText": "are"
   }
 ];
