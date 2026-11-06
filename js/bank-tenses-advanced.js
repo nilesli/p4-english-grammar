@@ -1,4 +1,4 @@
-/** auto bank · r17 fill prompts · 20261105r17 · answerText + prompt (base hint); tips = 思路 only, no answer leak */
+/** auto bank · r17 fill prompts · 20261105r18 · answerText + prompt (base hint); tips = 思路 only, no answer leak */
 window.P4_BANK_TENSES_ADVANCED = [
   {
     "id": "adv-email-picnic",

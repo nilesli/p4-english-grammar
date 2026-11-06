@@ -1,6 +1,6 @@
 /**
  * 小四英文温習 · 課題清單 + 教學重點
- * r17 · 進階時態括號提示＋r16 配圖 20261105r17 · 疑問詞仍對話 MCQ；其餘不變
+ * r18 · 比較級只留有圖 17 題、每回合 5 題 · 20261105r18 · 進階時態括號提示＋r16 配圖；疑問詞仍對話 MCQ；其餘不變
  */
 window.P4_TOPICS = [
   {
@@ -150,6 +150,7 @@ window.P4_TOPICS = [
     short: "比較級／最高級",
     enabled: true,
     hasAdvanced: false,
+    roundSize: 5,
     bankKey: "P4_BANK_COMPARATIVES",
     historyTopic: "comparatives",
     teachHtml: `

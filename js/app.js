@@ -1,9 +1,14 @@
 /**
- * 小四英文温習 · Practice app
- * r17 · ?v=20261105r17 · advanced tense fill prompts + r16 images
+ * 小四英文温習 · practice UI
+ * r18 · ?v=20261105r18 · comparatives image-only 17 · roundSize 5 · advanced tense fill prompts + r16 images
  */
 (function () {
   const ROUND_SIZE = 8;
+
+  function getRoundSize() {
+    var n = state.topic && state.topic.roundSize;
+    return typeof n === "number" && n > 0 ? n : ROUND_SIZE;
+  }
 
   function mulberry32(a) {
     return function () {
@@ -568,14 +573,15 @@
     document.title = "小四英文温習 · " + t.short;
     if (el.pageTitle) el.pageTitle.textContent = "小四英文温習 · " + t.short;
     if (el.pageSub) {
+      var rs = getRoundSize();
       if (t.hasAdvanced) {
         el.pageSub.textContent = "基礎填充／進階短文填充（小四程度）";
       } else if (t.id === "sentence-order") {
-        el.pageSub.textContent = "字卡拼句 · 每回合隨機 8 題";
+        el.pageSub.textContent = "字卡拼句 · 每回合隨機 " + rs + " 題";
       } else if (t.id === "punctuation") {
-        el.pageSub.textContent = "標點插入 · 每回合隨機 8 題";
+        el.pageSub.textContent = "標點插入 · 每回合隨機 " + rs + " 題";
       } else {
-        el.pageSub.textContent = "每回合隨機 8 題（小四程度）";
+        el.pageSub.textContent = "每回合隨機 " + rs + " 題（小四程度）";
       }
     }
     if (el.teachBody) el.teachBody.innerHTML = t.teachHtml || "";
@@ -615,11 +621,12 @@
       el.modeAdvanced.setAttribute("aria-pressed", String(adv));
     }
     if (el.modeHint) {
+      var rsHint = getRoundSize();
       el.modeHint.textContent = adv
         ? "進階：一篇短文／對話，格內自己打時態（畫面鍵盤）。"
         : isFillTopic(state.topicId)
-          ? "基礎：隨機 8 題填充（畫面鍵盤輸入）。"
-          : "基礎：隨機 8 題四選一。";
+          ? "基礎：隨機 " + rsHint + " 題填充（畫面鍵盤輸入）。"
+          : "基礎：隨機 " + rsHint + " 題四選一。";
       el.modeHint.hidden = !(state.topic && state.topic.hasAdvanced);
     }
     if (el.practiceIntro) {
@@ -687,7 +694,7 @@
         }
         return;
       }
-      state.questions = pickQuestions(bank, state.seed, ROUND_SIZE);
+      state.questions = pickQuestions(bank, state.seed, getRoundSize());
       if (interactiveKind() && window.P4Interactive) {
         state.ixMeta = window.P4Interactive.prepareQuestions(
           state.questions,
@@ -915,7 +922,7 @@
       const fig = document.createElement("figure");
       fig.className = "q-figure";
       const img = document.createElement("img");
-      img.src = "assets/questions/" + q.image + "?v=20261105r17";
+      img.src = "assets/questions/" + q.image + "?v=20261105r18";
       img.alt = q.imageAlt || "";
       img.loading = "lazy";
       img.decoding = "async";
